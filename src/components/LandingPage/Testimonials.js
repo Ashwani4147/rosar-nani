@@ -22,11 +22,18 @@ export function Testimonials() {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-100 to-pink-100">
+    <section className="py-20" style={{ backgroundColor: "#86c9d8" }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl mb-6 text-purple-800">{t("testimonialsTitle")}</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t("testimonialsText")}</p>
+          <h2
+            className="text-3xl md:text-5xl mb-6"
+            style={{ color: "#efb1fa" }} // Pink heading
+          >
+            {t("testimonialsTitle")}
+          </h2>
+          <p className="text-lg text-gray-100 max-w-2xl mx-auto">
+            {t("testimonialsText")}
+          </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
@@ -47,7 +54,9 @@ export function Testimonials() {
 
                 {/* Customer Info */}
                 <div>
-                  <h4 className="text-xl text-purple-800 mb-2">{testimonials[currentSlide].name}</h4>
+                  <h4 className="text-xl mb-2" style={{ color: "#efb1fa" }}> {/* Pink name */}
+                    {testimonials[currentSlide].name}
+                  </h4>
                   <p className="text-gray-600">{testimonials[currentSlide].service}</p>
                 </div>
               </div>
@@ -56,13 +65,13 @@ export function Testimonials() {
 
           {/* Navigation Buttons */}
           <button
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-pink-100 border border-purple-800 text-purple-800 rounded-full w-10 h-10 flex items-center justify-center transition-colors duration-300 shadow-md"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-pink-100 border border-blue-800 text-blue-800 rounded-full w-10 h-10 flex items-center justify-center transition-colors duration-300 shadow-md"
             onClick={prevSlide}
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
           <button
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-pink-100 border border-purple-800 text-purple-800 rounded-full w-10 h-10 flex items-center justify-center transition-colors duration-300 shadow-md"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-pink-100 border border-blue-800 text-blue-800 rounded-full w-10 h-10 flex items-center justify-center transition-colors duration-300 shadow-md"
             onClick={nextSlide}
           >
             <ChevronRight className="w-4 h-4" />
@@ -74,7 +83,7 @@ export function Testimonials() {
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                  index === currentSlide ? "bg-purple-800" : "bg-gray-300"
+                  index === currentSlide ? "bg-[#efb1fa]" : "bg-gray-300"
                 }`}
                 onClick={() => setCurrentSlide(index)}
               />
