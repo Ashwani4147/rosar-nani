@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { X, Menu } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "../../i18n";
-import logo from "../../assets/logo.png";
-import sideImage from "../../assets/side-image.png";
+import logos1 from "../../assets/logos1.png"; // The logo you want to use
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,11 +27,9 @@ function Header() {
     }
   };
 
-  // Scrollspy effect: update activeSection on scroll
   useEffect(() => {
     const handleScroll = () => {
       const scrollPos = window.scrollY + window.innerHeight / 3;
-
       for (let link of navLinks) {
         const section = document.getElementById(link.href);
         if (section) {
@@ -46,7 +43,7 @@ function Header() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initialize on load
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -57,12 +54,14 @@ function Header() {
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <button
-          onClick={() => handleNavClick("home")}
-          className="flex items-center hover:scale-105 transition-transform duration-200"
-        >
-          <img src={logo} alt="Rosar Nani Logo" className="h-6 w-auto" />
-        </button>
+        <div className="flex items-center">
+          <button
+            onClick={() => handleNavClick("home")}
+            className="flex items-center hover:scale-105 transition-transform duration-200"
+          >
+            <img src={logos1} alt="Rosar Nani Logo" className="h-12 w-auto" />
+          </button>
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
@@ -97,11 +96,6 @@ function Header() {
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
-        </div>
-
-        {/* Side Image on the right */}
-        <div className="hidden lg:block ml-4">
-          <img src={sideImage} alt="Decorative" className="h-12 w-auto" />
         </div>
       </nav>
 

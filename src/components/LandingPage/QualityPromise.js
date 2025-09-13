@@ -85,7 +85,10 @@ export function QualityPromise() {
     <section className="py-20 bg-gradient-to-r from-purple-100 to-pink-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl mb-6 text-purple-800">
+          <h2
+            className="text-3xl md:text-5xl mb-6"
+            style={{ color: "#86c9d8" }} // Our Quality Promise title in light blue
+          >
             {t("qualityTitle")}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -99,10 +102,12 @@ export function QualityPromise() {
               key={index}
               className="text-center group hover:transform hover:scale-105 transition-all duration-300"
             >
-              <div className="inline-flex items-center justify-center w-20 h-20 mb-6 bg-purple-800 rounded-full group-hover:bg-pink-500 transition-colors duration-300">
+              <div className="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-full transition-colors duration-300 bg-[#86c9d8] group-hover:bg-[#1e3a8a]">
                 <promise.icon className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl mb-4 text-purple-800">{promise.title}</h3>
+              <h3 className="text-xl mb-4 transition-colors duration-300 text-[#86c9d8] group-hover:text-[#1e3a8a]">
+                {promise.title}
+              </h3>
               <p className="text-gray-600 leading-relaxed">{promise.description}</p>
             </div>
           ))}
