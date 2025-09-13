@@ -1,7 +1,16 @@
-import React from 'react';
+import React from "react";
 
 const ImageAndText = () => {
-  const imageUrl = "https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7";
+  const imageUrl =
+    "https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7";
+
+  // Function to scroll to the "services" section
+  const handleExploreClick = () => {
+    const section = document.getElementById("services");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div
@@ -15,14 +24,14 @@ const ImageAndText = () => {
       {/* Text Content */}
       <div className="absolute inset-0 flex items-center justify-center p-4">
         <div className="text-center text-white">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+          <h1 className="text-6xl font-bold mb-4">
             Taste & Treat Yourself
           </h1>
-          <p className="text-xl md:text-2xl mb-8">
-            Customized for You
-          </p>
+          <p className="text-xl mb-8">Customized for You</p>
           <button
-            className="bg-orange-500 hover:bg-orange-600 text-white transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl px-8 py-6 text-lg rounded-full"
+            onClick={handleExploreClick}
+            style={{ backgroundColor: "#efb1fa" }}
+            className="text-white transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl px-8 py-6 text-lg rounded-full hover:opacity-90"
           >
             Explore Now
           </button>

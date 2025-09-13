@@ -21,19 +21,28 @@ export function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const titleColor = { color: "#86c9d8" }; // Reusable style
+
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
+        {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl mb-6 text-purple-800">{t("contactTitle")}</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t("contactText")}</p>
+          <h2 className="text-3xl md:text-5xl mb-6" style={titleColor}>
+            {t("contactTitle")}
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            {t("contactText")}
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
           <div className="border-0 shadow-lg rounded-lg">
             <div className="p-8">
-              <h3 className="text-2xl mb-6 text-purple-800">{t("contactFormTitle")}</h3>
+              <h3 className="text-2xl mb-6" style={titleColor}>
+                {t("contactFormTitle")}
+              </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block mb-2 text-gray-700">{t("nameLabel")}</label>
@@ -76,7 +85,8 @@ export function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-3 px-6 bg-purple-800 hover:bg-purple-900 text-white font-semibold rounded-md transform hover:scale-105 transition-all duration-300 shadow-lg"
+                  className="w-full py-3 px-6 text-white font-semibold rounded-md transform hover:scale-105 transition-all duration-300 shadow-lg"
+                  style={{ backgroundColor: "#86c9d8" }}
                 >
                   {t("sendButton")}
                 </button>
@@ -87,7 +97,7 @@ export function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl mb-6 text-purple-800">{t("contactInfoTitle")}</h3>
+              <h3 className="text-2xl mb-6" style={titleColor}>{t("contactInfoTitle")}</h3>
               <p className="text-gray-600 mb-8 leading-relaxed">{t("contactInfoText")}</p>
             </div>
 
@@ -97,7 +107,7 @@ export function Contact() {
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg text-purple-800 mb-1">{t("locationTitle")}</h4>
+                  <h4 className="text-lg mb-1" style={titleColor}>{t("locationTitle")}</h4>
                   <p className="text-gray-600">{t("locationText")}</p>
                 </div>
               </div>
@@ -107,7 +117,7 @@ export function Contact() {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg text-purple-800 mb-1">{t("phoneTitle")}</h4>
+                  <h4 className="text-lg mb-1" style={titleColor}>{t("phoneTitle")}</h4>
                   <p className="text-gray-600">{t("phoneText")}</p>
                 </div>
               </div>
@@ -117,14 +127,14 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg text-purple-800 mb-1">{t("emailTitle")}</h4>
+                  <h4 className="text-lg mb-1" style={titleColor}>{t("emailTitle")}</h4>
                   <p className="text-gray-600">{t("emailText")}</p>
                 </div>
               </div>
             </div>
 
             <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-6">
-              <h4 className="text-lg text-purple-800 mb-3">{t("businessHoursTitle")}</h4>
+              <h4 className="text-lg mb-3" style={titleColor}>{t("businessHoursTitle")}</h4>
               <div className="space-y-2 text-gray-600">
                 <p>{t("businessHoursMonFri")}</p>
                 <p>{t("businessHoursSat")}</p>
