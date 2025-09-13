@@ -1,38 +1,37 @@
-import React, { useState } from "react";
-import { MapPin, Phone, Mail } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import React, { useState } from 'react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 
 export function Contact() {
-  const { t } = useTranslation();
-
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: ''
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", message: "" });
+    // Handle form submission here
+    console.log('Form submitted:', formData);
+    // Reset form
+    setFormData({ name: '', email: '', message: '' });
   };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   };
-
-  const titleColor = { color: "#86c9d8" }; // Reusable style
 
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
-        {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl mb-6" style={titleColor}>
-            {t("contactTitle")}
+          <h2 className="text-3xl md:text-5xl mb-6 text-purple-800">
+            Get in Touch
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {t("contactText")}
+            Ready to experience personalized food and wellness? Contact us to start your journey
           </p>
         </div>
 
@@ -40,12 +39,14 @@ export function Contact() {
           {/* Contact Form */}
           <div className="border-0 shadow-lg rounded-lg">
             <div className="p-8">
-              <h3 className="text-2xl mb-6" style={titleColor}>
-                {t("contactFormTitle")}
+              <h3 className="text-2xl mb-6 text-purple-800">
+                Send Us a Message
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block mb-2 text-gray-700">{t("nameLabel")}</label>
+                  <label htmlFor="name" className="block mb-2 text-gray-700">
+                    Name
+                  </label>
                   <input
                     type="text"
                     id="name"
@@ -54,11 +55,13 @@ export function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                    placeholder={t("namePlaceholder")}
+                    placeholder="Your full name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block mb-2 text-gray-700">{t("emailLabel")}</label>
+                  <label htmlFor="email" className="block mb-2 text-gray-700">
+                    Email
+                  </label>
                   <input
                     type="email"
                     id="email"
@@ -67,11 +70,13 @@ export function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                    placeholder={t("emailPlaceholder")}
+                    placeholder="your.email@example.com"
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block mb-2 text-gray-700">{t("messageLabel")}</label>
+                  <label htmlFor="message" className="block mb-2 text-gray-700">
+                    Message
+                  </label>
                   <textarea
                     id="message"
                     name="message"
@@ -80,15 +85,14 @@ export function Contact() {
                     required
                     rows={5}
                     className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                    placeholder={t("messagePlaceholder")}
+                    placeholder="Tell us about your preferences and how we can help you..."
                   ></textarea>
                 </div>
-                <button
-                  type="submit"
-                  className="w-full py-3 px-6 text-white font-semibold rounded-md transform hover:scale-105 transition-all duration-300 shadow-lg"
-                  style={{ backgroundColor: "#86c9d8" }}
+                <button 
+                  type="submit" 
+                  className="w-full py-3 px-6 bg-purple-800 hover:bg-purple-900 text-white font-semibold rounded-md transform hover:scale-105 transition-all duration-300 shadow-lg"
                 >
-                  {t("sendButton")}
+                  Send Message
                 </button>
               </form>
             </div>
@@ -97,8 +101,13 @@ export function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl mb-6" style={titleColor}>{t("contactInfoTitle")}</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">{t("contactInfoText")}</p>
+              <h3 className="text-2xl mb-6 text-purple-800">
+                Contact Information
+              </h3>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                We'd love to hear from you! Reach out to us through any of the following channels, 
+                and we'll get back to you as soon as possible.
+              </p>
             </div>
 
             <div className="space-y-6">
@@ -107,8 +116,8 @@ export function Contact() {
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg mb-1" style={titleColor}>{t("locationTitle")}</h4>
-                  <p className="text-gray-600">{t("locationText")}</p>
+                  <h4 className="text-lg text-purple-800 mb-1">Location</h4>
+                  <p className="text-gray-600">123 Wellness Street, Gourmet District, City 12345</p>
                 </div>
               </div>
 
@@ -117,8 +126,8 @@ export function Contact() {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg mb-1" style={titleColor}>{t("phoneTitle")}</h4>
-                  <p className="text-gray-600">{t("phoneText")}</p>
+                  <h4 className="text-lg text-purple-800 mb-1">Phone</h4>
+                  <p className="text-gray-600">+1 (555) 123-4567</p>
                 </div>
               </div>
 
@@ -127,18 +136,18 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg mb-1" style={titleColor}>{t("emailTitle")}</h4>
-                  <p className="text-gray-600">{t("emailText")}</p>
+                  <h4 className="text-lg text-purple-800 mb-1">Email</h4>
+                  <p className="text-gray-600">hello@rosarnani.com</p>
                 </div>
               </div>
             </div>
 
             <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-6">
-              <h4 className="text-lg mb-3" style={titleColor}>{t("businessHoursTitle")}</h4>
+              <h4 className="text-lg text-purple-800 mb-3">Business Hours</h4>
               <div className="space-y-2 text-gray-600">
-                <p>{t("businessHoursMonFri")}</p>
-                <p>{t("businessHoursSat")}</p>
-                <p>{t("businessHoursSun")}</p>
+                <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
+                <p>Saturday: 10:00 AM - 6:00 PM</p>
+                <p>Sunday: 11:00 AM - 5:00 PM</p>
               </div>
             </div>
           </div>

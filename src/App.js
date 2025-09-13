@@ -10,6 +10,8 @@ import { Testimonials } from './components/LandingPage/Testimonials';
 import { Contact } from './components/LandingPage/Contact';
 import { Footer } from './components/LandingPage/Footer';
 import { Food } from './components/LandingPage/Food';
+import Salon from './components/LandingPage/Salon';
+import Cosmetics from './components/LandingPage/Cosmetics';
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const AppWithRouter = () => {
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/food" element={<Food />} />
+          <Route path="/salon" element={<Salon />} />
+          <Route path="/cosmetics" element={<Cosmetics />} />
         </Routes>
       </Router>
     </Suspense>
