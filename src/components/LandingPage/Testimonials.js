@@ -1,35 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function Testimonials() {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      rating: 5,
-      text: "Rosar Nani exceeded all my expectations! The food was absolutely divine, and the spa treatment left me feeling completely rejuvenated. The personalized approach made all the difference.",
-      service: "Food & Spa Experience"
-    },
-    {
-      name: "Michael Chen",
-      rating: 5,
-      text: "The customized skincare products are amazing! They really took the time to understand my skin type and created products that work perfectly for me. Highly recommend!",
-      service: "Customized Products"
-    },
-    {
-      name: "Emily Rodriguez",
-      rating: 5,
-      text: "What a unique concept! Being able to enjoy gourmet food and then pamper myself with salon treatments all in one place is incredible. The quality is top-notch.",
-      service: "Complete Experience"
-    },
-    {
-      name: "David Thompson",
-      rating: 5,
-      text: "The attention to detail is remarkable. Every aspect of my visit was tailored to my preferences. The staff truly cares about customer satisfaction.",
-      service: "Personalized Service"
-    }
-  ];
+  const testimonials = t("testimonialsList", { returnObjects: true });
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
@@ -48,12 +25,8 @@ export function Testimonials() {
     <section className="py-20 bg-gradient-to-br from-purple-100 to-pink-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl mb-6 text-purple-800">
-            What Our Customers Say
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Hear from our satisfied customers about their personalized experiences
-          </p>
+          <h2 className="text-3xl md:text-5xl mb-6 text-purple-800">{t("testimonialsTitle")}</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t("testimonialsText")}</p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
@@ -74,12 +47,8 @@ export function Testimonials() {
 
                 {/* Customer Info */}
                 <div>
-                  <h4 className="text-xl text-purple-800 mb-2">
-                    {testimonials[currentSlide].name}
-                  </h4>
-                  <p className="text-gray-600">
-                    {testimonials[currentSlide].service}
-                  </p>
+                  <h4 className="text-xl text-purple-800 mb-2">{testimonials[currentSlide].name}</h4>
+                  <p className="text-gray-600">{testimonials[currentSlide].service}</p>
                 </div>
               </div>
             </div>
@@ -105,7 +74,7 @@ export function Testimonials() {
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                  index === currentSlide ? 'bg-purple-800' : 'bg-gray-300'
+                  index === currentSlide ? "bg-purple-800" : "bg-gray-300"
                 }`}
                 onClick={() => setCurrentSlide(index)}
               />

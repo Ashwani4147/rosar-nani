@@ -1,26 +1,19 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export function Footer() {
+  const { t } = useTranslation();
+
   const socialLinks = [
     { icon: Facebook, href: '#', label: 'Facebook' },
     { icon: Instagram, href: '#', label: 'Instagram' },
     { icon: Twitter, href: '#', label: 'Twitter' },
   ];
 
-  const quickLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Menu', href: '#menu' },
-    { name: 'Salon', href: '#salon' },
-    { name: 'Products', href: '#products' },
-    { name: 'Contact', href: '#contact' },
-  ];
-
-  const policies = [
-    { name: 'Privacy Policy', href: '#' },
-    { name: 'Terms of Service', href: '#' },
-    { name: 'Refund Policy', href: '#' },
-  ];
+  const quickLinks = t('footerQuickLinks', { returnObjects: true });
+  const policies = t('footerPolicies', { returnObjects: true });
+  const contact = t('footerContact', { returnObjects: true });
 
   return (
     <footer className="bg-gray-900 text-white py-16">
@@ -29,10 +22,10 @@ export function Footer() {
           {/* Brand Section */}
           <div className="md:col-span-1">
             <h3 className="text-2xl font-bold text-purple-800 mb-4">
-              Rosar Nani
+              {t('footerBrand')}
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Your personalized destination for food delicacies, salon treatments, and customized products.
+              {t('footerDescription')}
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -51,7 +44,7 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-pink-500">
-              Quick Links
+              {t('footerQuickLinksTitle')}
             </h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
@@ -70,20 +63,20 @@ export function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-pink-500">
-              Contact Info
+              {t('footerContactTitle')}
             </h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                <span className="text-gray-300">123 Wellness Street, Gourmet District</span>
+                <span className="text-gray-300">{contact.location}</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">{contact.phone}</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                <span className="text-gray-300">hello@rosarnani.com</span>
+                <span className="text-gray-300">{contact.email}</span>
               </div>
             </div>
           </div>
@@ -91,7 +84,7 @@ export function Footer() {
           {/* Policies */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-pink-500">
-              Legal
+              {t('footerPoliciesTitle')}
             </h4>
             <ul className="space-y-2">
               {policies.map((policy, index) => (
@@ -110,9 +103,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-gray-700 mt-12 pt-8 text-center">
-          <p className="text-gray-400">
-            © 2025 Rosar Nani. All rights reserved. Designed with care for your personalized experience.
-          </p>
+          <p className="text-gray-400">{t('footerCopyright')}</p>
         </div>
       </div>
     </footer>
