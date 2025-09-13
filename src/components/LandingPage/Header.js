@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { X, Menu } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "../../i18n";
+import logo from "../../assets/logo.png";
+import sideImage from "../../assets/side-image.png";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("#home");
+  const [activeSection, setActiveSection] = useState("home");
   const { t } = useTranslation();
 
   const navLinks = [
@@ -18,7 +20,7 @@ function Header() {
   ];
 
   const handleNavClick = (id) => {
-    setActiveSection(`#${id}`);
+    setActiveSection(id);
     setIsMenuOpen(false);
     const section = document.getElementById(id);
     if (section) {
@@ -26,24 +28,50 @@ function Header() {
     }
   };
 
+  // Scrollspy effect: update activeSection on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + window.innerHeight / 3;
+
+      for (let link of navLinks) {
+        const section = document.getElementById(link.href);
+        if (section) {
+          const { offsetTop, offsetHeight } = section;
+          if (scrollPos >= offsetTop && scrollPos < offsetTop + offsetHeight) {
+            setActiveSection(link.href);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initialize on load
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+        {/* Logo */}
         <button
           onClick={() => handleNavClick("home")}
-          className="text-2xl font-bold text-purple-800 hover:scale-105 transition-transform duration-300"
+          className="flex items-center hover:scale-105 transition-transform duration-200"
         >
-          Rosar Nani
+          <img src={logo} alt="Rosar Nani Logo" className="h-6 w-auto" />
         </button>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
-          {navLinks.map((link, index) => (
+          {navLinks.map((link) => (
             <button
-              key={index}
+              key={link.href}
               onClick={() => handleNavClick(link.href)}
               className={`font-medium transition-colors duration-300 hover:scale-105 ${
-                activeSection === `#${link.href}`
+                activeSection === link.href
                   ? "text-purple-800 border-b-2 border-purple-800 font-semibold"
                   : "text-gray-700 hover:text-purple-800"
               }`}
@@ -51,8 +79,6 @@ function Header() {
               {link.name}
             </button>
           ))}
-
-          {/* Language Dropdown */}
           <select
             onChange={(e) => changeLanguage(e.target.value)}
             className="border border-gray-300 rounded px-2 py-1 text-gray-700"
@@ -72,18 +98,23 @@ function Header() {
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
+
+        {/* Side Image on the right */}
+        <div className="hidden lg:block ml-4">
+          <img src={sideImage} alt="Decorative" className="h-12 w-auto" />
+        </div>
       </nav>
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg border-t border-gray-100">
           <div className="flex flex-col items-center py-4 space-y-4">
-            {navLinks.map((link, index) => (
+            {navLinks.map((link) => (
               <button
-                key={index}
+                key={link.href}
                 onClick={() => handleNavClick(link.href)}
                 className={`w-full text-center py-3 text-lg transition-colors duration-300 ${
-                  activeSection === `#${link.href}`
+                  activeSection === link.href
                     ? "text-purple-800 bg-gray-100 font-bold"
                     : "text-gray-700 hover:bg-gray-100"
                 }`}
