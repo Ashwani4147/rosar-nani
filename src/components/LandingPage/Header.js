@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { X, Menu } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { changeLanguage } from "../../i18n";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,6 +35,8 @@ function Header() {
         >
           Rosar Nani
         </button>
+
+        {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link, index) => (
             <button
@@ -57,6 +61,8 @@ function Header() {
             <option value="th">ไทย</option>
           </select>
         </div>
+
+        {/* Mobile Menu Button */}
         <div className="lg:hidden flex items-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -66,7 +72,7 @@ function Header() {
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-      </div>
+      </nav>
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
