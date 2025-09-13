@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { X, Menu } from "lucide-react";
-import { useTranslation } from "react-i18next";
-import { changeLanguage } from "../../i18n";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +18,6 @@ function Header() {
   const handleNavClick = (id) => {
     setActiveSection(`#${id}`);
     setIsMenuOpen(false);
-
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -30,15 +27,12 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo */}
         <button
           onClick={() => handleNavClick("home")}
-          className="flex-shrink-0 text-2xl font-bold text-purple-800 hover:scale-105 transition-transform duration-300"
+          className="text-2xl font-bold text-purple-800 hover:scale-105 transition-transform duration-300"
         >
           Rosar Nani
         </button>
-
-        {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link, index) => (
             <button
@@ -63,18 +57,7 @@ function Header() {
             <option value="th">ไทย</option>
           </select>
         </div>
-
-        {/* Mobile Menu Toggle */}
-        <div className="lg:hidden flex items-center space-x-2">
-          {/* Language Dropdown for mobile */}
-          <select
-            onChange={(e) => changeLanguage(e.target.value)}
-            className="border border-gray-300 rounded px-2 py-1 text-gray-700"
-          >
-            <option value="en">English</option>
-            <option value="th">ไทย</option>
-          </select>
-
+        <div className="lg:hidden flex items-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-md p-2"
@@ -83,30 +66,28 @@ function Header() {
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-      </nav>
-
-      {/* Mobile Menu */}
-      <div
-        className={`fixed inset-x-0 top-[64px] bg-white lg:hidden transition-transform duration-300 ease-in-out z-40 ${
-          isMenuOpen ? "translate-y-0" : "-translate-y-full"
-        }`}
-      >
-        <div className="flex flex-col items-center py-4 space-y-4 shadow-lg">
-          {navLinks.map((link, index) => (
-            <button
-              key={index}
-              onClick={() => handleNavClick(link.href)}
-              className={`w-full text-center py-3 text-lg transition-colors duration-300 ${
-                activeSection === `#${link.href}`
-                  ? "text-purple-800 bg-gray-100 font-bold"
-                  : "text-gray-700 hover:bg-gray-100"
-              }`}
-            >
-              {link.name}
-            </button>
-          ))}
-        </div>
       </div>
+
+      {/* Mobile Navigation Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white shadow-lg border-t border-gray-100">
+          <div className="flex flex-col items-center py-4 space-y-4">
+            {navLinks.map((link, index) => (
+              <button
+                key={index}
+                onClick={() => handleNavClick(link.href)}
+                className={`w-full text-center py-3 text-lg transition-colors duration-300 ${
+                  activeSection === `#${link.href}`
+                    ? "text-purple-800 bg-gray-100 font-bold"
+                    : "text-gray-700 hover:bg-gray-100"
+                }`}
+              >
+                {link.name}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </header>
   );
 }
