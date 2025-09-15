@@ -39,7 +39,7 @@ export function About() {
           </h2> */}
           <h2
             className="text-3xl md:text-5xl mb-8"
-            style={{ color: "#86c9d8" }}
+            style={{ color: "#419fa4" }}
           >
             {t("aboutTitle")}
           </h2>

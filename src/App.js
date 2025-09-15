@@ -10,7 +10,7 @@ import { Testimonials } from './components/LandingPage/Testimonials';
 import { Contact } from './components/LandingPage/Contact';
 import { Footer } from './components/LandingPage/Footer';
 import  Food  from './components/FoodService/Food';
-import Salon from './components/LandingPage/Salon';
+import Salon from './components/SalonService/Salon';
 import Cosmetics from './components/LandingPage/Cosmetics';
 
 const App = () => {

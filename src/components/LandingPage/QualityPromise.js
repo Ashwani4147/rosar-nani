@@ -87,7 +87,7 @@ export function QualityPromise() {
         <div className="text-center mb-16">
           <h2
             className="text-3xl md:text-5xl mb-6"
-            style={{ color: "#86c9d8" }} // Our Quality Promise title in light blue
+            style={{ color: "#419fa4" }} // Our Quality Promise title in light blue
           >
             {t("qualityTitle")}
           </h2>
@@ -102,10 +102,10 @@ export function QualityPromise() {
               key={index}
               className="text-center group hover:transform hover:scale-105 transition-all duration-300"
             >
-              <div className="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-full transition-colors duration-300 bg-[#86c9d8] group-hover:bg-[#1e3a8a]">
+              <div className="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-full transition-colors duration-300 bg-[#419fa4] group-hover:bg-[#50c4ca]">
                 <promise.icon className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl mb-4 transition-colors duration-300 text-[#86c9d8] group-hover:text-[#1e3a8a]">
+              <h3 className="text-xl mb-4 transition-colors duration-300 text-[#419fa4] group-hover:text-[#50c4ca]">
                 {promise.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">{promise.description}</p>

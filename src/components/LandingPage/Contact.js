@@ -29,7 +29,7 @@ export function Contact() {
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl mb-6" style={{ color: "#86c9d8" }}>
+          <h2 className="text-3xl md:text-5xl mb-6" style={{ color: "#419fa4" }}>
             Get in Touch
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -41,7 +41,7 @@ export function Contact() {
           {/* Contact Form */}
           <div className="border-0 shadow-lg rounded-lg" style={{ backgroundColor: "#ffffff" }}>
             <div className="p-8">
-              <h3 className="text-2xl mb-6" style={{ color: "#86c9d8" }}>
+              <h3 className="text-2xl mb-6" style={{ color: "#419fa4" }}>
                 Send Us a Message
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -93,9 +93,9 @@ export function Contact() {
                 <button 
                   type="submit" 
                   className="w-full py-3 px-6 text-white font-semibold rounded-md transform hover:scale-105 transition-all duration-300 shadow-lg"
-                  style={{ backgroundColor: "#86c9d8" }}
+                  style={{ backgroundColor: "#419fa4" }}
                   onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#75b3c3"}
-                  onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#86c9d8"}
+                  onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#419fa4"}
                 >
                   Send Message
                 </button>
@@ -106,7 +106,7 @@ export function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl mb-6" style={{ color: "#86c9d8" }}>
+              <h3 className="text-2xl mb-6" style={{ color: "#419fa4" }}>
                 Contact Information
               </h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
@@ -117,11 +117,11 @@ export function Contact() {
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#86c9d8] rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#419fa4] rounded-full flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg mb-1" style={{ color: "#86c9d8" }}>Location</h4>
+                  <h4 className="text-lg mb-1" style={{ color: "#419fa4" }}>Location</h4>
                   <p className="text-gray-600">123 Wellness Street, Gourmet District, City 12345</p>
                 </div>
               </div>
@@ -131,7 +131,7 @@ export function Contact() {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg mb-1" style={{ color: "#86c9d8" }}>Phone</h4>
+                  <h4 className="text-lg mb-1" style={{ color: "#419fa4" }}>Phone</h4>
                   <p className="text-gray-600">+1 (555) 123-4567</p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg mb-1" style={{ color: "#86c9d8" }}>Email</h4>
+                  <h4 className="text-lg mb-1" style={{ color: "#419fa4" }}>Email</h4>
                   <p className="text-gray-600">hello@rosarnani.com</p>
                 </div>
               </div>
