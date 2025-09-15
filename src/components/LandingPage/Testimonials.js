@@ -13,7 +13,9 @@ export function Testimonials() {
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentSlide(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+    );
   };
 
   useEffect(() => {
@@ -22,16 +24,19 @@ export function Testimonials() {
   }, []);
 
   return (
-    <section className="py-20" style={{ backgroundColor: "#86c9d8" }}>
+    <section className="py-20" style={{ backgroundColor: "#86C9D81A" }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2
             className="text-3xl md:text-5xl mb-6"
-            style={{ color: "#efb1fa" }} // Pink heading
+            style={{ color: "#86c9d8" }} // Pink heading
           >
             {t("testimonialsTitle")}
           </h2>
-          <p className="text-lg text-gray-100 max-w-2xl mx-auto">
+          <p
+            className="text-lg max-w-2xl mx-auto text-gray-100"
+            style={{ color: "rgb(55, 65, 81)" }}
+          >
             {t("testimonialsText")}
           </p>
         </div>
@@ -43,7 +48,10 @@ export function Testimonials() {
                 {/* Stars */}
                 <div className="flex justify-center mb-6">
                   {[...Array(testimonials[currentSlide].rating)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      className="w-6 h-6 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
 
@@ -54,10 +62,14 @@ export function Testimonials() {
 
                 {/* Customer Info */}
                 <div>
-                  <h4 className="text-xl mb-2" style={{ color: "#efb1fa" }}> {/* Pink name */}
+                  <h4 className="text-xl mb-2" style={{ color: "#86c9d8" }}>
+                    {" "}
+                    {/* Pink name */}
                     {testimonials[currentSlide].name}
                   </h4>
-                  <p className="text-gray-600">{testimonials[currentSlide].service}</p>
+                  <p className="text-gray-600">
+                    {testimonials[currentSlide].service}
+                  </p>
                 </div>
               </div>
             </div>
@@ -83,7 +95,7 @@ export function Testimonials() {
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                  index === currentSlide ? "bg-[#efb1fa]" : "bg-gray-300"
+                  index === currentSlide ? "bg-[#86c9d8]" : "bg-gray-300"
                 }`}
                 onClick={() => setCurrentSlide(index)}
               />

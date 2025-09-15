@@ -84,6 +84,7 @@ testimonialsList: [
      // Footer Section
         footerBrand: "Rosar Nani",
         footerDescription: "Your personalized destination for food delicacies, salon treatments, and customized products.",
+        footerDescriptionfoodsrv: "Bringing you exceptional food experiences with quality, passion,and care.",
         footerQuickLinksTitle: "Quick Links",
         footerQuickLinks: [
           { name: "Home", href: "#home" },
@@ -91,6 +92,13 @@ testimonialsList: [
           { name: "Salon", href: "#salon" },
           { name: "Products", href: "#products" },
           { name: "Contact", href: "#contact" },
+        ],
+        footerQuickLinksfoodsrv: [
+          { name: "Home", href: "/" },
+          { name: "Services", href: "/services" },
+          { name: "Categories", href: "#categories" },
+          { name: "Quality", href: "#quality" },
+          { name: "Contact", href: "#footer" },
         ],
         footerContactTitle: "Contact Info",
         footerContact: {
@@ -214,6 +222,7 @@ testimonialsList: [
         // Footer Section
         footerBrand: "Rosar Nani",
         footerDescription: "จุดหมายส่วนตัวของคุณสำหรับอาหารรสเลิศ การบริการสปา และผลิตภัณฑ์ที่ปรับแต่งเฉพาะคุณ",
+        footerDescriptionfoodsrv: "มอบประสบการณ์การรับประทานอาหารสุดพิเศษด้วยคุณภาพ ความหลงใหล และความใส่ใจ",
         footerQuickLinksTitle: "ลิงก์ด่วน",
         footerQuickLinks: [
           { name: "หน้าหลัก", href: "#home" },

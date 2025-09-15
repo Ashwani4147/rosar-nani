@@ -21,7 +21,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="md:col-span-1">
-            <h3 className="text-2xl font-bold text-purple-800 mb-4">
+            <h3 className="text-2xl font-bold mb-4" style={{ color: "#86c9d8" }}>
               {t('footerBrand')}
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -32,10 +32,13 @@ export function Footer() {
                 <a
                   key={index}
                   href={social.href}
-                  className="w-10 h-10 bg-purple-800 rounded-full flex items-center justify-center hover:bg-pink-500 transition-colors duration-300 hover:scale-110 transform"
+                  className="w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 transform hover:scale-110"
+                  style={{ backgroundColor: "#86c9d8" }}
+                  onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#1e3a8a"}
+                  onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#86c9d8"}
                   aria-label={social.label}
                 >
-                  <social.icon className="w-5 h-5" />
+                  <social.icon className="w-5 h-5 text-white" />
                 </a>
               ))}
             </div>
@@ -43,7 +46,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-pink-500">
+            <h4 className="text-lg font-semibold mb-4" style={{ color: "#86c9d8" }}>
               {t('footerQuickLinksTitle')}
             </h4>
             <ul className="space-y-2">
@@ -62,7 +65,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-pink-500">
+            <h4 className="text-lg font-semibold mb-4" style={{ color: "#86c9d8" }}>
               {t('footerContactTitle')}
             </h4>
             <div className="space-y-3">
@@ -83,7 +86,7 @@ export function Footer() {
 
           {/* Policies */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-pink-500">
+            <h4 className="text-lg font-semibold mb-4" style={{ color: "#86c9d8" }}>
               {t('footerPoliciesTitle')}
             </h4>
             <ul className="space-y-2">
