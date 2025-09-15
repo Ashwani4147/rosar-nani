@@ -30,7 +30,7 @@ const ImageAndText = () => {
           <p className="text-xl mb-8">Customized for You</p>
           <button
             onClick={handleExploreClick}
-            style={{ backgroundColor: "#efb1fa" }}
+            style={{ backgroundColor: "#f8be6a" }}
             className="text-white transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl px-8 py-6 text-lg rounded-full hover:opacity-90"
           >
             Explore Now

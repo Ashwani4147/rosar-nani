@@ -9,7 +9,7 @@ import { QualityPromise } from './components/LandingPage/QualityPromise';
 import { Testimonials } from './components/LandingPage/Testimonials';
 import { Contact } from './components/LandingPage/Contact';
 import { Footer } from './components/LandingPage/Footer';
-import { Food } from './components/LandingPage/Food';
+import  Food  from './components/FoodService/Food';
 import Salon from './components/LandingPage/Salon';
 import Cosmetics from './components/LandingPage/Cosmetics';
 

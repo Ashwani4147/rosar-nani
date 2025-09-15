@@ -59,7 +59,7 @@ function Header() {
             onClick={() => handleNavClick("home")}
             className="flex items-center hover:scale-105 transition-transform duration-200"
           >
-            <img src={logos1} alt="Rosar Nani Logo" className="h-12 w-auto" />
+            <img src={logos1} alt="Rosar Nani Logo" className="h-10 w-auto" />
           </button>
         </div>
 

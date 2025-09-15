@@ -10,9 +10,7 @@ export function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
     console.log('Form submitted:', formData);
-    // Reset form
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -24,10 +22,14 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20">
+    <section 
+      id="contact" 
+      className="py-20"
+      // style={{ backgroundColor: "#FCE7F3" }} // Light pink background for the entire section
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl mb-6 text-purple-800">
+          <h2 className="text-3xl md:text-5xl mb-6" style={{ color: "#86c9d8" }}>
             Get in Touch
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -37,9 +39,9 @@ export function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <div className="border-0 shadow-lg rounded-lg">
+          <div className="border-0 shadow-lg rounded-lg" style={{ backgroundColor: "#ffffff" }}>
             <div className="p-8">
-              <h3 className="text-2xl mb-6 text-purple-800">
+              <h3 className="text-2xl mb-6" style={{ color: "#86c9d8" }}>
                 Send Us a Message
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -90,7 +92,10 @@ export function Contact() {
                 </div>
                 <button 
                   type="submit" 
-                  className="w-full py-3 px-6 bg-purple-800 hover:bg-purple-900 text-white font-semibold rounded-md transform hover:scale-105 transition-all duration-300 shadow-lg"
+                  className="w-full py-3 px-6 text-white font-semibold rounded-md transform hover:scale-105 transition-all duration-300 shadow-lg"
+                  style={{ backgroundColor: "#86c9d8" }}
+                  onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#75b3c3"}
+                  onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#86c9d8"}
                 >
                   Send Message
                 </button>
@@ -101,7 +106,7 @@ export function Contact() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl mb-6 text-purple-800">
+              <h3 className="text-2xl mb-6" style={{ color: "#86c9d8" }}>
                 Contact Information
               </h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
@@ -112,11 +117,11 @@ export function Contact() {
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-purple-800 rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#86c9d8] rounded-full flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg text-purple-800 mb-1">Location</h4>
+                  <h4 className="text-lg mb-1" style={{ color: "#86c9d8" }}>Location</h4>
                   <p className="text-gray-600">123 Wellness Street, Gourmet District, City 12345</p>
                 </div>
               </div>
@@ -126,7 +131,7 @@ export function Contact() {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg text-purple-800 mb-1">Phone</h4>
+                  <h4 className="text-lg mb-1" style={{ color: "#86c9d8" }}>Phone</h4>
                   <p className="text-gray-600">+1 (555) 123-4567</p>
                 </div>
               </div>
@@ -136,7 +141,7 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg text-purple-800 mb-1">Email</h4>
+                  <h4 className="text-lg mb-1" style={{ color: "#86c9d8" }}>Email</h4>
                   <p className="text-gray-600">hello@rosarnani.com</p>
                 </div>
               </div>
