@@ -29,7 +29,7 @@ export function Testimonials() {
         <div className="text-center mb-16">
           <h2
             className="text-3xl md:text-5xl mb-6"
-            style={{ color: "#86c9d8" }} // Pink heading
+            style={{ color: "#419fa4" }} // Pink heading
           >
             {t("testimonialsTitle")}
           </h2>
@@ -62,9 +62,8 @@ export function Testimonials() {
 
                 {/* Customer Info */}
                 <div>
-                  <h4 className="text-xl mb-2" style={{ color: "#86c9d8" }}>
+                  <h4 className="text-xl mb-2" style={{ color: "#419fa4" }}>
                     {" "}
-                    {/* Pink name */}
                     {testimonials[currentSlide].name}
                   </h4>
                   <p className="text-gray-600">
@@ -95,7 +94,7 @@ export function Testimonials() {
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                  index === currentSlide ? "bg-[#86c9d8]" : "bg-gray-300"
+                  index === currentSlide ? "bg-[#419fa4]" : "bg-gray-300"
                 }`}
                 onClick={() => setCurrentSlide(index)}
               />

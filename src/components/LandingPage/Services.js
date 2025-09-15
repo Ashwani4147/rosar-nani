@@ -13,7 +13,7 @@ export function Services() {
       <div className="container mx-auto px-4">
         {/* Section title */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl mb-6" style={{ color: "#86c9d8" }}>
+          <h2 className="text-3xl md:text-5xl mb-6" style={{ color: "#419fa4" }}>
             {t('servicesTitle')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -38,7 +38,7 @@ export function Services() {
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-800/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl mb-3" style={{ color: "#86c9d8" }}>
+                <h3 className="text-xl mb-3" style={{ color: "#419fa4" }}>
                   {service.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
