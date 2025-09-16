@@ -1,32 +1,12 @@
-// import React from 'react';
-
-// export function About() {
-//   return (
-//     <section id="about" className="py-20 bg-gradient-to-br from-purple-100 to-pink-100">
-//       <div className="container mx-auto px-4">
-//         <div className="max-w-4xl mx-auto text-center">
-//           <h2 className="text-3xl md:text-5xl mb-8 text-purple-800">
-//             About Rosar Nani
-//           </h2>
-//           <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-//             Rosar Nani is a platform/shop which provides you food delicacies and soothing
-//             salon experience along with cosmetic products specially customised for you.
-//             We believe in creating personalized experiences that nourish both your body
-//             and soul, offering the perfect blend of culinary delights and wellness treatments
-//             tailored to your unique preferences.
-//           </p>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
 import React from "react";
 import { useTranslation } from "react-i18next";
+import aboutImageLeft from 'https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7';
+import aboutImageRight from "../../assets/about-image-right.jpg";
 
 // Example image URLs
-const aboutImageLeft = "https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7";
-const aboutImageRight = "http://asteriskengineering.com/wp-content/uploads/2023/07/10-1-1200x556.jpg";
+// const aboutImageLeft = "https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7";
+// const aboutImageRight = "http://asteriskengineering.com/wp-content/uploads/2023/07/10-1-1200x556.jpg";
+// const aboutImageRight = "../../assets/about-image-right.jpg";
 
 export function About() {
   const { t } = useTranslation();
@@ -46,7 +26,7 @@ export function About() {
             />
           </div>
 
-          {/* Right: Text (vertically centered) */}
+          {/* Right: Text */}
           <div className="md:w-1/2 w-full flex flex-col justify-center text-center md:text-left h-64 md:h-80">
             <h2
               className="text-3xl md:text-4xl mb-4 font-semibold"
@@ -71,18 +51,16 @@ export function About() {
             />
           </div>
 
-          {/* Left: Text (vertically centered) */}
+          {/* Left: Text */}
           <div className="md:w-1/2 w-full flex flex-col justify-center text-center md:text-left h-64 md:h-80">
             <h2
               className="text-3xl md:text-4xl mb-4 font-semibold"
               style={{ color: "#419fa4" }}
             >
-              Our Unique Experience
+              {t("aboutTitle1")}
             </h2>
             <p className="text-base md:text-lg leading-relaxed italic text-gray-700">
-              At Rosar Nani, every visit is a delightful escape.  
-              Handpicked culinary treats and rejuvenating wellness moments  
-              crafted just for you, leaving you refreshed and inspired.
+              {t("aboutText1")}
             </p>
           </div>
         </div>
@@ -91,4 +69,3 @@ export function About() {
     </section>
   );
 }
-
