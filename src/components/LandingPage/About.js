@@ -1,10 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import aboutImageLeft from 'https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7';
+// import aboutImageLeft from 'https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7';
 import aboutImageRight from "../../assets/about-image-right.jpg";
 
 // Example image URLs
-// const aboutImageLeft = "https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7";
+const aboutImageLeft = "https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7";
 // const aboutImageRight = "http://asteriskengineering.com/wp-content/uploads/2023/07/10-1-1200x556.jpg";
 // const aboutImageRight = "../../assets/about-image-right.jpg";
 
