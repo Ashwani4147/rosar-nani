@@ -19,7 +19,7 @@ const ImageAndText = () => {
         This overrides the previous full-screen height
         Text size and button remain unchanged
       */
-      className="relative w-full min-h-[80vh] bg-cover bg-center"
+      className="relative w-full min-h-[85vh] bg-cover bg-center"
       style={{ backgroundImage: `url('${imageUrl}')` }}
     >
       {/* Overlay to darken the image and create a gradient */}
