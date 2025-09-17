@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-dom';
 import './i18n'; // Make sure i18n is initialized
+import { useTranslation } from "react-i18next";
 import Header from './components/LandingPage/Header';
 import Image from './components/LandingPage/Image';
 import { About } from './components/LandingPage/About';
@@ -29,7 +30,6 @@ const App = () => {
   );
 };
 
-// Router setup for separate pages like Food
 const AppWithRouter = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -45,4 +45,9 @@ const AppWithRouter = () => {
   );
 };
 
+
+
 export default AppWithRouter;
+
+
+
