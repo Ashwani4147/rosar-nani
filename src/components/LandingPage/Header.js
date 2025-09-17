@@ -20,14 +20,20 @@ function Header() {
     { name: t("contact"), href: "contact" },
   ];
 
-  const handleNavClick = (id) => {
-    setActiveSection(id);
-    setIsMenuOpen(false);
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+const handleNavClick = (id) => {
+  setActiveSection(id);
+  setIsMenuOpen(false);
+  const section = document.getElementById(id);
+  if (section) {
+    const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+    const sectionTop = section.offsetTop - headerHeight;
+    window.scrollTo({
+      top: sectionTop,
+      behavior: 'smooth'
+    });
+  }
+};
+
 
   useEffect(() => {
     const handleScroll = () => {
