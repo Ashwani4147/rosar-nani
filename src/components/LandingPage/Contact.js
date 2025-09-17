@@ -121,7 +121,16 @@ export function Contact() {
                   <h4 className="text-lg mb-1" style={{ color: "#419fa4" }}>
                     {t("locationTitle")}
                   </h4>
-                  <p className="text-gray-600">{t("locationText")}</p>
+                 <a
+        href="https://www.google.com/maps?q=28.6129,77.2295" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-600 hover:underline"
+      >
+        {t("locationText")}
+      </a>
+                 {/* <p className="text-gray-600">{t("locationText")}</p> */}
+
                 </div>
               </div>
 
@@ -133,7 +142,15 @@ export function Contact() {
                   <h4 className="text-lg mb-1" style={{ color: "#419fa4" }}>
                     {t("phoneTitle")}
                   </h4>
-                  <p className="text-gray-600">{t("phoneText")}</p>
+
+                  <a
+        href="tel:+15551234567"
+        className="text-gray-600 hover:underline"
+      >
+        {t("phoneText")}
+      </a>
+
+                 {/* <p className="text-gray-600">{t("phoneText")}</p> */}
                 </div>
               </div>
 
@@ -145,7 +162,14 @@ export function Contact() {
                   <h4 className="text-lg mb-1" style={{ color: "#419fa4" }}>
                     {t("emailTitle")}
                   </h4>
-                  <p className="text-gray-600">{t("emailText")}</p>
+
+                  <a
+        href="mailto:hello@rosarnani.com"
+        className="text-gray-600 hover:underline"
+      >
+        {t("emailText")}
+      </a>
+               {/*   <p className="text-gray-600">{t("emailText")}</p> */}
                 </div>
               </div>
             </div>
