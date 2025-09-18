@@ -7,7 +7,7 @@ export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
   const handleSubmit = (e) => {
@@ -19,7 +19,7 @@ export function Contact() {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -27,7 +27,10 @@ export function Contact() {
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl mb-6" style={{ color: "#419fa4" }}>
+          <h2
+            className="text-3xl md:text-5xl mb-6"
+            style={{ color: "#419fa4" }}
+          >
             {t("contactTitle")}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -37,7 +40,10 @@ export function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <div className="border-0 shadow-lg rounded-lg" style={{ backgroundColor: "#ffffff" }}>
+          <div
+            className="border-0 shadow-lg rounded-lg"
+            style={{ backgroundColor: "#ffffff" }}
+          >
             <div className="p-8">
               <h3 className="text-2xl mb-6" style={{ color: "#419fa4" }}>
                 {t("contactFormTitle")}
@@ -92,8 +98,12 @@ export function Contact() {
                   type="submit"
                   className="w-full py-3 px-6 text-white font-semibold rounded-md transform hover:scale-105 transition-all duration-300 shadow-lg"
                   style={{ backgroundColor: "#419fa4" }}
-                  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#75b3c3")}
-                  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#419fa4")}
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#50c4ca")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#419fa4")
+                  }
                 >
                   {t("sendButton")}
                 </button>
@@ -121,16 +131,14 @@ export function Contact() {
                   <h4 className="text-lg mb-1" style={{ color: "#419fa4" }}>
                     {t("locationTitle")}
                   </h4>
-                 <a
-        href="https://www.google.com/maps?q=28.6129,77.2295" 
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-600 hover:underline"
-      >
-        {t("locationText")}
-      </a>
-                 {/* <p className="text-gray-600">{t("locationText")}</p> */}
-
+                  <a
+                    href="https://www.google.com/maps?q=28.6129,77.2295"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-[#419fa4] hover:underline hover:decoration-[#419fa4]"
+                  >
+                    {t("locationText")}
+                  </a>
                 </div>
               </div>
 
@@ -142,15 +150,12 @@ export function Contact() {
                   <h4 className="text-lg mb-1" style={{ color: "#419fa4" }}>
                     {t("phoneTitle")}
                   </h4>
-
                   <a
-        href="tel:+15551234567"
-        className="text-gray-600 hover:underline"
-      >
-        {t("phoneText")}
-      </a>
-
-                 {/* <p className="text-gray-600">{t("phoneText")}</p> */}
+                    href="tel:+15551234567"
+                    className="text-gray-600 hover:text-[#419fa4] hover:underline hover:decoration-[#419fa4]"
+                  >
+                    {t("phoneText")}
+                  </a>
                 </div>
               </div>
 
@@ -162,20 +167,20 @@ export function Contact() {
                   <h4 className="text-lg mb-1" style={{ color: "#419fa4" }}>
                     {t("emailTitle")}
                   </h4>
-
                   <a
-        href="mailto:hello@rosarnani.com"
-        className="text-gray-600 hover:underline"
-      >
-        {t("emailText")}
-      </a>
-               {/*   <p className="text-gray-600">{t("emailText")}</p> */}
+                    href="mailto:hello@rosarnani.com"
+                    className="text-gray-600 hover:text-[#419fa4] hover:underline hover:decoration-[#419fa4]"
+                  >
+                    {t("emailText")}
+                  </a>
                 </div>
               </div>
             </div>
 
             <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-6">
-              <h4 className="text-lg text-purple-800 mb-3">{t("businessHoursTitle")}</h4>
+              <h4 className="text-lg text-purple-800 mb-3">
+                {t("businessHoursTitle")}
+              </h4>
               <div className="space-y-2 text-gray-600">
                 <p>{t("businessHoursMonFri")}</p>
                 <p>{t("businessHoursSat")}</p>
