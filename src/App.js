@@ -120,6 +120,7 @@ const AppWithRouter = () => {
     <Suspense fallback={<div>Loading...</div>}>
       <Router>
         <Routes>
+        
           {/* Default redirect to current language */}
           <Route path="/" element={<Navigate to={`/${currentLang}`} replace />} />
 

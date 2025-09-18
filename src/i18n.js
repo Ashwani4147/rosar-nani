@@ -134,12 +134,44 @@ i18n.use(initReactI18next).init({
           phone: "+1 (555) 123-4567",
           email: "hello@rosarnani.com",
         },
+
+
+        //Footer Policies
+
+        // footerPoliciesTitle: "Legal",
+        // footerPolicies: [
+        //   { name: "Privacy Policy", href: "#" },
+        //   { name: "Terms of Service", href: "#" },
+        //   { name: "Refund Policy", href: "#" },
+        // ],
+
         footerPoliciesTitle: "Legal",
-        footerPolicies: [
-          { name: "Privacy Policy", href: "#" },
-          { name: "Terms of Service", href: "#" },
-          { name: "Refund Policy", href: "#" },
-        ],
+        footerPolicies: {
+          privacy: {
+            name: "Privacy Policy",
+            href: "#",
+            description: "Learn how we handle your personal data with care.",
+          },
+          terms: {
+            name: "Terms of Service",
+            href: "#",
+            description:
+              "Read the terms and conditions for using our services.",
+          },
+          refund: {
+            name: "Refund Policy",
+            href: "#",
+            description:
+              "Understand our refund process and eligibility criteria.",
+          },
+        },
+
+        //         "footerPolicies": {
+        //   "privacy": { "name": "Privacy Policy", "href": "#", "description": "..." },
+        //   "terms": { "name": "Terms of Service", "href": "#", "description": "..." },
+        //   "refund": { "name": "Refund Policy", "href": "#", "description": "..." }
+        // },
+
         footerCopyright:
           "© 2025 Rosar Nani. All rights reserved. Designed with care for your personalized experience.",
 
@@ -173,6 +205,25 @@ i18n.use(initReactI18next).init({
             link: "/cosmetics",
           },
         ],
+      },
+      // Footer Policies
+      footerPolicies: {
+        privacy: {
+          name: "Privacy Policy",
+          href: "#",
+          description: "Learn how we handle your personal data with care.",
+        },
+        terms: {
+          name: "Terms of Service",
+          href: "#",
+          description: "Read the terms and conditions for using our services.",
+        },
+        refund: {
+          name: "Refund Policy",
+          href: "#",
+          description:
+            "Understand our refund process and eligibility criteria.",
+        },
       },
     },
     th: {
@@ -303,12 +354,34 @@ i18n.use(initReactI18next).init({
           phone: "+1 (555) 123-4567",
           email: "hello@rosarnani.com",
         },
+        // footerPoliciesTitle: "กฎหมาย",
+        // footerPolicies: [
+        //   { name: "นโยบายความเป็นส่วนตัว", href: "#" },
+        //   { name: "ข้อกำหนดการให้บริการ", href: "#" },
+        //   { name: "นโยบายการคืนเงิน", href: "#" },
+        // ],
+
+        //Footer Policies
         footerPoliciesTitle: "กฎหมาย",
-        footerPolicies: [
-          { name: "นโยบายความเป็นส่วนตัว", href: "#" },
-          { name: "ข้อกำหนดการให้บริการ", href: "#" },
-          { name: "นโยบายการคืนเงิน", href: "#" },
-        ],
+        footerPolicies: {
+          privacy: {
+            name: "นโยบายความเป็นส่วนตัว",
+            href: "#",
+            description:
+              "เรียนรู้วิธีที่เราดูแลข้อมูลส่วนบุคคลของคุณด้วยความเอาใจใส่",
+          },
+          terms: {
+            name: "ข้อกำหนดการให้บริการ",
+            href: "#",
+            description: "อ่านข้อกำหนดและเงื่อนไขสำหรับการใช้บริการของเรา",
+          },
+          refund: {
+            name: "นโยบายการคืนเงิน",
+            href: "#",
+            description: "เข้าใจกระบวนการคืนเงินและเกณฑ์ความเหมาะสมของเรา",
+          },
+        },
+
         footerCopyright:
           "© 2025 Rosar Nani สงวนลิขสิทธิ์ ออกแบบด้วยความเอาใจใส่สำหรับประสบการณ์ส่วนตัวของคุณ",
 
