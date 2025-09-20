@@ -10,11 +10,37 @@ export function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", message: "" });
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Form submitted:", formData);
+  //   setFormData({ name: "", email: "", message: "" });
+  // };
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch('http://localhost:5000/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+
+    if (res.ok) {
+      console.log('Message sent!');
+      alert('Message sent successfully!');
+      setFormData({ name: '', email: '', message: '' });
+    } else {
+      console.error('Failed to send message');
+      alert('Failed to send message');
+    }
+  } catch (err) {
+    console.error('Error:', err);
+    alert('An error occurred while sending message');
+  }
+};
 
   const handleChange = (e) => {
     setFormData({
