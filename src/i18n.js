@@ -423,7 +423,11 @@ i18n.use(initReactI18next).init({
       },
     },
   },
-  lng: "en",
+  // lng: "en",
+  // fallbackLng: "en",
+  // interpolation: { escapeValue: false },
+
+   lng: "th", // ✅ Set default language to Thai
   fallbackLng: "en",
   interpolation: { escapeValue: false },
 });
