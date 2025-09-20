@@ -51,7 +51,8 @@ export function Services() {
           {servicesData.map((service, index) => (
             <Link
               key={index}
-              to={`/${currentLang}${service.link}`} // ✅ language prefix
+          //    to={`/${currentLang}${service.link}`} // ✅ language prefix
+          to={service.link}   // ✅ no language prefix
               className="group overflow-hidden border-0 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white block"
             >
               <div className="relative h-64 overflow-hidden">
