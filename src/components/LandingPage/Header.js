@@ -187,7 +187,7 @@ function Header() {
   const navLinks = [
     { name: t("welcome"), href: "home" },
     { name: t("about"), href: "about" },
-    { name: t("services"), href: "services" },
+    { name: t("servicesLabel1"), href: "services" },
     { name: t("quality"), href: "quality" },
     { name: t("testimonials"), href: "testimonials" },
     { name: t("contact"), href: "contact" },

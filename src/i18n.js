@@ -7,12 +7,141 @@ i18n.use(initReactI18next).init({
       translation: {
         // General
         welcome: "Welcome to Rosar Nani",
+        welcomeFoodService: "Welcome to Food Service",
+        welcomeSalonService: "Welcome to Salon Service",
+        welcomeCosmeticsService: "Welcome to Cosmetics Service",
+        Home: "Home",
+        Categories: "Categories",
         about: "About Us",
-        services: "Our Services",
+        servicesLabel1: "Our Services",
         quality: "Best Quality Guaranteed",
+        qualitysrv: "Quality You Can Trust",
         testimonials: "What Our Customers Say",
         contact: "Contact Us",
         footer: "© 2025 Rosar Nani. All rights reserved.",
+        services: [
+          { name: "Food Service", href: "/food", type: "page" },
+          { name: "Salon Service", href: "/salon", type: "page" },
+          { name: "Cosmetics Service", href: "home", type: "section" },
+        ],
+
+        serviceFood: "Food Service",
+        serviceSalon: "Salon Service",
+        serviceCosmetics: "Cosmetics Service",
+
+        //Hero or Image session
+        hero: {
+          landtitle: "Taste & Treat Yourself",
+          landsubtitle: "Customized for You",
+
+          foodtitle: "Delicious Flavors, Crafted Just For You",
+          foodsubtitle:
+            "Experience a curated menu full of taste, health, and freshness.",
+
+          salontitle: "Beauty That Speaks to Your Soul",
+          salonsubtitle:
+            "Experience luxury beauty services with expert stylists, premium products, and personalized care.",
+
+          cosmeticstitle: "Where Luxury Meets Beauty",
+          cosmeticssubtitle:
+            "Discover premium cosmetics crafted with luxury ingredients, innovative formulas, and timeless elegance.",
+
+          button: "Explore Menu",
+        },
+
+        // Main Heading Section
+        mainHeadingFood: {
+          heading: "Food that Speaks to Your Soul",
+          description:
+            "From savory bites to sweet treats, every dish is thoughtfully prepared with fresh ingredients and a passion for flavor. Dive into a menu designed to delight your senses.",
+        },
+        mainHeadingBeauty: {
+          heading: "Elevate Your Natural Beauty",
+          description:
+            "From precision cuts to rejuvenating treatments, every service is crafted with expertise and passion. Discover a full range of beauty services designed to enhance your confidence and style.",
+        },
+        mainHeadingCosmetics: {
+          heading: "Unleash Your Inner Radiance",
+          description:
+            "From vibrant lipsticks to flawless foundations, every product is formulated with precision and care. Explore our curated collection of premium cosmetics designed to enhance your natural beauty and boost your confidence.",
+        },
+
+        // Categories Section
+
+        // Food Categories
+        categoriesSectionTitle: "Our Delicious Categories",
+
+        categories: [
+          {
+            title: "Gourmet Entrees",
+            description:
+              "Expertly crafted main dishes that showcase premium ingredients and culinary artistry.",
+          },
+          {
+            title: "Fresh Pasta",
+            description:
+              "Handmade pasta dishes with authentic flavors and traditional cooking techniques.",
+          },
+          {
+            title: "Artisan Desserts",
+            description:
+              "Decadent pastries and sweets made with the finest ingredients and attention to detail.",
+          },
+          {
+            title: "Healthy Bowls",
+            description:
+              "Nutritious and colorful bowls packed with fresh vegetables, grains, and superfoods.",
+          },
+        ],
+
+        // Salon Categories
+        servicesSectionTitle: "Our Signature Services",
+        services: [
+          {
+            title: "Hair Styling",
+            description:
+              "Expert cuts, coloring, and styling services with the latest techniques and premium products.",
+          },
+          {
+            title: "Spa Treatments",
+            description:
+              "Relaxing facials, rejuvenating masks, and therapeutic treatments for radiant skin.",
+          },
+          {
+            title: "Nail Services",
+            description:
+              "Professional manicures, pedicures, and nail art with attention to detail and hygiene.",
+          },
+          {
+            title: "Beauty Makeup",
+            description:
+              "Professional makeup services for special events, photoshoots, and everyday glamour.",
+          },
+        ],
+        // Cosmetics Categories
+        collectionsSectionTitle: "Our Signature Collections",
+        collections: [
+          {
+            title: "Lip Collection",
+            description:
+              "Luxurious lipsticks, glosses, and balms in stunning shades that complement every skin tone.",
+          },
+          {
+            title: "Skincare Essentials",
+            description:
+              "Nourishing serums, moisturizers, and treatments for healthy, glowing skin at any age.",
+          },
+          {
+            title: "Eye Makeup",
+            description:
+              "Captivating eyeshadows, mascaras, and liners to create mesmerizing looks that last all day.",
+          },
+          {
+            title: "Fragrance",
+            description:
+              "Exquisite perfumes and eau de toilettes with sophisticated scents for every occasion.",
+          },
+        ],
 
         // About Section
         aboutTitle: "About Rosar Nani",
@@ -40,11 +169,12 @@ i18n.use(initReactI18next).init({
         contactInfoText:
           "We'd love to hear from you! Reach out to us through any of the following channels, and we'll get back to you as soon as possible.",
         locationTitle: "Location",
-        locationText: "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230",
+        locationText:
+          "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230",
         phoneTitle: "Phone",
-        phoneText: "+1 (555) 123-4567",
+        phoneText: "‪+66 6-3240-1934‬",
         emailTitle: "Email",
-        emailText: "hello@rosarnani.com",
+        emailText: "contact@rosarnani.com",
         businessHoursTitle: "Business Hours",
         businessHoursMonFri: "Monday - Friday: 9:00 AM - 8:00 PM",
         businessHoursSat: "Saturday: 10:00 AM - 6:00 PM",
@@ -107,6 +237,111 @@ i18n.use(initReactI18next).init({
           },
         ],
 
+        // Quality Section
+        cosmeticsquality: {
+          heading: "Quality You Can Trust",
+          description:
+            "Our commitment to cosmetic excellence means every product meets the highest standards of quality, safety, and performance. We use premium ingredients and cutting-edge formulations to deliver exceptional results.",
+          features: [
+            {
+              title: "Cruelty-Free",
+              description: "Never tested on animals, always ethical",
+            },
+            {
+              title: "Premium Ingredients",
+              description: "Only the finest natural and synthetic components",
+            },
+            {
+              title: "Expert Formulation",
+              description: "Developed by leading cosmetic scientists",
+            },
+            {
+              title: "Long-Lasting",
+              description: "Formulas designed for all-day wear",
+            },
+          ],
+          badge: "Premium Brand",
+        },
+        foodquality: {
+          heading: "Quality You Can Trust",
+          description:
+            "Our commitment to excellence means every dish meets the highest standards of quality, freshness, and flavor. We maintain rigorous quality checks throughout our preparation process.",
+          features: [
+            {
+              title: "Safety First",
+              description: "Strict hygiene and safety protocols",
+            },
+            {
+              title: "Fresh Daily",
+              description: "Ingredients sourced fresh every day",
+            },
+            {
+              title: "Made to Order",
+              description: "Prepared fresh when you order",
+            },
+            {
+              title: "Premium Quality",
+              description: "Only the finest ingredients used",
+            },
+          ],
+          badge: "5-Star Quality",
+        },
+        qualitySalon: {
+          heading: "Excellence You Can Trust",
+          description:
+            "Our commitment to beauty excellence means every service meets the highest standards of quality, hygiene, and customer satisfaction. We maintain professional standards throughout every treatment.",
+          features: [
+            {
+              title: "Hygiene First",
+              description: "Strict sanitation and safety protocols",
+            },
+            {
+              title: "Premium Products",
+              description: "Only top-quality beauty brands used",
+            },
+            {
+              title: "Expert Stylists",
+              description: "Certified professionals with years of experience",
+            },
+            {
+              title: "Personalized Service",
+              description: "Tailored treatments for every client",
+            },
+          ],
+          badge: "5-Star Salon",
+        },
+
+
+          // Cosmetic Call to Action
+        cosmetic: {
+          cta: {
+            title: "Elevate Your Beauty Routine",
+            description:
+              "Join thousands of beauty enthusiasts who trust us for luxurious, high-quality cosmetics made to inspire confidence.",
+            button: "Visit Now",
+          },
+        },
+
+        // Food Call to Action
+                "food": {
+  "cta": {
+    "title": "Ready to Experience Amazing Flavors?",
+    "description": "Join thousands of satisfied customers who have made Rosar Nani their go-to destination for exceptional food experiences.",
+    "button": "Visit Now"
+  }
+},
+
+// Salon Call to Action
+"salon": {
+  "cta": {
+    "title": "Ready to Transform Your Look?",
+    "description": "Join thousands of satisfied clients who have made Rosar Nani their trusted destination for beauty and wellness services.",
+    "button": "Visit Now"
+  }
+},
+        
+
+
         // Footer Section
         footerBrand: "Rosar Nani",
         footerDescription:
@@ -127,18 +362,21 @@ i18n.use(initReactI18next).init({
         ],
         footerQuickLinksfoodsrv: [
           { name: "Home", href: "/" },
-          { name: "Services", href: "/services" },
-          { name: "Categories", href: "#categories" },
-          { name: "Quality", href: "#quality" },
-          { name: "Contact", href: "#footer" },
+          // { name: "Services", href: "/services" },
+          // { name: "Categories", href: "#categories" },
+          // { name: "Quality", href: "#quality" },
+          // { name: "Contact", href: "#footer" },
+          { name: "Food", href: "/food" },
+          { name: "Salon", href: "/salon" },
+          { name: "Products", href: "/cosmetics" },
+          { name: "Contact", href: "#contact" },
         ],
         footerContactTitle: "Contact Info",
         footerContact: {
-          location: "123 Wellness Street, Gourmet District",
-          phone: "+1 (555) 123-4567",
-          email: "hello@rosarnani.com",
+          location: "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230t",
+          phone: "‪+66 6-3240-1934‬",
+          email: "contact@rosarnani.com",
         },
-
 
         //Footer Policies
 
@@ -234,12 +472,136 @@ i18n.use(initReactI18next).init({
       translation: {
         // General
         welcome: "ยินดีต้อนรับสู่ Rosar Nani",
+        welcomeFoodService: "ยินดีต้อนรับสู่บริการอาหาร",
+        welcomeSalonService: "ยินดีต้อนรับสู่บริการซาลอน",
+        welcomeCosmeticsService: "ยินดีต้อนรับสู่บริการด้านเครื่องสำอาง",
+        Home: "บ้าน",
+        Categories: "หมวดหมู่",
         about: "เกี่ยวกับเรา",
-        services: "บริการของเรา",
+        servicesLabel1: "บริการของเรา",
         quality: "รับประกันคุณภาพดีที่สุด",
+        qualitysrv: "คุณภาพที่คุณวางใจได้",
         testimonials: "สิ่งที่ลูกค้าของเราพูด",
         contact: "ติดต่อเรา",
         footer: "© 2025 Rosar Nani. สงวนลิขสิทธิ์",
+
+        serviceFood: "บริการอาหาร",
+        serviceSalon: "บริการซาลอน",
+        serviceCosmetics: "บริการด้านเครื่องสำอาง",
+
+        //Hero or Image session
+        hero: {
+          landtitle: "ลิ้มรสและปรนเปรอตัวเอง",
+          landsubtitle: "ปรับแต่งสำหรับคุณ",
+
+          foodtitle: "รสชาติแสนอร่อยที่รังสรรค์มาเพื่อคุณโดยเฉพาะ",
+          foodsubtitle:
+            "สัมผัสกับเมนูที่คัดสรรมาอย่างดีเต็มไปด้วยรสชาติ สุขภาพ และความสดใหม่",
+
+          salontitle: "ความงามที่พูดกับจิตวิญญาณของคุณ",
+          salonsubtitle:
+            "สัมผัสประสบการณ์บริการความงามระดับหรูหราด้วยสไตลิสต์ผู้เชี่ยวชาญ ผลิตภัณฑ์ระดับพรีเมียม และการดูแลแบบเฉพาะบุคคล",
+
+          cosmeticstitle: "เมื่อความหรูหราผสานกับความงาม",
+          cosmeticssubtitle:
+            "ค้นพบผลิตภัณฑ์เครื่องสำอางระดับพรีเมียมที่ผลิตจากส่วนผสมสุดหรู สูตรที่สร้างสรรค์ และความสง่างามเหนือกาลเวลา",
+
+          button: "สำรวจเมนู",
+        },
+
+        // Main Heading Section
+        mainHeadingFood: {
+          heading: "อาหารที่สื่อสารกับจิตวิญญาณของคุณ",
+          description:
+            "ตั้งแต่ของว่างแสนอร่อยไปจนถึงของหวาน ทุกจานล้วนปรุงอย่างพิถีพิถันด้วยวัตถุดิบสดใหม่และรสชาติที่เปี่ยมล้น ดื่มด่ำไปกับเมนูที่ออกแบบมาเพื่อมอบความสุขให้กับทุกประสาทสัมผัสของคุณ",
+        },
+        mainHeadingBeauty: {
+          heading: "ยกระดับความงามตามธรรมชาติของคุณ",
+          description:
+            "ตั้งแต่การตัดผมอย่างแม่นยำไปจนถึงทรีตเมนต์ฟื้นฟูผิว ทุกบริการล้วนรังสรรค์ขึ้นด้วยความเชี่ยวชาญและความมุ่งมั่น ค้นพบบริการความงามครบวงจรที่ออกแบบมาเพื่อเสริมความมั่นใจและสไตล์ของคุณ",
+        },
+        mainHeadingCosmetics: {
+          heading: "ปลดปล่อยความเปล่งประกายภายในตัวคุณ",
+          description:
+            "ตั้งแต่ลิปสติกสีสันสดใสไปจนถึงรองพื้นที่สวยไร้ที่ติ ผลิตภัณฑ์ทุกชิ้นล้วนผ่านการคิดค้นสูตรอย่างพิถีพิถันและพิถีพิถัน สำรวจคอลเลกชันเครื่องสำอางระดับพรีเมียมที่เราคัดสรรมาเพื่อเสริมความงามตามธรรมชาติและเพิ่มความมั่นใจให้กับคุณ",
+        },
+
+        // Categories Section
+
+        // Food Categories
+        categoriesSectionTitle: "หมวดหมู่อร่อยของเรา",
+
+        categories: [
+          {
+            title: "อาหารจานหลักรสเลิศ",
+            description:
+              "อาหารจานหลักที่รังสรรค์อย่างพิถีพิถันด้วยวัตถุดิบชั้นเลิศและศิลปะการทำอาหาร",
+          },
+          {
+            title: "พาสต้าสด",
+            description:
+              "เมนูพาสต้าทำมือที่มีรสชาติต้นตำรับและเทคนิคการปรุงอาหารแบบดั้งเดิม",
+          },
+          {
+            title: "ของหวานช่างฝีมือ",
+            description:
+              "ขนมอบและขนมหวานรสเลิศที่ทำด้วยส่วนผสมชั้นเลิศและใส่ใจในรายละเอียด",
+          },
+          {
+            title: "ชามเพื่อสุขภาพ",
+            description:
+              "ชามหลากสีสันที่เต็มไปด้วยผักสด ธัญพืช และซูเปอร์ฟู้ดที่อุดมไปด้วยคุณค่าทางโภชนาการ",
+          },
+        ],
+
+        // Salon Categories
+        servicesSectionTitle: "บริการอันเป็นเอกลักษณ์ของเรา",
+        services: [
+          {
+            title: "จัดแต่งทรงผม",
+            description:
+              "บริการตัดผม ทำสี และจัดแต่งทรงผมโดยผู้เชี่ยวชาญด้วยเทคนิคล่าสุดและผลิตภัณฑ์ระดับพรีเมียม",
+          },
+          {
+            title: "ทรีทเมนท์สปา",
+            description:
+              "ทรีตเมนต์บำรุงผิวหน้าเพื่อการผ่อนคลาย มาส์กฟื้นฟู และการบำบัดเพื่อผิวเปล่งปลั่ง",
+          },
+          {
+            title: "บริการทำเล็บ",
+            description:
+              "บริการทำเล็บมือ เล็บเท้า และศิลปะบนเล็บแบบมืออาชีพ ใส่ใจในรายละเอียดและสุขอนามัย",
+          },
+          {
+            title: "แต่งหน้าสวย",
+            description:
+              "บริการแต่งหน้ามืออาชีพ สำหรับงานพิเศษ การถ่ายภาพ และความสวยหวานในชีวิตประจำวัน",
+          },
+        ],
+        // Cosmetics Categories
+        collectionsSectionTitle: "คอลเลกชันลายเซ็นของเรา",
+        collections: [
+          {
+            title: "ลิปคอลเลคชั่น",
+            description:
+              "ลิปสติก ลิปกลอส และบาล์มสุดหรูในเฉดสีอันสวยงามที่เข้ากันได้กับทุกโทนสีผิว",
+          },
+          {
+            title: "สิ่งจำเป็นในการดูแลผิว",
+            description:
+              "เซรั่มบำรุงผิว มอยส์เจอร์ไรเซอร์ และทรีตเมนต์เพื่อผิวสุขภาพดีและเปล่งปลั่งในทุกวัย",
+          },
+          {
+            title: "แต่งตา",
+            description:
+              "อายแชโดว์ มาสคาร่า และอายไลเนอร์อันน่าหลงใหล สร้างสรรค์ลุคอันน่าหลงใหลที่ติดทนนานตลอดวัน",
+          },
+          {
+            title: "กลิ่นหอม",
+            description:
+              "น้ำหอมและโอ เดอ ทอยเล็ตต์อันเลิศหรูที่มีกลิ่นหอมอันแสนซับซ้อนสำหรับทุกโอกาส",
+          },
+        ],
 
         // About Section
         aboutTitle: "เกี่ยวกับ Rosar Nani",
@@ -267,11 +629,12 @@ i18n.use(initReactI18next).init({
         contactInfoText:
           "เรายินดีที่จะรับฟังคุณ! ติดต่อเราผ่านช่องทางใดก็ได้ด้านล่าง และเราจะตอบกลับคุณโดยเร็วที่สุด",
         locationTitle: "สถานที่",
-        locationText: "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230",
+        locationText:
+          "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230",
         phoneTitle: "โทรศัพท์",
-        phoneText: "+1 (555) 123-4567",
+        phoneText: "‪+66 6-3240-1934‬",
         emailTitle: "อีเมล",
-        emailText: "hello@rosarnani.com",
+        emailText: "contact@rosarnani.com",
         businessHoursTitle: "เวลาทำการ",
         businessHoursMonFri: "จันทร์ - ศุกร์: 9:00 น. - 20:00 น.",
         businessHoursSat: "เสาร์: 10:00 น. - 18:00 น.",
@@ -336,7 +699,105 @@ i18n.use(initReactI18next).init({
             service: "ประสบการณ์ที่สมบูรณ์",
           },
         ],
-        //Contact Section
+
+        // Quality Sections
+        cosmeticsquality: {
+          heading: "คุณภาพที่คุณวางใจได้",
+          description:
+            "ความมุ่งมั่นของเราต่อความเป็นเลิศด้านเครื่องสำอางหมายความว่าผลิตภัณฑ์ทุกชิ้นต้องผ่านมาตรฐานสูงสุดด้านคุณภาพ ความปลอดภัย และประสิทธิภาพ เราใช้ส่วนผสมพรีเมียมและสูตรล้ำสมัยเพื่อมอบผลลัพธ์ที่ยอดเยี่ยม",
+          features: [
+            {
+              title: "ปราศจากการทดสอบกับสัตว์",
+              description: "ไม่เคยทดสอบกับสัตว์ เสมอด้วยจริยธรรม",
+            },
+            {
+              title: "ส่วนผสมพรีเมียม",
+              description: "ใช้ส่วนผสมธรรมชาติและสังเคราะห์ที่ดีที่สุด",
+            },
+            {
+              title: "การพัฒนาจากผู้เชี่ยวชาญ",
+              description: "พัฒนาจากนักวิทยาศาสตร์เครื่องสำอางชั้นนำ",
+            },
+            {
+              title: "ใช้งานยาวนาน",
+              description: "สูตรที่ออกแบบมาเพื่อการใช้งานตลอดวัน",
+            },
+          ],
+          badge: "แบรนด์พรีเมียม",
+        },
+
+        foodquality: {
+          heading: "คุณภาพที่คุณวางใจได้",
+          description:
+            "ความมุ่งมั่นของเราต่อความเป็นเลิศหมายความว่าอาหารทุกจานต้องผ่านมาตรฐานสูงสุดด้านคุณภาพ ความสดใหม่ และรสชาติ เรามีการตรวจสอบคุณภาพอย่างเข้มงวดตลอดกระบวนการเตรียมการ",
+          features: [
+            {
+              title: "ความปลอดภัยมาก่อน",
+              description: "มาตรการสุขอนามัยและความปลอดภัยที่เข้มงวด",
+            },
+            {
+              title: "สดใหม่ทุกวัน",
+              description: "วัตถุดิบที่คัดสรรสดใหม่ทุกวัน",
+            },
+            {
+              title: "ทำตามออร์เดอร์",
+              description: "เตรียมสดใหม่เมื่อคุณสั่ง",
+            },
+            {
+              title: "คุณภาพพรีเมียม",
+              description: "ใช้วัตถุดิบที่ดีที่สุดเท่านั้น",
+            },
+          ],
+          badge: "คุณภาพระดับ 5 ดาว",
+        },
+
+        qualitySalon: {
+          heading: "ความเป็นเลิศที่คุณวางใจได้",
+          description:
+            "ความมุ่งมั่นของเราต่อความเป็นเลิศด้านความงามหมายความว่าบริการทุกอย่างต้องผ่านมาตรฐานสูงสุดด้านคุณภาพ สุขอนามัย และความพึงพอใจของลูกค้า เรารักษามาตรฐานวิชาชีพตลอดการรักษาทุกครั้ง",
+          features: [
+            {
+              title: "สุขอนามัยมาก่อน",
+              description: "มาตรการสุขอนามัยและความปลอดภัยที่เข้มงวด",
+            },
+            {
+              title: "ผลิตภัณฑ์พรีเมียม",
+              description: "ใช้แบรนด์ความงามคุณภาพสูงเท่านั้น",
+            },
+            {
+              title: "ช่างผู้เชี่ยวชาญ",
+              description: "มืออาชีพที่ผ่านการรับรองและมีประสบการณ์หลายปี",
+            },
+            {
+              title: "บริการที่ปรับให้เหมาะสม",
+              description: "การรักษาที่ปรับให้เหมาะสมกับลูกค้าแต่ละคน",
+            },
+          ],
+          badge: "ซาลอนระดับ 5 ดาว",
+        },
+  // Cosmetic Call to Action
+  "cosmetic": {
+    "cta": {
+      "title": "ยกระดับกิจวัตรความงามของคุณ",
+      "description": "เข้าร่วมกับผู้ที่รักความงามนับพันที่ไว้วางใจเราในด้านเครื่องสำอางหรูหรา คุณภาพสูง ที่สร้างแรงบันดาลใจและความมั่นใจ",
+      "button": "เยี่ยมชมเลย"
+    }
+  },
+  // Food Call to Action
+"food": {
+  "cta": {
+    "title": "พร้อมที่จะสัมผัสรสชาติอันยอดเยี่ยมหรือยัง?",
+    "description": "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rosar Nani ให้เป็นจุดหมายปลายทางสำหรับประสบการณ์อาหารที่ยอดเยี่ยม",
+    "button": "เยี่ยมชมเลย"
+  }
+},
+"salon": {
+  "cta": {
+    "title": "พร้อมที่จะเปลี่ยนลุคของคุณแล้วหรือยัง?",
+    "description": "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rosar Nani ให้เป็นจุดหมายปลายทางสำหรับบริการด้านความงามและสุขภาพ",
+    "button": "เยี่ยมชมตอนนี้"
+  }
+},
 
         // Footer Section
         footerBrand: "Rosar Nani",
@@ -352,11 +813,22 @@ i18n.use(initReactI18next).init({
           { name: "ผลิตภัณฑ์", href: "#products" },
           { name: "ติดต่อ", href: "#contact" },
         ],
+          footerQuickLinksfoodsrv: [
+          { name: "บ้าน", href: "/" },
+          // { name: "Services", href: "/services" },
+          // { name: "Categories", href: "#categories" },
+          // { name: "Quality", href: "#quality" },
+          // { name: "Contact", href: "#footer" },
+          { name: "อาหาร", href: "/food" },
+          { name: "ร้านเสริมสวย", href: "/salon" },
+          { name: "สินค้า", href: "/cosmetics" },
+          { name: "ติดต่อ", href: "#contact" },
+        ],
         footerContactTitle: "ข้อมูลติดต่อ",
         footerContact: {
-          location: "123 ถนนเวลเนส เขตกูร์เมต์",
-          phone: "+1 (555) 123-4567",
-          email: "hello@rosarnani.com",
+          location: "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230",
+          phone: "‪+66 6-3240-1934‬",
+          email: "contact@rosarnani.com",
         },
         // footerPoliciesTitle: "กฎหมาย",
         // footerPolicies: [
@@ -401,7 +873,7 @@ i18n.use(initReactI18next).init({
               "ลิ้มรสอาหารสุดพิเศษที่ปรุงด้วยวัตถุดิบชั้นเลิศ ปรับให้ตรงกับความชอบและความต้องการด้านโภชนาการของคุณ",
             image:
               "https://images.unsplash.com/photo-1757358958170-501b384915b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwZm9vZCUyMGRlbGljYWNpZXN8ZW58MXx8fHwxNzU3NTczMDU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-              link: "/food "
+            link: "/food ",
           },
           {
             title: "บริการสปาและซาลอน",
@@ -409,7 +881,7 @@ i18n.use(initReactI18next).init({
               "ผ่อนคลายด้วยบริการสปาและซาลอนที่ออกแบบมาเพื่อเติมเต็มร่างกาย จิตใจ และจิตวิญญาณของคุณ",
             image:
               "https://images.unsplash.com/photo-1731514771613-991a02407132?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxzYWxvbiUyMHNwYSUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NTc1NzMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-              link:"/salon"
+            link: "/salon",
           },
           {
             title: "ผลิตภัณฑ์ปรับแต่งเฉพาะ",
@@ -417,7 +889,7 @@ i18n.use(initReactI18next).init({
               "ค้นพบผลิตภัณฑ์เครื่องสำอางและสุขภาพระดับพรีเมียมที่ออกแบบเฉพาะสำหรับสภาพผิวและความชอบส่วนตัวของคุณ",
             image:
               "https://images.unsplash.com/photo-1644641811682-0439fd0185d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxjb3NtZXRpYyUyMHByb2R1Y3RzJTIwc2tpbmNhcmV8ZW58MXx8fHwxNzU3NTczMDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-              link:"/cosmetics"
+            link: "/cosmetics",
           },
         ],
       },

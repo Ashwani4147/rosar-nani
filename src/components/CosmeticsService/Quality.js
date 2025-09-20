@@ -2,8 +2,22 @@ import React from "react";
 import { Shield, Sparkles, Star, Users } from "lucide-react";
 import { ImageWithFallback } from "../../ImageWithFallback";
 import { Badge } from "../../badge";
+import { useTranslation } from "react-i18next";
 
 export default function Quality() {
+  const { t } = useTranslation();
+
+  // Get array of features from i18n
+  const features = t("cosmeticsquality.features", { returnObjects: true });
+
+  // Icons must be defined in same order as features
+  const icons = [
+    <Shield className="w-6 h-6 text-white" />,
+    <Sparkles className="w-6 h-6 text-white" />,
+    <Users className="w-6 h-6 text-white" />,
+    <Star className="w-6 h-6 text-white" />
+  ];
+
   return (
     <section
       id="quality"
@@ -16,47 +30,22 @@ export default function Quality() {
           <div>
             <h2
               className="text-3xl md:text-4xl mb-6"
-              style={{ color: "#419fa4" }} // Heading in light blue
+              style={{ color: "#419fa4" }}
             >
-              Quality You Can Trust
+              {t("cosmeticsquality.heading")}
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Our commitment to cosmetic excellence means every product meets the highest
-              standards of quality, safety, and performance. We use premium ingredients
-              and cutting-edge formulations to deliver exceptional results.
+              {t("cosmeticsquality.description")}
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {[
-                {
-                  icon: <Shield className="w-6 h-6 text-white" />,
-                  title: "Cruelty-Free",
-                  description: "Never tested on animals, always ethical",
-                },
-                {
-                  icon: <Sparkles className="w-6 h-6 text-white" />,
-                  title: "Premium Ingredients",
-                  description: "Only the finest natural and synthetic components",
-                },
-                {
-                  icon: <Users className="w-6 h-6 text-white" />,
-                  title: "Expert Formulation",
-                  description: "Developed by leading cosmetic scientists",
-                },
-                {
-                  icon: <Star className="w-6 h-6 text-white" />,
-                  title: "Long-Lasting",
-                  description: "Formulas designed for all-day wear",
-                },
-              ].map((item, index) => (
+              {features.map((item, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <div
                     className="flex-shrink-0 p-2 rounded-lg"
-                    style={{
-                      backgroundColor: "#419fa4", // Background color for icon circles
-                    }}
+                    style={{ backgroundColor: "#419fa4" }}
                   >
-                    {item.icon}
+                    {icons[index]}
                   </div>
                   <div>
                     <h4 className="mb-1" style={{ color: "var(--food-primary)" }}>
@@ -82,7 +71,7 @@ export default function Quality() {
                 className="text-white px-4 py-2"
                 style={{ backgroundColor: "#f8be6a" }}
               >
-                Premium Brand
+                {t("cosmeticsquality.badge")}
               </Badge>
             </div>
           </div>

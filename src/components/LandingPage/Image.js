@@ -1,12 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const ImageAndText = () => {
+  const { t } = useTranslation();
   const imageUrl =
     "https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7";
 
   // Function to scroll to the "services" section
   const handleExploreClick = () => {
     const section = document.getElementById("services");
+    
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -15,7 +18,7 @@ const ImageAndText = () => {
   return (
     <div
       /* 
-        Set the image container height to 80% of viewport (80vh) for all screens
+        Set the image container height to 85% of viewport (85vh) for all screens
         This overrides the previous full-screen height
         Text size and button remain unchanged
       */
@@ -29,16 +32,19 @@ const ImageAndText = () => {
       {/* Text Content */}
       <div className="absolute inset-0 flex items-center justify-center p-4">
         <div className="text-center text-white">
-          <h1 className="text-6xl font-bold mb-4">
-            Taste & Treat Yourself
-          </h1>
-          <p className="text-xl mb-8">Customized for You</p>
+          {/* Title */}
+          <h1 className="text-6xl font-bold mb-4">{t("hero.landtitle")}</h1>
+          
+          {/* Subtitle */}
+          <p className="text-xl mb-8">{t("hero.landsubtitle")}</p>
+          
+          {/* Button */}
           <button
             onClick={handleExploreClick}
             style={{ backgroundColor: "#f8be6a" }}
             className="text-white transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl px-8 py-6 text-lg rounded-full hover:opacity-90"
           >
-            Explore Now
+            {t("hero.button")}
           </button>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export function Services() {
   const { t, i18n } = useTranslation(); 
-  const hoverOverlayColor = "rgba(65, 159, 164, 0.2)"; // ✅ same as demo
+  const hoverOverlayColor = "rgba(65, 159, 164, 0.2)";
 
   // Define services array with routing links and image
   const servicesData = [

@@ -12,6 +12,7 @@ function Header() {
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
   const location = useLocation();
+  
 
   // Desktop Services dropdown
   const [isServicesOpenDesktop, setIsServicesOpenDesktop] = useState(false);
@@ -25,19 +26,19 @@ function Header() {
 
   // Main nav links (mix of sections + routes)
   const navLinks = [
-    { name: t("Welcome to Cosmetics Service"), href: "home", type: "section" },
+    { name: t("welcomeCosmeticsService"), href: "home", type: "section" },
     { name: t("Home"), href: "/", type: "page" },
-    { name: t("services"), href: "services", type: "section" },
-    { name: "Categories", href: "categories", type: "section" },
-    { name: "Quality You Can Trust", href: "quality", type: "section" },
+    { name: t("servicesLabel1"), href: "services", type: "section" },
+    { name: t("Categories"), href: "categories", type: "section" },
+    { name: t("qualitysrv"), href: "quality", type: "section" },
     { name: t("contact"), href: "contact", type: "section" },
   ];
 
   // Service sub-links (some are new pages)
   const serviceSubLinks = [
-    { name: "Food Service", href: "/food", type: "page" },
-    { name: "Salon Service", href: "/salon", type: "page" },
-    { name: "Cosmetics Service", href: "home", type: "section" },
+  { name: t("serviceFood"), href: "/food", type: "page" },
+  { name: t("serviceSalon"), href: "/salon", type: "page" },
+  { name: t("serviceCosmetics"), href: "home", type: "section" },
   ];
 
   // Handle in-page navigation (smooth scroll)
