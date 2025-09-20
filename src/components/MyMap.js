@@ -33,11 +33,12 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 12.9716, // replace with your latitude
-  lng: 77.5946, // replace with your longitude
+  lat: 16.633680, // replace with your latitude
+  lng: 103.783387, // replace with your longitude
 };
 
 const MyMap = () => {
+    const center = lat && lng ? { lat, lng } : center;
   return (
     <LoadScript googleMapsApiKey="AIzaSyCQWB9ZQeRPn9z-EUv5mJTB4LE2rba8mUM">
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>

@@ -40,7 +40,7 @@ i18n.use(initReactI18next).init({
         contactInfoText:
           "We'd love to hear from you! Reach out to us through any of the following channels, and we'll get back to you as soon as possible.",
         locationTitle: "Location",
-        locationText: "123 Wellness Street, Gourmet District, City 12345",
+        locationText: "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230",
         phoneTitle: "Phone",
         phoneText: "+1 (555) 123-4567",
         emailTitle: "Email",
@@ -113,12 +113,16 @@ i18n.use(initReactI18next).init({
           "Your personalized destination for food delicacies, salon treatments, and customized products.",
         footerDescriptionfoodsrv:
           "Bringing you exceptional food experiences with quality, passion,and care.",
+        footerDescriptionsalonsrv:
+          "Bringing you exceptional beauty experiences with quality, passion, and care.",
+        footerDescriptioncosmeticssrv:
+          "Bringing you exceptional beauty products with quality, innovation, and timeless elegance.",
         footerQuickLinksTitle: "Quick Links",
         footerQuickLinks: [
           { name: "Home", href: "#home" },
-          { name: "Menu", href: "#menu" },
-          { name: "Salon", href: "#salon" },
-          { name: "Products", href: "#products" },
+          { name: "Food", href: "/food" },
+          { name: "Salon", href: "/salon" },
+          { name: "Products", href: "/cosmetics" },
           { name: "Contact", href: "#contact" },
         ],
         footerQuickLinksfoodsrv: [
@@ -263,7 +267,7 @@ i18n.use(initReactI18next).init({
         contactInfoText:
           "เรายินดีที่จะรับฟังคุณ! ติดต่อเราผ่านช่องทางใดก็ได้ด้านล่าง และเราจะตอบกลับคุณโดยเร็วที่สุด",
         locationTitle: "สถานที่",
-        locationText: "123 Wellness Street, Gourmet District, City 12345",
+        locationText: "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230",
         phoneTitle: "โทรศัพท์",
         phoneText: "+1 (555) 123-4567",
         emailTitle: "อีเมล",

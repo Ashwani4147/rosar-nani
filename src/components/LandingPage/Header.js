@@ -8,7 +8,7 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const { t, i18n } = useTranslation();
-  const menuRef = useRef(null);   // ✅ Ref for menu container
+  const menuRef = useRef(null); // ✅ Ref for menu container
   const buttonRef = useRef(null); // ✅ Ref for hamburger button
 
   const navLinks = [
@@ -20,20 +20,19 @@ function Header() {
     { name: t("contact"), href: "contact" },
   ];
 
-const handleNavClick = (id) => {
-  setActiveSection(id);
-  setIsMenuOpen(false);
-  const section = document.getElementById(id);
-  if (section) {
-    const headerHeight = document.querySelector('header')?.offsetHeight || 0;
-    const sectionTop = section.offsetTop - headerHeight;
-    window.scrollTo({
-      top: sectionTop,
-      behavior: 'smooth'
-    });
-  }
-};
-
+  const handleNavClick = (id) => {
+    setActiveSection(id);
+    setIsMenuOpen(false);
+    const section = document.getElementById(id);
+    if (section) {
+      const headerHeight = document.querySelector("header")?.offsetHeight || 0;
+      const sectionTop = section.offsetTop - headerHeight;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: "smooth",
+      });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -80,12 +79,16 @@ const handleNavClick = (id) => {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
       <nav className="container mx-auto max-w-full px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center">
+        <div className="flex items-center flex-shrink-0">
           <button
             onClick={() => handleNavClick("home")}
             className="flex items-center hover:scale-105 transition-transform duration-200"
           >
-            <img src={logos1} alt="Rosar Nani Logo" className="h-8 md:h-10 w-auto" />
+            <img
+              src={logos1}
+              alt="Rosar Nani Logo"
+              className="h-8 sm:h-9 md:h-10 w-auto"
+            />
           </button>
         </div>
 
@@ -120,13 +123,20 @@ const handleNavClick = (id) => {
             className="text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#419fa4] rounded-md p-2"
             aria-label="Toggle navigation menu"
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
       </nav>
 
       {isMenuOpen && (
-        <div ref={menuRef} className="xl:hidden bg-white shadow-lg border-t border-gray-100">
+        <div
+          ref={menuRef}
+          className="xl:hidden bg-white shadow-lg border-t border-gray-100"
+        >
           <div className="flex flex-col items-center py-4 space-y-4">
             {navLinks.map((link) => (
               <button

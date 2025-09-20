@@ -7,7 +7,7 @@ export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: "",
+    message: ""
   });
 
   const handleSubmit = (e) => {
@@ -19,7 +19,7 @@ export function Contact() {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value
     });
   };
 
@@ -27,10 +27,7 @@ export function Contact() {
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2
-            className="text-3xl md:text-5xl mb-6"
-            style={{ color: "#419fa4" }}
-          >
+          <h2 className="text-3xl md:text-5xl mb-6" style={{ color: "#419fa4" }}>
             {t("contactTitle")}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -40,10 +37,7 @@ export function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <div
-            className="border-0 shadow-lg rounded-lg"
-            style={{ backgroundColor: "#ffffff" }}
-          >
+          <div className="border-0 shadow-lg rounded-lg" style={{ backgroundColor: "#ffffff" }}>
             <div className="p-8">
               <h3 className="text-2xl mb-6" style={{ color: "#419fa4" }}>
                 {t("contactFormTitle")}
@@ -98,12 +92,8 @@ export function Contact() {
                   type="submit"
                   className="w-full py-3 px-6 text-white font-semibold rounded-md transform hover:scale-105 transition-all duration-300 shadow-lg"
                   style={{ backgroundColor: "#419fa4" }}
-                  onMouseOver={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#50c4ca")
-                  }
-                  onMouseOut={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#419fa4")
-                  }
+                  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#50c4ca")}
+                  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#419fa4")}
                 >
                   {t("sendButton")}
                 </button>
