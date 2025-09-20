@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function MainHeading() {
+  const { t } = useTranslation();
+
   return (
     <section
       className="py-16 px-4 sm:px-6 lg:px-8"
@@ -11,12 +14,10 @@ export default function MainHeading() {
           className="text-4xl md:text-5xl mb-6"
           style={{ color: "#419fa4" }}
         >
-          Food that Speaks to Your Soul
+          {t("mainHeadingFood.heading")}
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          From savory bites to sweet treats, every dish is thoughtfully
-          prepared with fresh ingredients and a passion for flavor. Dive into
-          a menu designed to delight your senses.
+          {t("mainHeadingFood.description")}
         </p>
       </div>
     </section>

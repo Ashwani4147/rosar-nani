@@ -1,7 +1,10 @@
 import React from "react";
 import { Button } from "../../button";
+import { useTranslation } from "react-i18next";
 
 export default function CallToAction() {
+  const { t } = useTranslation();
+
   return (
     <section
       className="py-16 px-4 sm:px-6 lg:px-8 text-center"
@@ -9,11 +12,10 @@ export default function CallToAction() {
     >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl mb-6" style={{ color: "#419fa4" }}>
-          Ready to Experience Amazing Flavors?
+          {t("food.cta.title")}
         </h2>
         <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-          Join thousands of satisfied customers who have made Rosar Nani their
-          go-to destination for exceptional food experiences.
+          {t("food.cta.description")}
         </p>
         {/* <Button
           size="lg"
@@ -29,7 +31,7 @@ export default function CallToAction() {
             e.target.style.backgroundColor = "#f8be6a"; // Revert to default
           }}
         >
-          Visit Now
+          {t("food.cta.button")}
         </Button> */}
 
         <button
@@ -45,7 +47,7 @@ export default function CallToAction() {
             e.target.style.backgroundColor = "#f8be6a"; // Revert to default
           }}
         >
-          Visit Now
+          {t("food.cta.button")}
         </button>
       </div>
     </section>

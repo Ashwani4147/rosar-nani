@@ -15,7 +15,8 @@ function Header() {
 
   // Desktop Services dropdown
   const [isServicesOpenDesktop, setIsServicesOpenDesktop] = useState(false);
-  const [isServicesClickedDesktop, setIsServicesClickedDesktop] = useState(false);
+  const [isServicesClickedDesktop, setIsServicesClickedDesktop] =
+    useState(false);
   const servicesTimeoutRef = useRef(null);
   const servicesRef = useRef(null);
   const servicesButtonRef = useRef(null);
@@ -25,19 +26,22 @@ function Header() {
 
   // Main nav links (mix of sections + routes)
   const navLinks = [
-    { name: t("Welcome to Salon Service"), href: "home", type: "section" },
+    { name: t("welcomeSalonService"), href: "home", type: "section" },
     { name: t("Home"), href: "/", type: "page" },
-    { name: t("services"), href: "services", type: "section" },
-    { name: "Categories", href: "categories", type: "section" },
-    { name: "Quality You Can Trust", href: "quality", type: "section" },
+    { name: t("servicesLabel1"), href: "services", type: "section" },
+    { name: t("Categories"), href: "categories", type: "section" },
+    { name: t("qualitysrv"), href: "quality", type: "section" },
     { name: t("contact"), href: "contact", type: "section" },
   ];
 
   // Service sub-links (some are new pages)
   const serviceSubLinks = [
-    { name: "Food Service", href: "/food", type: "page" },
-    { name: "Salon Service", href: "home", type: "section" },
-    { name: "Cosmetics Service", href: "/cosmetics", type: "page" },
+    // { name: "Food Service", href: "/food", type: "page" },
+    // { name: "Salon Service", href: "home", type: "section" },
+    // { name: "Cosmetics Service", href: "/cosmetics", type: "page" },
+    { name: t("serviceFood"), href: "/food", type: "page" },
+    { name: t("serviceSalon"), href: "home", type: "section" },
+    { name: t("serviceCosmetics"), href: "/cosmetics", type: "page" },
   ];
 
   // Handle in-page navigation (smooth scroll)
@@ -68,7 +72,10 @@ function Header() {
           const section = document.getElementById(link.href);
           if (section) {
             const { offsetTop, offsetHeight } = section;
-            if (scrollPos >= offsetTop && scrollPos < offsetTop + offsetHeight) {
+            if (
+              scrollPos >= offsetTop &&
+              scrollPos < offsetTop + offsetHeight
+            ) {
               setActiveSection(link.href);
               break;
             }
@@ -127,7 +134,11 @@ function Header() {
             to="/"
             className="flex items-center hover:scale-105 transition-transform duration-200"
           >
-            <img src={logos1} alt="Rosar Nani Logo" className="h-8 md:h-10 w-auto" />
+            <img
+              src={logos1}
+              alt="Rosar Nani Logo"
+              className="h-8 md:h-10 w-auto"
+            />
           </Link>
         </div>
 
@@ -157,7 +168,8 @@ function Header() {
                   ref={servicesButtonRef}
                   onClick={() => setIsServicesClickedDesktop((prev) => !prev)}
                   className={`font-medium transition-colors duration-300 hover:scale-105 ${
-                    activeSection === link.href || location.pathname === link.href
+                    activeSection === link.href ||
+                    location.pathname === link.href
                       ? "text-[#419fa4] border-b-2 border-[#419fa4] font-semibold"
                       : "text-gray-700 hover:text-[#419fa4]"
                   }`}
@@ -242,14 +254,21 @@ function Header() {
             className="text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#419fa4] rounded-md p-2"
             aria-label="Toggle navigation menu"
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
       </nav>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div ref={menuRef} className="xl:hidden bg-white shadow-lg border-t border-gray-100">
+        <div
+          ref={menuRef}
+          className="xl:hidden bg-white shadow-lg border-t border-gray-100"
+        >
           <div className="flex flex-col items-center py-4 space-y-4">
             {navLinks.map((link) =>
               link.href === "services" ? (

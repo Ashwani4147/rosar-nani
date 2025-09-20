@@ -1,20 +1,24 @@
+// src/components/File.js
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function File() {
+  const { t } = useTranslation();
+
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8"
-    style={{ backgroundColor: "#86C9D81A" }}>
+    <section
+      className="py-16 px-4 sm:px-6 lg:px-8"
+      style={{ backgroundColor: "#86C9D81A" }}
+    >
       <div className="max-w-4xl mx-auto text-center">
         <h2
           className="text-4xl md:text-5xl mb-6"
           style={{ color: "#419fa4" }}
         >
-          Unleash Your Inner Radiance
+          {t("mainHeadingCosmetics.heading")}
         </h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          From vibrant lipsticks to flawless foundations, every product is formulated
-          with precision and care. Explore our curated collection of premium cosmetics
-          designed to enhance your natural beauty and boost your confidence.
+          {t("mainHeadingCosmetics.description")}
         </p>
       </div>
     </section>
