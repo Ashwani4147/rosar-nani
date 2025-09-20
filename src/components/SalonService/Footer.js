@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-export function Footer() {
+export default function Footer() {
   const { t } = useTranslation();
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [selectedPolicy, setSelectedPolicy] = useState(null);
@@ -21,14 +21,13 @@ export function Footer() {
   ];
 
   const quickLinks = t("footerQuickLinks", { returnObjects: true });
-  
-  // Convert policies object to array
+    // Convert policies object to array
   const policies = Object.values(t("footerPolicies", { returnObjects: true }));
-  
   const contact = t("footerContact", { returnObjects: true });
 
+
   const openContactPopup = (policy) => {
-    console.log("Selected policy:", policy); // ✅ Debugging line
+    console.log("Selected policy:", policy);
     setSelectedPolicy(policy);
     setIsContactOpen(true);
   };
@@ -40,7 +39,7 @@ export function Footer() {
 
   return (
     <>
-      <footer className="bg-gray-900 text-white py-16">
+      <footer id="footer" className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             {/* Brand Section */}
@@ -52,7 +51,7 @@ export function Footer() {
                 {t("footerBrand")}
               </h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                {t("footerDescription")}
+                {t("footerDescriptionsalonsrv")}
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
@@ -84,16 +83,18 @@ export function Footer() {
                 {t("footerQuickLinksTitle")}
               </h4>
               <ul className="space-y-2">
-                {quickLinks.map((link, index) => (
-                  <li key={index}>
-                    <a
-                      href={link.href}
-                      className="text-gray-300 transition-colors duration-300 hover:text-[#86c9d8]"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
+                {t("footerQuickLinksfoodsrv", { returnObjects: true }).map(
+                  (link, index) => (
+                    <li key={index}>
+                      <a
+                        href={link.href}
+                        className="text-gray-300 transition-colors duration-300 hover:text-[#86c9d8]"
+                      >
+                        {link.name}
+                      </a>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
 
@@ -149,6 +150,15 @@ export function Footer() {
               <ul className="space-y-2">
                 {policies.map((policy, index) => (
                   <li key={index}>
+                    {/* Option 1: Old link behavior */}
+                    {/* <a
+                      href={policy.href}
+                      className="text-gray-300 hover:text-[#86c9d8] transition-colors duration-300"
+                    >
+                      {policy.name}
+                    </a> */}
+
+                    {/* Option 2: New popup behavior */}
                     <button
                       onClick={() => openContactPopup(policy)}
                       className="text-gray-300 hover:text-[#419fa4] hover:underline hover:decoration-[#419fa4] transition-colors duration-300"
@@ -172,18 +182,13 @@ export function Footer() {
       {isContactOpen && selectedPolicy && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-6 w-11/12 max-w-md shadow-lg relative">
-            {/* <button
-              onClick={closeContactPopup}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+            <h3
+              className="text-xl font-semibold mb-4"
+              style={{ color: "#419fa4" }}
             >
-              ✕
-            </button> */}
-            <h3 className="text-xl font-semibold mb-4" style={{ color: "#419fa4" }}>
-              {selectedPolicy.name}  {/* Heading from translation file */}
+              {selectedPolicy.name}
             </h3>
-            <p className="text-gray-600">
-              {selectedPolicy.description}  {/* Description from translation file */}
-            </p>
+            <p className="text-gray-600">{selectedPolicy.description}</p>
             <div className="mt-4 text-center">
               <button
                 onClick={closeContactPopup}

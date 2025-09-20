@@ -60,7 +60,8 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 export function Services() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+   const hoverOverlayColor = "rgba(65, 159, 164, 0.2)"; // ✅
 
   // Define services array with routing links and image
   const servicesData = [
@@ -118,7 +119,12 @@ export function Services() {
                   alt={t(service.titleKey)}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-800/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-purple-800/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div> */}
+                                {/* Hover overlay with new color */}
+                <div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{ backgroundColor: hoverOverlayColor }}
+                ></div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl mb-3" style={{ color: "#419fa4" }}>

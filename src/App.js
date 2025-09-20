@@ -1,19 +1,19 @@
-// import React, { Suspense } from 'react';
-// import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-dom';
-// import './i18n'; // Make sure i18n is initialized
-// import { useTranslation } from "react-i18next";
-// import Header from './components/LandingPage/Header';
-// import Image from './components/LandingPage/Image';
-// import { About } from './components/LandingPage/About';
-// import { Services } from './components/LandingPage/Services';
-// import { QualityPromise } from './components/LandingPage/QualityPromise';
-// import { Testimonials } from './components/LandingPage/Testimonials';
-// import { Contact } from './components/LandingPage/Contact';
-// import { Footer } from './components/LandingPage/Footer';
-// //import  Food  from './components/FoodService/Food';
-// import Salon from './components/LandingPage/Salon';
+import React, { Suspense } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './i18n';
+import Header from './components/LandingPage/Header';
+import Image from './components/LandingPage/Image';
+import { About } from './components/LandingPage/About';
+import { Services } from './components/LandingPage/Services';
+import { QualityPromise } from './components/LandingPage/QualityPromise';
+import { Testimonials } from './components/LandingPage/Testimonials';
+import { Contact } from './components/LandingPage/Contact';
+import { Footer } from './components/LandingPage/Footer';
+import Food from './components/FoodService/Food';
+import Salon from './components/SalonService/Salon';
+import Cosmetics from './components/CosmeticsService/Cosmetics';
 // import Cosmetics from './components/LandingPage/Cosmetics';
-// import Food from './components/LandingPage/Food';
+import ScrollToTop from './ScrollToTop';  // 👈 import here
 
 // const App = () => {
 //   return (
@@ -119,6 +119,8 @@ const AppWithRouter = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Router>
+        {/* 👇🏻 fixes the scroll issue */}
+        <ScrollToTop /> 
         <Routes>
         
           {/* Default redirect to current language */}
