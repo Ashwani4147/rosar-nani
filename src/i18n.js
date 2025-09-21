@@ -5,6 +5,9 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+
+  comingsoon: "Coming Soon",
+  backToHome: "Back to Home",
         // General
         welcome: "Welcome to Rosar Nani",
         welcomeFoodService: "Welcome to Food Service",
@@ -311,8 +314,7 @@ i18n.use(initReactI18next).init({
           badge: "5-Star Salon",
         },
 
-
-          // Cosmetic Call to Action
+        // Cosmetic Call to Action
         cosmetic: {
           cta: {
             title: "Elevate Your Beauty Routine",
@@ -323,24 +325,24 @@ i18n.use(initReactI18next).init({
         },
 
         // Food Call to Action
-                "food": {
-  "cta": {
-    "title": "Ready to Experience Amazing Flavors?",
-    "description": "Join thousands of satisfied customers who have made Rosar Nani their go-to destination for exceptional food experiences.",
-    "button": "Visit Now"
-  }
-},
+        food: {
+          cta: {
+            title: "Ready to Experience Amazing Flavors?",
+            description:
+              "Join thousands of satisfied customers who have made Rosar Nani their go-to destination for exceptional food experiences.",
+            button: "Visit Now",
+          },
+        },
 
-// Salon Call to Action
-"salon": {
-  "cta": {
-    "title": "Ready to Transform Your Look?",
-    "description": "Join thousands of satisfied clients who have made Rosar Nani their trusted destination for beauty and wellness services.",
-    "button": "Visit Now"
-  }
-},
-        
-
+        // Salon Call to Action
+        salon: {
+          cta: {
+            title: "Ready to Transform Your Look?",
+            description:
+              "Join thousands of satisfied clients who have made Rosar Nani their trusted destination for beauty and wellness services.",
+            button: "Visit Now",
+          },
+        },
 
         // Footer Section
         footerBrand: "Rosar Nani",
@@ -373,7 +375,8 @@ i18n.use(initReactI18next).init({
         ],
         footerContactTitle: "Contact Info",
         footerContact: {
-          location: "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230t",
+          location:
+            "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230t",
           phone: "‪+66 6-3240-1934‬",
           email: "contact@rosarnani.com",
         },
@@ -470,6 +473,10 @@ i18n.use(initReactI18next).init({
     },
     th: {
       translation: {
+
+       comingsoon: "เร็ว ๆ นี้",
+       backToHome: "กลับไปหน้าหลัก",
+
         // General
         welcome: "ยินดีต้อนรับสู่ Rosar Nani",
         welcomeFoodService: "ยินดีต้อนรับสู่บริการอาหาร",
@@ -775,29 +782,32 @@ i18n.use(initReactI18next).init({
           ],
           badge: "ซาลอนระดับ 5 ดาว",
         },
-  // Cosmetic Call to Action
-  "cosmetic": {
-    "cta": {
-      "title": "ยกระดับกิจวัตรความงามของคุณ",
-      "description": "เข้าร่วมกับผู้ที่รักความงามนับพันที่ไว้วางใจเราในด้านเครื่องสำอางหรูหรา คุณภาพสูง ที่สร้างแรงบันดาลใจและความมั่นใจ",
-      "button": "เยี่ยมชมเลย"
-    }
-  },
-  // Food Call to Action
-"food": {
-  "cta": {
-    "title": "พร้อมที่จะสัมผัสรสชาติอันยอดเยี่ยมหรือยัง?",
-    "description": "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rosar Nani ให้เป็นจุดหมายปลายทางสำหรับประสบการณ์อาหารที่ยอดเยี่ยม",
-    "button": "เยี่ยมชมเลย"
-  }
-},
-"salon": {
-  "cta": {
-    "title": "พร้อมที่จะเปลี่ยนลุคของคุณแล้วหรือยัง?",
-    "description": "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rosar Nani ให้เป็นจุดหมายปลายทางสำหรับบริการด้านความงามและสุขภาพ",
-    "button": "เยี่ยมชมตอนนี้"
-  }
-},
+        // Cosmetic Call to Action
+        cosmetic: {
+          cta: {
+            title: "ยกระดับกิจวัตรความงามของคุณ",
+            description:
+              "เข้าร่วมกับผู้ที่รักความงามนับพันที่ไว้วางใจเราในด้านเครื่องสำอางหรูหรา คุณภาพสูง ที่สร้างแรงบันดาลใจและความมั่นใจ",
+            button: "เยี่ยมชมเลย",
+          },
+        },
+        // Food Call to Action
+        food: {
+          cta: {
+            title: "พร้อมที่จะสัมผัสรสชาติอันยอดเยี่ยมหรือยัง?",
+            description:
+              "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rosar Nani ให้เป็นจุดหมายปลายทางสำหรับประสบการณ์อาหารที่ยอดเยี่ยม",
+            button: "เยี่ยมชมเลย",
+          },
+        },
+        salon: {
+          cta: {
+            title: "พร้อมที่จะเปลี่ยนลุคของคุณแล้วหรือยัง?",
+            description:
+              "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rosar Nani ให้เป็นจุดหมายปลายทางสำหรับบริการด้านความงามและสุขภาพ",
+            button: "เยี่ยมชมตอนนี้",
+          },
+        },
 
         // Footer Section
         footerBrand: "Rosar Nani",
@@ -813,7 +823,7 @@ i18n.use(initReactI18next).init({
           { name: "ผลิตภัณฑ์", href: "#products" },
           { name: "ติดต่อ", href: "#contact" },
         ],
-          footerQuickLinksfoodsrv: [
+        footerQuickLinksfoodsrv: [
           { name: "บ้าน", href: "/" },
           // { name: "Services", href: "/services" },
           // { name: "Categories", href: "#categories" },
@@ -826,7 +836,8 @@ i18n.use(initReactI18next).init({
         ],
         footerContactTitle: "ข้อมูลติดต่อ",
         footerContact: {
-          location: "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230",
+          location:
+            "234 Moo 5, Song Nuea Subdistrict, Namon District, Kalasin Province 46230",
           phone: "‪+66 6-3240-1934‬",
           email: "contact@rosarnani.com",
         },
@@ -899,7 +910,7 @@ i18n.use(initReactI18next).init({
   // fallbackLng: "en",
   // interpolation: { escapeValue: false },
 
-   lng: "th", // ✅ Set default language to Thai
+  lng: "th", // ✅ Set default language to Thai
   fallbackLng: "en",
   interpolation: { escapeValue: false },
 });
