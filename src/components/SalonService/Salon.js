@@ -41,7 +41,7 @@ export default function Salon() {
       <CallToAction />
 
       {/* Call to Quality Section */}
-      <Contact />
+      {/* <Contact /> */}
 
       {/* Footer Section */}
       <Footer />
