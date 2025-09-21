@@ -38,7 +38,7 @@ export default function App() {
       <CallToAction />
 
       {/* Contact Section */}
-      <Contact />
+      {/* <Contact /> */}
       
       {/* Footer Section */}
       <Footer />

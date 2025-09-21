@@ -44,7 +44,7 @@ export default function Food() {
       <CallToAction />
 
       {/* Contact Section */}
-      <Contact />
+      {/* <Contact /> */}
       
       {/* Footer Section */}
       <Footer />
