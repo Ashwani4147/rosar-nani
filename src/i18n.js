@@ -46,7 +46,7 @@ i18n.use(initReactI18next).init({
           cosmeticssubtitle:
             "Discover premium cosmetics crafted with luxury ingredients, innovative formulas, and timeless elegance.",
 
-          button: "Explore Menu",
+          button: "Explore ",
         },
 
         // Main Heading Section
