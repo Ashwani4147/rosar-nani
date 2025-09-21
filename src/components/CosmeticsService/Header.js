@@ -227,9 +227,15 @@ function Header() {
           {/* Language Selector */}
           <select
             value={i18n.language}
-            onChange={(e) => changeLanguage(e.target.value)}
-            className="border border-[#419fa4] rounded-lg px-4 py-2 text-gray-700 bg-white shadow-sm w-32 text-center focus:outline-none focus:ring-2 focus:ring-[#419fa4] focus:border-[#419fa4] transition duration-200 hover:shadow-md"
-          >
+            onChange={(e) => {changeLanguage(e.target.value);
+            e.target.blur();
+            }}
+          //   className="border border-[#419fa4] rounded-lg px-4 py-2 text-gray-700 bg-white shadow-sm w-32 text-center focus:outline-none focus:ring-2 focus:ring-[#419fa4] focus:border-[#419fa4] transition duration-200 hover:shadow-md"
+          // >
+
+           className="border border-[#419fa4] rounded-lg px-4 py-2 text-gray-700 bg-white w-32 text-center
+             focus:outline-none focus:ring-2 focus:ring-[#267b7f] focus:border-[#267b7f] transition duration-200"
+>
             <option value="en">English</option>
             <option value="th">ไทย/Thai</option>
           </select>
@@ -325,9 +331,15 @@ function Header() {
             {/* Language Selector */}
             <select
               value={i18n.language}
-              onChange={(e) => changeLanguage(e.target.value)}
-              className="border border-[#419fa4] rounded-lg px-4 py-2 text-gray-700 bg-white shadow-sm w-32 text-center focus:outline-none focus:ring-2 focus:ring-[#419fa4] focus:border-[#419fa4] transition duration-200 hover:shadow-md"
-            >
+               onChange={(e) => {changeLanguage(e.target.value);
+            e.target.blur();
+            }}
+          //   className="border border-[#419fa4] rounded-lg px-4 py-2 text-gray-700 bg-white shadow-sm w-32 text-center focus:outline-none focus:ring-2 focus:ring-[#419fa4] focus:border-[#419fa4] transition duration-200 hover:shadow-md"
+          // >
+
+           className="border border-[#419fa4] rounded-lg px-4 py-2 text-gray-700 bg-white w-32 text-center
+             focus:outline-none focus:ring-2 focus:ring-[#267b7f] focus:border-[#267b7f] transition duration-200"
+>
               <option value="en">English</option>
               <option value="th">ไทย/Thai</option>
             </select>
