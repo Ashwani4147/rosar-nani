@@ -10,12 +10,12 @@ export default function Categories() {
   const categoryTitleColor = "#419fa4"; // ✅ Title color
   const hoverOverlayColor = "rgba(65, 159, 164, 0.2)"; // ✅ Hover overlay color
 
-  // ✅ Icons and Images (keep your previous images)
+
   const icons = [
-    <Heart className="w-8 h-8" style={{ color: "var(--food-tertiary)" }} />,
-    <Sparkles className="w-8 h-8" style={{ color: "var(--food-tertiary)" }} />,
-    <Star className="w-8 h-8" style={{ color: "var(--food-tertiary)" }} />,
-    <Palette className="w-8 h-8" style={{ color: "var(--food-tertiary)" }} />
+    <Heart className="w-8 h-8"  />,
+    <Sparkles className="w-8 h-8"  />,
+    <Star className="w-8 h-8"  />,
+    <Palette className="w-8 h-8"  />
   ];
 
   const images = [

@@ -12,6 +12,7 @@ import { Footer } from './components/LandingPage/Footer';
 import Food from './components/FoodService/Food';
 import Salon from './components/SalonService/Salon';
 import Cosmetics from './components/CosmeticsService/Cosmetics';
+import Nail from './components/NailService/Nail';
 import ScrollToTop from './ScrollToTop';  // 👈 import here
 
 const App = () => {
@@ -36,9 +37,10 @@ const AppWithRouter = () => {
         <ScrollToTop />   {/* 👈 fixes the scroll issue */}
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/food" element={<Food />} />
+          {/* <Route path="/food" element={<Food />} /> */}
           <Route path="/salon" element={<Salon />} />
           <Route path="/cosmetics" element={<Cosmetics />} />
+          <Route path="/food" element={<Nail />} />
         </Routes>
       </Router>
     </Suspense>

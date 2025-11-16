@@ -5,9 +5,8 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-
-  comingsoon: "Coming Soon",
-  backToHome: "Back to Home",
+        comingsoon: "Coming Soon",
+        backToHome: "Back to Home",
         // General
         welcome: "Welcome to Rosar Nani",
         welcomeFoodService: "Welcome to Food Service",
@@ -67,6 +66,11 @@ i18n.use(initReactI18next).init({
           heading: "Unleash Your Inner Radiance",
           description:
             "From vibrant lipsticks to flawless foundations, every product is formulated with precision and care. Explore our curated collection of premium cosmetics designed to enhance your natural beauty and boost your confidence.",
+        },
+        mainHeadingNail: {
+          heading: "Nails that Express Your Style",
+          description:
+            "From classic manicures to creative nail art, every service is expertly crafted with premium products and attention to detail. Discover treatments designed to pamper and perfect your nails.",
         },
 
         // Categories Section
@@ -143,6 +147,31 @@ i18n.use(initReactI18next).init({
             title: "Fragrance",
             description:
               "Exquisite perfumes and eau de toilettes with sophisticated scents for every occasion.",
+          },
+        ],
+
+        // Nails Categories
+        NailSectionTitle: "Our Signature Collections",
+        Nail: [
+          {
+            title: "Classic Manicure",
+            description:
+              "Timeless elegance with expert nail shaping, cuticle care, and your choice of polish for a polished finish.",
+          },
+          {
+            title: "Nail Art Design",
+            description:
+              "Express your creativity with custom nail art featuring intricate designs, patterns, and artistic details.",
+          },
+          {
+            title: "Gel & Acrylic",
+            description:
+              "Long-lasting beauty with premium gel or acrylic enhancements for stunning, durable nails.",
+          },
+          {
+            title: "Spa Pedicure",
+            description:
+              "Luxurious foot care experience with exfoliation, massage, and flawless polish application.",
           },
         ],
 
@@ -314,6 +343,31 @@ i18n.use(initReactI18next).init({
           badge: "5-Star Salon",
         },
 
+        //nail quality
+        "nailquality": {
+  "heading": "Excellence in Every Detail",
+  "description": "Our commitment to excellence means every nail service meets the highest standards of quality, cleanliness, and artistry. We maintain rigorous safety protocols and use only premium products.",
+  "badge": "5-Star Service",
+  "features": [
+    {
+      "title": "Sanitized Tools",
+      "description": "Strict sterilization and hygiene protocols"
+    },
+    {
+      "title": "Premium Products",
+      "description": "Top-quality polishes and treatments"
+    },
+    {
+      "title": "Expert Technicians",
+      "description": "Skilled professionals with years of experience"
+    },
+    {
+      "title": "Healthy Nails",
+      "description": "Gentle care that promotes nail health"
+    }
+  ]
+},
+
         // Cosmetic Call to Action
         cosmetic: {
           cta: {
@@ -343,6 +397,13 @@ i18n.use(initReactI18next).init({
             button: "Visit Now",
           },
         },
+
+        // Nail Call to Action
+        "nailcta": {
+  "title": "Ready to Pamper Your Nails?",
+  "description": "Join thousands of satisfied clients who have made Rosar Nani their go-to destination for beautiful, expertly crafted nails.",
+  "button": "Book Appointment"
+},
 
         // Footer Section
         footerBrand: "Rosar Nani",
@@ -473,9 +534,8 @@ i18n.use(initReactI18next).init({
     },
     th: {
       translation: {
-
-       comingsoon: "เร็ว ๆ นี้",
-       backToHome: "กลับไปหน้าหลัก",
+        comingsoon: "เร็ว ๆ นี้",
+        backToHome: "กลับไปหน้าหลัก",
 
         // General
         welcome: "ยินดีต้อนรับสู่ Rosar Nani",
@@ -531,6 +591,11 @@ i18n.use(initReactI18next).init({
           heading: "ปลดปล่อยความเปล่งประกายภายในตัวคุณ",
           description:
             "ตั้งแต่ลิปสติกสีสันสดใสไปจนถึงรองพื้นที่สวยไร้ที่ติ ผลิตภัณฑ์ทุกชิ้นล้วนผ่านการคิดค้นสูตรอย่างพิถีพิถันและพิถีพิถัน สำรวจคอลเลกชันเครื่องสำอางระดับพรีเมียมที่เราคัดสรรมาเพื่อเสริมความงามตามธรรมชาติและเพิ่มความมั่นใจให้กับคุณ",
+        },
+        mainHeadingNail: {
+          heading: "เล็บที่บ่งบอกสไตล์ของคุณ",
+          description:
+            "ตั้งแต่การทำเล็บแบบคลาสสิกไปจนถึงงานศิลปะบนเล็บสุดสร้างสรรค์ ทุกบริการถูกรังสรรค์อย่างพิถีพิถันด้วยผลิตภัณฑ์คุณภาพระดับพรีเมียมและความใส่ใจในทุกรายละเอียด ค้นพบการดูแลมือและเล็บที่ออกแบบมาเพื่อปรนนิบัติและเพิ่มความงามให้กับเล็บของคุณ",
         },
 
         // Categories Section
@@ -609,6 +674,28 @@ i18n.use(initReactI18next).init({
               "น้ำหอมและโอ เดอ ทอยเล็ตต์อันเลิศหรูที่มีกลิ่นหอมอันแสนซับซ้อนสำหรับทุกโอกาส",
           },
         ],
+
+        //nail categories
+"NailSectionTitle": "คอลเลกชันซิกเนเจอร์ของเรา",
+"Nail": [
+  {
+    "title": "คลาสสิกแมนนิคิวร์",
+    "description": "ความงามเหนือกาลเวลาด้วยการตัดแต่งทรงเล็บอย่างประณีต ดูแลจมูกเล็บ และเลือกสีทาเล็บตามสไตล์ของคุณ"
+  },
+  {
+    "title": "ออกแบบเล็บอาร์ต",
+    "description": "แสดงความเป็นตัวคุณด้วยงานศิลปะบนเล็บ พร้อมลวดลายและดีไซน์สุดประณีตไม่เหมือนใคร"
+  },
+  {
+    "title": "เจลและอะคริลิก",
+    "description": "ความงามที่คงทนด้วยเจลหรืออะคริลิกคุณภาพพรีเมียม เพื่อเล็บที่ดูโดดเด่นและติดทนนาน"
+  },
+  {
+    "title": "สปาเพดิคิวร์",
+    "description": "ประสบการณ์ดูแลเท้าสุดหรู พร้อมสครับ ขัดเท้า นวดผ่อนคลาย และการทาสีเล็บอย่างสมบูรณ์แบบ"
+  }
+],
+
 
         // About Section
         aboutTitle: "เกี่ยวกับ Rosar Nani",
@@ -782,6 +869,31 @@ i18n.use(initReactI18next).init({
           ],
           badge: "ซาลอนระดับ 5 ดาว",
         },
+
+        //nail quality
+        "nailquality": {
+  "heading": "ความเป็นเลิศในทุกรายละเอียด",
+  "description": "เรามุ่งมั่นในมาตรฐานสูงสุดด้านคุณภาพ ความสะอาด และความพิถีพิถันในการทำเล็บ พร้อมดูแลความปลอดภัยและใช้เฉพาะผลิตภัณฑ์ระดับพรีเมียม",
+  "badge": "บริการระดับ 5 ดาว",
+  "features": [
+    {
+      "title": "อุปกรณ์ปลอดเชื้อ",
+      "description": "การฆ่าเชื้อและสุขอนามัยที่เข้มงวด"
+    },
+    {
+      "title": "ผลิตภัณฑ์พรีเมียม",
+      "description": "ใช้ยาทาเล็บและทรีตเมนต์คุณภาพสูงเท่านั้น"
+    },
+    {
+      "title": "ช่างทำเล็บมืออาชีพ",
+      "description": "ทีมงานที่มีประสบการณ์หลายปี"
+    },
+    {
+      "title": "เล็บสุขภาพดี",
+      "description": "การดูแลอย่างอ่อนโยนเพื่อส่งเสริมสุขภาพเล็บ"
+    }
+  ]
+},
         // Cosmetic Call to Action
         cosmetic: {
           cta: {
@@ -800,6 +912,13 @@ i18n.use(initReactI18next).init({
             button: "เยี่ยมชมเลย",
           },
         },
+
+        //nail Call to Action
+        "nailcta": {
+  "title": "พร้อมเปลี่ยนลุคเล็บของคุณหรือยัง?",
+  "description": "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rosar Nani ให้ดูแลและสร้างสรรค์เล็บสวยงามอย่างมืออาชีพ",
+  "button": "จองคิวทำเล็บ"
+},
         salon: {
           cta: {
             title: "พร้อมที่จะเปลี่ยนลุคของคุณแล้วหรือยัง?",
