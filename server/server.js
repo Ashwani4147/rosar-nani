@@ -28,6 +28,10 @@ app.get('/', (req, res) => {
 const contactRoutes = require('./routes/contactRoutes');
 app.use('/api/contact', contactRoutes);
 
+// ✅ Import and use appointmentRoutes (added here)
+const appointmentRoutes = require('./routes/appointmentRoutes');
+app.use('/api/appointment', appointmentRoutes);
+
 // --- start the server ---
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
