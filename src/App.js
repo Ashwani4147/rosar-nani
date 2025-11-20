@@ -13,6 +13,7 @@ import Food from './components/FoodService/Food';
 import Salon from './components/SalonService/Salon';
 import Cosmetics from './components/CosmeticsService/Cosmetics';
 import Nail from './components/NailService/Nail';
+import EyeLash from './components/EyeLashService/EyeLash';
 import ScrollToTop from './ScrollToTop';  // 👈 import here
 
 const App = () => {
@@ -39,8 +40,9 @@ const AppWithRouter = () => {
           <Route path="/" element={<App />} />
           {/* <Route path="/food" element={<Food />} /> */}
           <Route path="/salon" element={<Salon />} />
-          <Route path="/cosmetics" element={<Cosmetics />} />
+          {/* <Route path="/cosmetics" element={<Cosmetics />} /> */}
           <Route path="/nail" element={<Nail />} />
+          <Route path="/cosmetics" element={<EyeLash />} />
         </Routes>
       </Router>
     </Suspense>
