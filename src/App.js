@@ -40,7 +40,7 @@ const AppWithRouter = () => {
           {/* <Route path="/food" element={<Food />} /> */}
           <Route path="/salon" element={<Salon />} />
           <Route path="/cosmetics" element={<Cosmetics />} />
-          <Route path="/food" element={<Nail />} />
+          <Route path="/nail" element={<Nail />} />
         </Routes>
       </Router>
     </Suspense>

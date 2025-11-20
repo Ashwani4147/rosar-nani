@@ -3,8 +3,10 @@ import { useTranslation } from "react-i18next";
 
 const ImageAndText = () => {
   const { t } = useTranslation();
-  const imageUrl =
-    "https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7";
+  // const imageUrl =
+  //   "https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7";
+
+  const imageUrl= "/homeImg.png"
 
   // Function to scroll to the "services" section
   const handleExploreClick = () => {
@@ -30,10 +32,10 @@ const ImageAndText = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-orange-500/20"></div>
 
       {/* Text Content */}
-      <div className="absolute inset-0 flex items-center justify-center p-4">
+      <div className="absolute inset-0 flex items-center justify-center p-4 pt-40">
         <div className="text-center text-white">
           {/* Title */}
-          <h1 className="text-6xl font-bold mb-4">{t("hero.landtitle")}</h1>
+          <h1 className="text-6xl font-bold mb-4"  style={{ color: "#d4af37" }} >{t("hero.landtitle")}</h1>
           
           {/* Subtitle */}
           <p className="text-xl mb-8">{t("hero.landsubtitle")}</p>

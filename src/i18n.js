@@ -33,7 +33,7 @@ i18n.use(initReactI18next).init({
 
         //Hero or Image session
         hero: {
-          landtitle: "Taste & Treat Yourself",
+          landtitle: "Where Style Meets Beauty",
           landsubtitle: "Customized for You",
 
           foodtitle: "Delicious Flavors, Crafted Just For You",
@@ -487,12 +487,13 @@ i18n.use(initReactI18next).init({
           "Experience our unique blend of culinary excellence, wellness treatments, and personalized products",
         servicesList: [
           {
-            title: "Food Delicacies",
+            title: "Nail Glam",
             description:
-              "Savor exquisite culinary creations crafted with the finest ingredients, tailored to your taste preferences and dietary needs.",
-            image:
-              "https://images.unsplash.com/photo-1757358958170-501b384915b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwZm9vZCUyMGRlbGljYWNpZXN8ZW58MXx8fHwxNzU3NTczMDU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-            link: "/food",
+                  "Long-lasting gel nails with premium Thai designs, flawless shine, and expert detailing for a perfect, elegant look." ,
+            image: "/homeNail.png",
+              //     image:
+              // "https://images.unsplash.com/photo-1757358958170-501b384915b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwZm9vZCUyMGRlbGljYWNpZXN8ZW58MXx8fHwxNzU3NTczMDU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            link: "/nail",
           },
           {
             title: "Salon Treatments",
@@ -558,7 +559,7 @@ i18n.use(initReactI18next).init({
 
         //Hero or Image session
         hero: {
-          landtitle: "ลิ้มรสและปรนเปรอตัวเอง",
+          landtitle: "สถานที่ที่สไตล์ผสานกับความงามอย่างลงตัว",
           landsubtitle: "ปรับแต่งสำหรับคุณ",
 
           foodtitle: "รสชาติแสนอร่อยที่รังสรรค์มาเพื่อคุณโดยเฉพาะ",
@@ -998,12 +999,13 @@ i18n.use(initReactI18next).init({
           "สัมผัสประสบการณ์ผสมผสานระหว่างความอร่อยด้านอาหาร การบำบัดสุขภาพ และผลิตภัณฑ์ส่วนบุคคล",
         servicesList: [
           {
-            title: "อาหารอร่อยพิเศษ",
+            title: "เล็บสวยแกลม",
             description:
-              "ลิ้มรสอาหารสุดพิเศษที่ปรุงด้วยวัตถุดิบชั้นเลิศ ปรับให้ตรงกับความชอบและความต้องการด้านโภชนาการของคุณ",
-            image:
-              "https://images.unsplash.com/photo-1757358958170-501b384915b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwZm9vZCUyMGRlbGljYWNpZXN8ZW58MXx8fHwxNzU3NTczMDU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-            link: "/food ",
+              "เจลเล็บติดทนนาน พร้อมดีไซน์พรีเมียมสไตล์ไทย เงางามไร้ที่ติ และงานละเอียดประณีต เพื่อความสวยหรูอย่างสมบูรณ์แบบ",
+              image: "/homeNail.png",
+            // image:
+            //   "https://images.unsplash.com/photo-1757358958170-501b384915b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwZm9vZCUyMGRlbGljYWNpZXN8ZW58MXx8fHwxNzU3NTczMDU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            link: "/nail ",
           },
           {
             title: "บริการสปาและซาลอน",
