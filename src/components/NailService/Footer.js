@@ -8,6 +8,7 @@ import {
   MapPin,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+// import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -21,11 +22,11 @@ export default function Footer() {
   ];
 
   const quickLinks = t("footerQuickLinks", { returnObjects: true });
-    // Convert policies object to array
+  // Convert policies object to array
   const policies = Object.values(t("footerPolicies", { returnObjects: true }));
   const contact = t("footerContact", { returnObjects: true });
 
-
+  
   const openContactPopup = (policy) => {
     console.log("Selected policy:", policy);
     setSelectedPolicy(policy);
@@ -51,7 +52,7 @@ export default function Footer() {
                 {t("footerBrand")}
               </h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                {t("footerDescriptioncosmeticssrv")}
+                {t("footerDescriptionnailsrv")}
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (

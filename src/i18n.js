@@ -10,6 +10,9 @@ i18n.use(initReactI18next).init({
         // General
         welcome: "Welcome to Rosar Nani",
         welcomeFoodService: "Welcome to Food Service",
+        welcomeNailService: "Welcome to Nail Service",
+        welcomeLashService: "Welcome to Eye Lash Service",
+        welcomeHairService: "Welcome to Hair Service",
         welcomeSalonService: "Welcome to Salon Service",
         welcomeCosmeticsService: "Welcome to Cosmetics Service",
         Home: "Home",
@@ -23,11 +26,17 @@ i18n.use(initReactI18next).init({
         footer: "© 2025 Rosar Nani. All rights reserved.",
         services: [
           { name: "Food Service", href: "/food", type: "page" },
+          // { name: "Nail Service", href: "/nail", type: "page" },
+          // { name: "Lash Service", href: "/eyelash", type: "page" },
+          // { name: "Hair Service", href: "/hair", type: "page" },
           { name: "Salon Service", href: "/salon", type: "page" },
           { name: "Cosmetics Service", href: "home", type: "section" },
         ],
 
         serviceFood: "Food Service",
+        serviceNail: "Nail Service",
+        serviceLash: "Lash Service",
+        serviceHair: "Hair Service",
         serviceSalon: "Salon Service",
         serviceCosmetics: "Cosmetics Service",
 
@@ -51,6 +60,10 @@ i18n.use(initReactI18next).init({
           eyelashtitle: "Lash Perfection that Captivates",
           eyelashsubtitle:
             "Elevate your gaze with luxurious lash extensions. Expert application, stunning volume, and natural-looking beauty that lasts.",
+
+          nailtitle: "Nail Perfection at your fingertips",
+          nailsubtitle:
+            "Where artistry meets elegance in every detail. Experience luxury nail care with precision and style.",
 
           button: "Explore ",
         },
@@ -305,26 +318,51 @@ i18n.use(initReactI18next).init({
         ],
 
         //Feature section
-         "eyelashfeatures": {
-    "list": [
-      {
-        "title": "Expert Artists",
-        "description": "Certified professionals with years of experience"
-      },
-      {
-        "title": "Premium Products",
-        "description": "High-quality lashes and safe adhesives"
-      },
-      {
-        "title": "Lasting Results",
-        "description": "Beautiful lashes that last 4-6 weeks"
-      },
-      {
-        "title": "Safe & Gentle",
-        "description": "Hypoallergenic products for sensitive eyes"
-      }
-    ]
-  },
+        eyelashfeatures: {
+          list: [
+            {
+              title: "Expert Artists",
+              description: "Certified professionals with years of experience",
+            },
+            {
+              title: "Premium Products",
+              description: "High-quality lashes and safe adhesives",
+            },
+            {
+              title: "Lasting Results",
+              description: "Beautiful lashes that last 4-6 weeks",
+            },
+            {
+              title: "Safe & Gentle",
+              description: "Hypoallergenic products for sensitive eyes",
+            },
+          ],
+        },
+        // Nail Features section
+        nailfeatures: {
+          list: [
+            {
+              title: "Expert Technicians",
+              description:
+                "Skilled professionals with years of experience in nail artistry",
+            },
+            {
+              title: "Premium Products",
+              description:
+                "High-quality, trusted brands for lasting beauty and nail health",
+            },
+            {
+              title: "Durable Finishes",
+              description:
+                "Long-lasting results that keep your nails looking flawless",
+            },
+            {
+              title: "Health & Hygiene",
+              description:
+                "Strict sanitation protocols for your safety and peace of mind",
+            },
+          ],
+        },
 
         // Quality Section
         cosmeticsquality: {
@@ -427,30 +465,31 @@ i18n.use(initReactI18next).init({
         },
 
         //EyeLash quality
-        "lashquality": {
-  "heading": "Excellence in Every Lash",
-  "description": "We ensure every lash extension service meets the highest standards of safety, precision, and beauty.",
-  "badge": "5-Star Service",
+        lashquality: {
+          heading: "Excellence in Every Lash",
+          description:
+            "We ensure every lash extension service meets the highest standards of safety, precision, and beauty.",
+          badge: "5-Star Service",
 
-  "features": [
-    {
-      "title": "Sanitized Tools",
-      "description": "Strict hygiene and sterilization protocols."
-    },
-    {
-      "title": "Premium Lashes",
-      "description": "High-quality extensions and adhesive."
-    },
-    {
-      "title": "Expert Technicians",
-      "description": "Certified lash artists with years of experience."
-    },
-    {
-      "title": "Healthy Lash Care",
-      "description": "Techniques that protect natural lash health."
-    }
-  ]
-},
+          features: [
+            {
+              title: "Sanitized Tools",
+              description: "Strict hygiene and sterilization protocols.",
+            },
+            {
+              title: "Premium Lashes",
+              description: "High-quality extensions and adhesive.",
+            },
+            {
+              title: "Expert Technicians",
+              description: "Certified lash artists with years of experience.",
+            },
+            {
+              title: "Healthy Lash Care",
+              description: "Techniques that protect natural lash health.",
+            },
+          ],
+        },
 
         // Cosmetic Call to Action
         cosmetic: {
@@ -491,11 +530,12 @@ i18n.use(initReactI18next).init({
         },
 
         // EyeLash Call to Action
-        "lashcta": {
-  "title": "Ready to Transform Your Lashes?",
-  "description": "Join thousands of satisfied clients who trust Rosar Nani for beautifully crafted lash extensions and premium eyelash treatments.",
-  "button": "Book Appointment"
-},
+        lashcta: {
+          title: "Ready to Transform Your Lashes?",
+          description:
+            "Join thousands of satisfied clients who trust Rosar Nani for beautifully crafted lash extensions and premium eyelash treatments.",
+          button: "Book Appointment",
+        },
 
         // Footer Section
         footerBrand: "Rosar Nani",
@@ -507,12 +547,14 @@ i18n.use(initReactI18next).init({
           "Bringing you exceptional beauty experiences with quality, passion, and care.",
         footerDescriptioncosmeticssrv:
           "Bringing you exceptional beauty products with quality, innovation, and timeless elegance.",
+        footerDescriptionnailsrv:
+          "Crafting flawless looks with innovative, high-quality nail polishes and timeless elegance.",
         footerQuickLinksTitle: "Quick Links",
         footerQuickLinks: [
           { name: "Home", href: "#home" },
-          { name: "Food", href: "/food" },
-          { name: "Salon", href: "/salon" },
-          { name: "Products", href: "/cosmetics" },
+          { name: "Nail", href: "/nail" },
+          { name: "Eye Lash", href: "/eyelash" },
+          { name: "Hair", href: "/hair" },
           { name: "Contact", href: "#contact" },
         ],
         footerQuickLinksfoodsrv: [
@@ -521,10 +563,10 @@ i18n.use(initReactI18next).init({
           // { name: "Categories", href: "#categories" },
           // { name: "Quality", href: "#quality" },
           // { name: "Contact", href: "#footer" },
-          { name: "Food", href: "/food" },
-          { name: "Salon", href: "/salon" },
-          { name: "Products", href: "/cosmetics" },
-          { name: "Contact", href: "#contact" },
+          { name: "Nail", href: "/nail" },
+          { name: "Eye Lash", href: "/eyelash" },
+          { name: "Hair", href: "/hair" },
+          { name: "Contact", href: "/#contact" },
         ],
         footerContactTitle: "Contact Info",
         footerContact: {
@@ -633,6 +675,9 @@ i18n.use(initReactI18next).init({
         // General
         welcome: "ยินดีต้อนรับสู่ Rosar Nani",
         welcomeFoodService: "ยินดีต้อนรับสู่บริการอาหาร",
+        welcomeNailService: "ยินดีต้อนรับสู่บริการทำเล็บ",
+        welcomeLashService: "ยินดีต้อนรับสู่บริการต่อขนตา",
+        welcomeHairService: "ยินดีต้อนรับสู่บริการทำผม",
         welcomeSalonService: "ยินดีต้อนรับสู่บริการซาลอน",
         welcomeCosmeticsService: "ยินดีต้อนรับสู่บริการด้านเครื่องสำอาง",
         Home: "บ้าน",
@@ -646,6 +691,10 @@ i18n.use(initReactI18next).init({
         footer: "© 2025 Rosar Nani. สงวนลิขสิทธิ์",
 
         serviceFood: "บริการอาหาร",
+        serviceNail: "บริการทำเล็บ",
+        serviceLash: "บริการต่อขนตา",
+        serviceHair: "บริการทำผม",
+
         serviceSalon: "บริการซาลอน",
         serviceCosmetics: "บริการด้านเครื่องสำอาง",
 
@@ -669,6 +718,10 @@ i18n.use(initReactI18next).init({
           eyelashtitle: "ขนตาสวยเป๊ะที่สะกดทุกสายตา",
           eyelashsubtitle:
             "ยกระดับความงามของดวงตาด้วยงานต่อขนตาสุดหรู ประณีตทุกเส้น สวยฟู ดูเป็นธรรมชาติและติดทนนาน",
+            
+          nailtitle: "ความสมบูรณ์แบบของเล็บปลายนิ้วของคุณ",
+          nailsubtitle:
+            "ที่ที่งานศิลป์ผสานกับความงดงามในทุกรายละเอียด สัมผัสการดูแลเล็บระดับลักชัวรีอย่างพิถีพิถันและมีสไตล์",
 
           button: "สำรวจเมนู",
         },
@@ -924,27 +977,49 @@ i18n.use(initReactI18next).init({
           },
         ],
 
-        //Feature section 
-          "eyelashfeatures": {
-    "list": [
-      {
-        "title": "ช่างผู้เชี่ยวชาญ",
-        "description": "ช่างต่อขนตาที่ผ่านการรับรองและมีประสบการณ์หลายปี"
-      },
-      {
-        "title": "ผลิตภัณฑ์พรีเมียม",
-        "description": "ขนตาและกาวคุณภาพสูง ปลอดภัยต่อดวงตา"
-      },
-      {
-        "title": "ติดทนนาน",
-        "description": "ขนตาสวยคงทนยาวนาน 4–6 สัปดาห์"
-      },
-      {
-        "title": "ปลอดภัยและอ่อนโยน",
-        "description": "ผลิตภัณฑ์ hypoallergenic เหมาะสำหรับดวงตาแพ้ง่าย"
-      }
-    ]
-  },
+        //Feature section
+        eyelashfeatures: {
+          list: [
+            {
+              title: "ช่างผู้เชี่ยวชาญ",
+              description: "ช่างต่อขนตาที่ผ่านการรับรองและมีประสบการณ์หลายปี",
+            },
+            {
+              title: "ผลิตภัณฑ์พรีเมียม",
+              description: "ขนตาและกาวคุณภาพสูง ปลอดภัยต่อดวงตา",
+            },
+            {
+              title: "ติดทนนาน",
+              description: "ขนตาสวยคงทนยาวนาน 4–6 สัปดาห์",
+            },
+            {
+              title: "ปลอดภัยและอ่อนโยน",
+              description: "ผลิตภัณฑ์ hypoallergenic เหมาะสำหรับดวงตาแพ้ง่าย",
+            },
+          ],
+        },
+
+        //nail features
+        nailfeatures: {
+          list: [
+            {
+              title: "ช่างผู้เชี่ยวชาญ",
+              description: "ช่างทำเล็บมืออาชีพที่มีประสบการณ์หลายปี",
+            },
+            {
+              title: "ผลิตภัณฑ์พรีเมียม",
+              description: "แบรนด์คุณภาพสูงที่ปลอดภัยและให้ความงามยาวนาน",
+            },
+            {
+              title: "ติดทนนาน",
+              description: "ผลงานสวยคงทนที่ทำให้เล็บของคุณดูดีเสมอ",
+            },
+            {
+              title: "ปลอดภัยและถูกสุขลักษณะ",
+              description: "มาตรฐานความสะอาดเข้มงวดเพื่อความปลอดภัยของคุณ",
+            },
+          ],
+        },
 
         // Quality Sections
         cosmeticsquality: {
@@ -1047,32 +1122,33 @@ i18n.use(initReactI18next).init({
             },
           ],
         },
-        
-        "lashquality": {
-  "heading": "ความสมบูรณ์แบบในทุกเส้นขนตา",
-  "description": "เราพิถีพิถันในทุกขั้นตอน เพื่อให้บริการต่อขนตามีความปลอดภัย ประณีต และสวยงามที่สุด โดยใช้ผลิตภัณฑ์พรีเมียมและมาตรฐานการดูแลระดับสูง",
-  "badge": "บริการ 5 ดาว",
 
-  "features": [
-    {
-      "title": "อุปกรณ์ผ่านการฆ่าเชื้อ",
-      "description": "ปฏิบัติตามขั้นตอนการทำความสะอาดและสุขอนามัยอย่างเข้มงวด"
-    },
-    {
-      "title": "ขนตาพรีเมียม",
-      "description": "ใช้ขนตาและกาวคุณภาพสูงเท่านั้น"
-    },
-    {
-      "title": "ช่างมืออาชีพ",
-      "description": "ช่างต่อขนตาที่มีใบรับรองและประสบการณ์หลายปี"
-    },
-    {
-      "title": "ดูแลขนตาธรรมชาติ",
-      "description": "เทคนิคที่ช่วยปกป้องและไม่ทำร้ายขนตาจริง"
-    }
-  ]
-},
+        lashquality: {
+          heading: "ความสมบูรณ์แบบในทุกเส้นขนตา",
+          description:
+            "เราพิถีพิถันในทุกขั้นตอน เพื่อให้บริการต่อขนตามีความปลอดภัย ประณีต และสวยงามที่สุด โดยใช้ผลิตภัณฑ์พรีเมียมและมาตรฐานการดูแลระดับสูง",
+          badge: "บริการ 5 ดาว",
 
+          features: [
+            {
+              title: "อุปกรณ์ผ่านการฆ่าเชื้อ",
+              description:
+                "ปฏิบัติตามขั้นตอนการทำความสะอาดและสุขอนามัยอย่างเข้มงวด",
+            },
+            {
+              title: "ขนตาพรีเมียม",
+              description: "ใช้ขนตาและกาวคุณภาพสูงเท่านั้น",
+            },
+            {
+              title: "ช่างมืออาชีพ",
+              description: "ช่างต่อขนตาที่มีใบรับรองและประสบการณ์หลายปี",
+            },
+            {
+              title: "ดูแลขนตาธรรมชาติ",
+              description: "เทคนิคที่ช่วยปกป้องและไม่ทำร้ายขนตาจริง",
+            },
+          ],
+        },
 
         // Cosmetic Call to Action
         cosmetic: {
@@ -1110,11 +1186,12 @@ i18n.use(initReactI18next).init({
         },
 
         //eyelash Call to Action
-        "lashcta": {
-  "title": "พร้อมเปลี่ยนลุคขนตาของคุณหรือยัง?",
-  "description": "ร่วมเป็นหนึ่งในลูกค้ามากมายที่ไว้วางใจ Rosar Nani เพื่อขนตาที่สวยงาม ประณีต และทำอย่างมืออาชีพ",
-  "button": "จองคิวตอนนี้"
-},
+        lashcta: {
+          title: "พร้อมเปลี่ยนลุคขนตาของคุณหรือยัง?",
+          description:
+            "ร่วมเป็นหนึ่งในลูกค้ามากมายที่ไว้วางใจ Rosar Nani เพื่อขนตาที่สวยงาม ประณีต และทำอย่างมืออาชีพ",
+          button: "จองคิวตอนนี้",
+        },
 
         // Footer Section
         footerBrand: "Rosar Nani",
@@ -1122,12 +1199,14 @@ i18n.use(initReactI18next).init({
           "จุดหมายส่วนตัวของคุณสำหรับอาหารรสเลิศ การบริการสปา และผลิตภัณฑ์ที่ปรับแต่งเฉพาะคุณ",
         footerDescriptionfoodsrv:
           "มอบประสบการณ์การรับประทานอาหารสุดพิเศษด้วยคุณภาพ ความหลงใหล และความใส่ใจ",
+        footerDescriptionnailsrv:
+          "รังสรรค์ลุคที่สมบูรณ์แบบด้วยนวัตกรรม สีทาเล็บคุณภาพสูง และความงามเหนือกาลเวลา",
         footerQuickLinksTitle: "ลิงก์ด่วน",
         footerQuickLinks: [
           { name: "หน้าหลัก", href: "#home" },
-          { name: "เมนู", href: "#menu" },
-          { name: "สปา", href: "#salon" },
-          { name: "ผลิตภัณฑ์", href: "#products" },
+          { name: "เล็บ", href: "/nail" },
+          { name: "ขนตา", href: "/eyelash" },
+          { name: "ผม", href: "/hair" },
           { name: "ติดต่อ", href: "#contact" },
         ],
         footerQuickLinksfoodsrv: [
@@ -1136,10 +1215,10 @@ i18n.use(initReactI18next).init({
           // { name: "Categories", href: "#categories" },
           // { name: "Quality", href: "#quality" },
           // { name: "Contact", href: "#footer" },
-          { name: "อาหาร", href: "/food" },
-          { name: "ร้านเสริมสวย", href: "/salon" },
-          { name: "สินค้า", href: "/cosmetics" },
-          { name: "ติดต่อ", href: "#contact" },
+          { name: "เล็บ", href: "/nail" },
+          { name: "ขนตา", href: "/eyelash" },
+          { name: "ผม", href: "/hair" },
+          { name: "ติดต่อ", href: "/#contact" },
         ],
         footerContactTitle: "ข้อมูลติดต่อ",
         footerContact: {
