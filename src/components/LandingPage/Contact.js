@@ -140,7 +140,7 @@ export function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     className={`w-full p-3 border rounded-md focus:outline-none focus:ring-2 ${
-                      errors.name ? "border-red-500 focus:ring-red-500" : "focus:ring-purple-500"
+                      errors.name ? "border-red-500 focus:ring-red-500" : "focus:#419fa4"
                     }`}
                     placeholder={t("namePlaceholder")}
                   />
@@ -159,7 +159,7 @@ export function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     className={`w-full p-3 border rounded-md focus:outline-none focus:ring-2 ${
-                      errors.email ? "border-red-500 focus:ring-red-500" : "focus:ring-purple-500"
+                      errors.email ? "border-red-500 focus:ring-red-500" : "focus:#419fa4"
                     }`}
                     placeholder={t("emailPlaceholder")}
                   />
@@ -178,7 +178,7 @@ export function Contact() {
                     onChange={handleChange}
                     rows={5}
                     className={`w-full p-3 border rounded-md focus:outline-none focus:ring-2 ${
-                      errors.message ? "border-red-500 focus:ring-red-500" : "focus:ring-purple-500"
+                      errors.message ? "border-red-500 focus:ring-red-500" : "focus:#419fa4"
                     }`}
                     placeholder={t("messagePlaceholder")}
                   ></textarea>
