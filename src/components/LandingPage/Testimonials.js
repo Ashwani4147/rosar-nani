@@ -164,9 +164,8 @@ export function Testimonials() {
             {testimonials.map((_, index) => (
               <button
                 key={index}
-                className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                  index === currentSlide ? "bg-[#419fa4]" : "bg-gray-300"
-                }`}
+                className={`w-3 h-3 rounded-full transition-colors duration-300 ${index === currentSlide ? "bg-[#419fa4]" : "bg-gray-300"
+                  }`}
                 onClick={() => goToSlide(index)}
               />
             ))}

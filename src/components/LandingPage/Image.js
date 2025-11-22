@@ -6,12 +6,12 @@ const ImageAndText = () => {
   // const imageUrl =
   //   "https://images.unsplash.com/photo-1629195352884-1ec52b94ffa7";
 
-  const imageUrl= "/homeImg.png"
+  const imageUrl = "/homeImg.png"
 
   // Function to scroll to the "services" section
   const handleExploreClick = () => {
     const section = document.getElementById("services");
-    
+
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -35,11 +35,11 @@ const ImageAndText = () => {
       <div className="absolute inset-0 flex items-center justify-center p-4 pt-40">
         <div className="text-center text-white">
           {/* Title */}
-          <h1 className="text-6xl font-bold mb-4"  style={{ color: "#d4af37" }} >{t("hero.landtitle")}</h1>
-          
+          <h1 className="text-6xl font-bold mb-4" style={{ color: "#d4af37" }} >{t("hero.landtitle")}</h1>
+
           {/* Subtitle */}
           <p className="text-xl mb-8">{t("hero.landsubtitle")}</p>
-          
+
           {/* Button */}
           <button
             onClick={handleExploreClick}

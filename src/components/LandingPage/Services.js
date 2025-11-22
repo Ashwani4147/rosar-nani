@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 export function Services() {
-  const { t, i18n } = useTranslation(); 
+  const { t, i18n } = useTranslation();
   const hoverOverlayColor = "rgba(65, 159, 164, 0.2)";
 
   // Define services array with routing links and image
@@ -16,19 +16,35 @@ export function Services() {
       //   "https://images.unsplash.com/photo-1757358958170-501b384915b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwZm9vZCUyMGRlbGljYWNpZXN8ZW58MXx8fHwxNzU3NTczMDU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       link: "/nail",
     },
+    // {
+    //   titleKey: "servicesList.1.title",
+    //   descriptionKey: "servicesList.1.description",
+    //   image:
+    //     "https://images.unsplash.com/photo-1731514771613-991a02407132?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxzYWxvbiUyMHNwYSUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NTc1NzMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    //   link: "/salon",
+    // },
     {
       titleKey: "servicesList.1.title",
       descriptionKey: "servicesList.1.description",
-      image:
-        "https://images.unsplash.com/photo-1731514771613-991a02407132?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxzYWxvbiUyMHNwYSUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NTc1NzMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      link: "/salon",
+      image: "/thaiHair.png",
+      // image:
+      //   "https://images.unsplash.com/photo-1731514771613-991a02407132?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxzYWxvbiUyMHNwYSUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NTc1NzMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      link: "/hair",
     },
+    // {
+    //   titleKey: "servicesList.2.title",
+    //   descriptionKey: "servicesList.2.description",
+    //   image:
+    //     "https://images.unsplash.com/photo-1644641811682-0439fd0185d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxjb3NtZXRpYyUyMHByb2R1Y3RzJTIwc2tpbmNhcmV8ZW58MXx8fHwxNzU3NTczMDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    //   link: "/cosmetics",
+    // },
     {
       titleKey: "servicesList.2.title",
       descriptionKey: "servicesList.2.description",
-      image:
-        "https://images.unsplash.com/photo-1644641811682-0439fd0185d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxjb3NtZXRpYyUyMHByb2R1Y3RzJTIwc2tpbmNhcmV8ZW58MXx8fHwxNzU3NTczMDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      link: "/cosmetics",
+      image: "/eyeLash.png",
+      // image:
+      //   "https://images.unsplash.com/photo-1644641811682-0439fd0185d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxjb3NtZXRpYyUyMHByb2R1Y3RzJTIwc2tpbmNhcmV8ZW58MXx8fHwxNzU3NTczMDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      link: "/eyeLash",
     },
   ];
 
@@ -52,8 +68,8 @@ export function Services() {
           {servicesData.map((service, index) => (
             <Link
               key={index}
-          //    to={`/${currentLang}${service.link}`} // ✅ language prefix
-          to={service.link}   // ✅ no language prefix
+              //    to={`/${currentLang}${service.link}`} // ✅ language prefix
+              to={service.link}   // ✅ no language prefix
               className="group overflow-hidden border-0 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white block"
             >
               <div className="relative h-64 overflow-hidden">

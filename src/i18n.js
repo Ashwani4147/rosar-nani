@@ -65,6 +65,11 @@ i18n.use(initReactI18next).init({
           nailsubtitle:
             "Where artistry meets elegance in every detail. Experience luxury nail care with precision and style.",
 
+          hairtitle: "Hair Perfection that Inspires",
+          hairsubtitle:
+            "Enhance your style with beautifully crafted hair services. Expert techniques, smooth finishes, and naturally stunning results that last.",
+
+
           button: "Explore ",
         },
 
@@ -94,6 +99,11 @@ i18n.use(initReactI18next).init({
           heading: "Lashes that Define Your Beauty",
           description:
             "From natural volume to dramatic length, every lash extension is meticulously applied with precision and care. Discover treatments designed to enhance your natural beauty and frame your eyes perfectly.",
+        },
+        mainHeadingHair: {
+          heading: "Hair That Elevates Your Beauty",
+          description:
+            "From sleek styling to voluminous finishes, every strand is treated with expert care and precision. Discover hair services designed to enhance your natural beauty and create a look that perfectly frames your face..",
         },
 
         // Categories Section
@@ -223,6 +233,31 @@ i18n.use(initReactI18next).init({
           },
         ],
 
+        //Hair Categories
+        HairSectionTitle: "Our Signature Services",
+        Hair: [
+          {
+            title: "Hair Cut & Style",
+            description:
+              "Stylish, face-enhancing cuts with professional finishing for both men and women. Our stylists craft looks that match your personality and daily lifestyle.",
+          },
+          {
+            title: "Hair Spa",
+            description:
+              "A relaxing service combining scalp massage, nourishing mask, and gentle steam. Perfect for improving hair health, adding shine, and relieving stress.",
+          },
+          {
+            title: "Hair Coloring",
+            description:
+              "Beautiful, long-lasting color services—from full color and touch-ups to highlights, balayage, and ombré. Customized shades that complement your skin tone and style.",
+          },
+          {
+            title: "Hair Straightening / Rebonding",
+            description:
+              "Smooth, long-lasting straightening or soft, natural volume perms. Ideal for achieving sleek, manageable hair in Thailand’s humid weather..",
+          },
+        ],
+
         // About Section
         aboutTitle: "About Rosar Nani",
         aboutText:
@@ -335,6 +370,28 @@ i18n.use(initReactI18next).init({
             {
               title: "Safe & Gentle",
               description: "Hypoallergenic products for sensitive eyes",
+            },
+          ],
+        },
+
+        //Hair Features Section
+        hairfeatures: {
+          list: [
+            {
+              title: "Expert Stylists",
+              description: "Skilled professionals delivering flawless cuts, styles, and treatments.",
+            },
+            {
+              title: "Premium Products",
+              description: "Salon-grade shampoos, conditioners, and styling products for the best results.",
+            },
+            {
+              title: "Smooth & Lasting Finish",
+              description: "Enjoy sleek, stylish hair that stays beautiful throughout the day.",
+            },
+            {
+              title: "Safe & Gentle Care",
+              description: "Nourishing formulas suitable for all hair types, even sensitive scalps.",
             },
           ],
         },
@@ -491,6 +548,33 @@ i18n.use(initReactI18next).init({
           ],
         },
 
+        //Hair quality
+        hairquality: {
+          heading: "Excellence in Every Style",
+          description:
+            "We ensure every hair service meets the highest standards of precision, care, and beauty.",
+          badge: "5-Star Service",
+
+          features: [
+            {
+              title: "Sanitized Tools",
+              description: "Strict hygiene, clean equipment, and safe practices for every client.",
+            },
+            {
+              title: "Premium Products",
+              description: "Salon-grade shampoos, conditioners, and styling products for flawless results.",
+            },
+            {
+              title: "Expert Stylists",
+              description: "Skilled professionals with years of experience in cutting, styling, and hair care.",
+            },
+            {
+              title: "Healthy Hair Care",
+              description: "Techniques designed to protect hair health, enhance shine, and maintain natural strength.",
+            },
+          ],
+        },
+
         // Cosmetic Call to Action
         cosmetic: {
           cta: {
@@ -533,7 +617,15 @@ i18n.use(initReactI18next).init({
         lashcta: {
           title: "Ready to Transform Your Lashes?",
           description:
-            "Join thousands of satisfied clients who trust Rosar Nani for beautifully crafted lash extensions and premium eyelash treatments.",
+           "Join countless happy clients who trust Rak Nani for stunning lashes, expert lash services, and premium beauty care.",
+          button: "Book Appointment",
+        },
+
+         // Hair Call to Action
+        haircta: {
+          title: "Ready to Transform Your Hair?",
+          description:
+            "Join countless happy clients who trust Rak Nani for beautifully styled hair, expert treatments, and premium salon care.",
           button: "Book Appointment",
         },
 
@@ -630,20 +722,31 @@ i18n.use(initReactI18next).init({
             link: "/nail",
           },
           {
-            title: "Salon Treatments",
+            title: "Hair Magic",
             description:
-              "Indulge in rejuvenating spa and salon services designed to refresh your mind, body, and spirit with personalized care.",
-            image:
-              "https://images.unsplash.com/photo-1731514771613-991a02407132?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxzYWxvbiUyMHNwYSUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NTc1NzMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-            link: "/salon",
+              "Transform your look with smooth, stylish, and flawless hair that enhances your natural beauty and boosts your confidence.",
+            image: "/thaiHair.png",
+            // image:
+            //   "https://images.unsplash.com/photo-1731514771613-991a02407132?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxzYWxvbiUyMHNwYSUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NTc1NzMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            link: "/hair",
           },
+          // {
+          //   title: "Customized Products",
+          //   description:
+          //     "Discover premium cosmetic and wellness products specially formulated to match your skin type and personal preferences.",
+          //   image:
+          //     "https://images.unsplash.com/photo-1644641811682-0439fd0185d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxjb3NtZXRpYyUyMHByb2R1Y3RzJTIwc2tpbmNhcmV8ZW58MXx8fHwxNzU3NTczMDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          //   link: "/cosmetics",
+          // },
+
           {
-            title: "Customized Products",
+            title: "Lash Elegance",
             description:
-              "Discover premium cosmetic and wellness products specially formulated to match your skin type and personal preferences.",
-            image:
-              "https://images.unsplash.com/photo-1644641811682-0439fd0185d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxjb3NtZXRpYyUyMHByb2R1Y3RzJTIwc2tpbmNhcmV8ZW58MXx8fHwxNzU3NTczMDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-            link: "/cosmetics",
+              "Enhance your eyes with beautifully refined, lightweight lashes that add natural length, definition, and timeless sophistication.",
+            image: "/eyeLash.png",
+            // image:
+            //   "https://images.unsplash.com/photo-1644641811682-0439fd0185d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxjb3NtZXRpYyUyMHByb2R1Y3RzJTIwc2tpbmNhcmV8ZW58MXx8fHwxNzU3NTczMDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            link: "/eyeLash",
           },
         ],
       },
@@ -718,10 +821,14 @@ i18n.use(initReactI18next).init({
           eyelashtitle: "ขนตาสวยเป๊ะที่สะกดทุกสายตา",
           eyelashsubtitle:
             "ยกระดับความงามของดวงตาด้วยงานต่อขนตาสุดหรู ประณีตทุกเส้น สวยฟู ดูเป็นธรรมชาติและติดทนนาน",
-            
+
           nailtitle: "ความสมบูรณ์แบบของเล็บปลายนิ้วของคุณ",
           nailsubtitle:
             "ที่ที่งานศิลป์ผสานกับความงดงามในทุกรายละเอียด สัมผัสการดูแลเล็บระดับลักชัวรีอย่างพิถีพิถันและมีสไตล์",
+
+          hairtitle: "ผมสวยสมบูรณ์แบบที่สร้างแรงบันดาลใจ",
+          hairsubtitle:
+            "เสริมสไตล์ของคุณด้วยบริการทำผมที่ปราณีต ลงเทคนิคมืออาชีพ ให้ผมนุ่มสวยและดูเป็นธรรมชาติอย่างยาวนาน",
 
           button: "สำรวจเมนู",
         },
@@ -751,6 +858,11 @@ i18n.use(initReactI18next).init({
           heading: "ขนตาสวยงามที่ช่วยเสริมความงามในแบบของคุณ",
           description:
             "ตั้งแต่ลุคธรรมชาติไปจนถึงความยาวที่โดดเด่น ทุกเส้นขนตาต่อถูกทำอย่างประณีต ใส่ใจทุกรายละเอียด มอบความสวยที่เสริมเสน่ห์และกรอบดวงตาของคุณอย่างสมบูรณ์แบบ",
+        },
+        mainHeadingHair: {
+          heading: "ผมสวยที่ยกระดับความงามของคุณ",
+          description:
+            "ตั้งแต่การจัดแต่งทรงที่เรียบหรูจนถึงลุคผมหนามีน้ำหนัก ทุกเส้นผมได้รับการดูแลอย่างพิถีพิถันโดยผู้เชี่ยวชาญ ค้นพบบริการทำผมที่ออกแบบมาเพื่อเสริมความงามตามธรรมชาติของคุณ และสร้างลุคที่รับกับรูปหน้าอย่างลงตัว",
         },
 
         // Categories Section
@@ -879,6 +991,32 @@ i18n.use(initReactI18next).init({
               "ยกโคนขนตาให้โค้งงอน พร้อมย้อมสีเพื่อให้ขนตาดูคมชัด โดยไม่ต้องต่อขนตา",
           },
         ],
+
+        //Hair Categories
+        HairSectionTitle: "บริการซิกเนเจอร์ของเรา",
+        Hair: [
+          {
+            title: "ตัดและจัดแต่งทรงผม",
+            description:
+              "ทรงผมที่ทันสมัยและเสริมรูปหน้า พร้อมงานเก็บทรงอย่างมืออาชีพสำหรับทั้งผู้หญิงและผู้ชาย ช่างผมของเราพร้อมออกแบบลุคที่เข้ากับบุคลิกและไลฟ์สไตล์ประจำวันของคุณ",
+          },
+          {
+            title: "แฮร์สปา",
+            description:
+              "บริการผ่อนคลายที่ผสานการนวดหนังศีรษะ มาส์กบำรุง และไอน้ำอุ่น ช่วยฟื้นฟูสุขภาพเส้นผม เพิ่มความเงางาม และลดความเครียดได้เป็นอย่างดี",
+          },
+          {
+            title: "การทำสีผม",
+            description:
+              "บริการทำสีผมที่สวยงามและติดทนนาน ตั้งแต่ทำสีทั้งศีรษะ เก็บโคนไล่สี ไฮไลต์ บาลายาจ ไปจนถึงออมเบร เลือกเฉดสีที่เข้ากับโทนผิวและสไตล์ของคุณโดยเฉพาะ",
+          },
+          {
+            title: "ยืดผม / รีบอนดิ้ง",
+            description:
+              "บริการยืดผมให้เรียบลื่น ตรงสวยติดทนนาน หรือดัดวอลลุ่มนุ่มเป็นธรรมชาติ เหมาะสำหรับลุคผมที่จัดทรงง่ายในสภาพอากาศชื้นของประเทศไทย",
+          },
+        ],
+
 
         // About Section
         aboutTitle: "เกี่ยวกับ Rosar Nani",
@@ -1021,6 +1159,28 @@ i18n.use(initReactI18next).init({
           ],
         },
 
+        //hair features
+        hairfeatures: {
+          list: [
+            {
+              title: "ช่างผมผู้เชี่ยวชาญ",
+              description: "มืออาชีพมากประสบการณ์ มอบทรงผม ตัด ซอย และทรีทเมนต์อย่างไร้ที่ติ",
+            },
+            {
+              title: "ผลิตภัณฑ์คุณภาพพรีเมียม",
+              description: "แชมพู ครีมนวด และผลิตภัณฑ์จัดแต่งทรงคุณภาพระดับซาลอน เพื่อผลลัพธ์ที่ดีที่สุด",
+            },
+            {
+              title: "ผิวสัมผัสเรียบลื่นและติดทนนาน",
+              description: "เพลิดเพลินกับเส้นผมที่สวยเรียบ เงางาม และคงความงดงามได้ตลอดทั้งวัน",
+            },
+            {
+              title: "การดูแลที่ปลอดภัยและอ่อนโยน",
+              description: "สูตรบำรุงที่เหมาะกับทุกสภาพผม แม้หนังศีรษะที่บอบบาง",
+            },
+          ],
+        },
+
         // Quality Sections
         cosmeticsquality: {
           heading: "คุณภาพที่คุณวางใจได้",
@@ -1150,6 +1310,37 @@ i18n.use(initReactI18next).init({
           ],
         },
 
+        //Hair quality
+        hairquality: {
+          heading: "ความงามที่สมบูรณ์แบบในทุกสไตล์",
+          description:
+            "เราพิถีพิถันในทุกขั้นตอน เพื่อให้ทุกบริการทำผมได้มาตรฐานสูงสุด ทั้งความแม่นยำ การดูแล และความสวยงาม",
+          badge: "บริการระดับ 5 ดาว",
+
+          features: [
+            {
+              title: "อุปกรณ์ปลอดเชื้อ",
+              description: "ความสะอาดเข้มงวด อุปกรณ์สะอาดปลอดภัย และขั้นตอนที่ได้มาตรฐานสำหรับลูกค้าทุกคน",
+            },
+            {
+              title: "ผลิตภัณฑ์คุณภาพพรีเมียม",
+              description:
+                "แชมพู ครีมนวด และผลิตภัณฑ์จัดแต่งทรงผมคุณภาพระดับซาลอน เพื่อผลลัพธ์ที่ยอดเยี่ยมไร้ที่ติ",
+            },
+            {
+              title: "ช่างผมมืออาชีพ",
+              description:
+                "ผู้เชี่ยวชาญมากประสบการณ์ด้านการตัดแต่งทรงผม การออกแบบทรง และการดูแลเส้นผม",
+            },
+            {
+              title: "การดูแลผมอย่างมีสุขภาพ",
+              description:
+                "เทคนิคที่ออกแบบมาเพื่อปกป้องสุขภาพเส้นผม เพิ่มความเงางาม และคงความแข็งแรงตามธรรมชาติ",
+            },
+          ],
+        },
+
+
         // Cosmetic Call to Action
         cosmetic: {
           cta: {
@@ -1185,13 +1376,22 @@ i18n.use(initReactI18next).init({
           },
         },
 
-        //eyelash Call to Action
-        lashcta: {
-          title: "พร้อมเปลี่ยนลุคขนตาของคุณหรือยัง?",
-          description:
-            "ร่วมเป็นหนึ่งในลูกค้ามากมายที่ไว้วางใจ Rosar Nani เพื่อขนตาที่สวยงาม ประณีต และทำอย่างมืออาชีพ",
-          button: "จองคิวตอนนี้",
-        },
+        // EyeLash Call to Action
+lashcta: {
+  title: "พร้อมเปลี่ยนลุคขนตาของคุณหรือยัง?",
+  description:
+    "ร่วมเป็นหนึ่งในลูกค้ามากมายที่ไว้วางใจ Rak Nani เพื่อขนตาสวยโดดเด่น บริการต่อขนตามืออาชีพ และการดูแลความงามระดับพรีเมียม",
+  button: "เยี่ยมชมตอนนี้",
+},
+
+// Hair Call to Action
+haircta: {
+  title: "พร้อมเปลี่ยนลุคผมของคุณหรือยัง?",
+  description:
+    "ร่วมเป็นหนึ่งในลูกค้ามากมายที่ไว้วางใจ Rak Nani เพื่อทรงผมที่สวยงาม บริการทำผมโดยผู้เชี่ยวชาญ และการดูแลระดับซาลอนพรีเมียม",
+  button: "เยี่ยมชมตอนนี้",
+},
+
 
         // Footer Section
         footerBrand: "Rosar Nani",
@@ -1273,22 +1473,40 @@ i18n.use(initReactI18next).init({
             //   "https://images.unsplash.com/photo-1757358958170-501b384915b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwZm9vZCUyMGRlbGljYWNpZXN8ZW58MXx8fHwxNzU3NTczMDU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
             link: "/nail ",
           },
+          // {
+          //   title: "บริการสปาและซาลอน",
+          //   description:
+          //     "ผ่อนคลายด้วยบริการสปาและซาลอนที่ออกแบบมาเพื่อเติมเต็มร่างกาย จิตใจ และจิตวิญญาณของคุณ",
+          //   image:
+          //     "https://images.unsplash.com/photo-1731514771613-991a02407132?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxzYWxvbiUyMHNwYSUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NTc1NzMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          //   link: "/salon",
+          // },
           {
-            title: "บริการสปาและซาลอน",
+            title: "เฮียร์ แมจิก",
             description:
-              "ผ่อนคลายด้วยบริการสปาและซาลอนที่ออกแบบมาเพื่อเติมเต็มร่างกาย จิตใจ และจิตวิญญาณของคุณ",
-            image:
-              "https://images.unsplash.com/photo-1731514771613-991a02407132?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxzYWxvbiUyMHNwYSUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NTc1NzMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-            link: "/salon",
+              "เปลี่ยนลุคของคุณให้สวยโดดเด่นด้วยผมที่เรียบลื่น มีสไตล์ และดูไร้ที่ติ เสริมความงามตามธรรมชาติและเพิ่มความมั่นใจในทุกๆ วัน",
+            image: "/thaiHair.png",
+            // image:
+            //   "https://images.unsplash.com/photo-1731514771613-991a02407132?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxzYWxvbiUyMHNwYSUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NTc1NzMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            link: "/hair",
           },
           {
-            title: "ผลิตภัณฑ์ปรับแต่งเฉพาะ",
+            title: "ขนตาเอลิแกนซ์",
             description:
-              "ค้นพบผลิตภัณฑ์เครื่องสำอางและสุขภาพระดับพรีเมียมที่ออกแบบเฉพาะสำหรับสภาพผิวและความชอบส่วนตัวของคุณ",
-            image:
-              "https://images.unsplash.com/photo-1644641811682-0439fd0185d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxjb3NtZXRpYyUyMHByb2R1Y3RzJTIwc2tpbmNhcmV8ZW58MXx8fHwxNzU3NTczMDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-            link: "/cosmetics",
+              "เติมความโดดเด่นให้ดวงตาของคุณด้วยขนตาที่สวยละมุน ดูเบาสบาย ให้ความยาวและความคมชัดอย่างเป็นธรรมชาติ เพิ่มเสน่ห์ที่หรูหราอย่างเหนือระดับ",
+            image: "/eyeLash.png",
+            // image:
+            //   "https://images.unsplash.com/photo-1731514771613-991a02407132?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxzYWxvbiUyMHNwYSUyMHRyZWF0bWVudHxlbnwxfHx8fDE3NTc1NzMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            link: "/eyeLash",
           },
+          // {
+          //   title: "ผลิตภัณฑ์ปรับแต่งเฉพาะ",
+          //   description:
+          //     "ค้นพบผลิตภัณฑ์เครื่องสำอางและสุขภาพระดับพรีเมียมที่ออกแบบเฉพาะสำหรับสภาพผิวและความชอบส่วนตัวของคุณ",
+          //   image:
+          //     "https://images.unsplash.com/photo-1644641811682-0439fd0185d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxjb3NtZXRpYyUyMHByb2R1Y3RzJTIwc2tpbmNhcmV8ZW58MXx8fHwxNzU3NTczMDU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          //   link: "/cosmetics",
+          // },
         ],
       },
     },

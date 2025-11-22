@@ -39,8 +39,8 @@ function Header() {
     // { name: "Food Service", href: "home", type: "section" },
     // { name: "Salon Service", href: "/salon", type: "page" },
     // { name: "Cosmetics Service", href: "/cosmetics", type: "page" },
-    { name: t("serviceNail"), href: "home", type: "section" },
-    { name: t("serviceLash"), href: "/eyelash", type: "page" },
+    { name: t("serviceLash"), href: "home", type: "section" },
+     { name: t("serviceNail"), href: "/nail", type: "page" },
     { name: t("serviceHair"), href: "/hair", type: "page" },
   ];
 

@@ -14,6 +14,7 @@ import Salon from './components/SalonService/Salon';
 import Cosmetics from './components/CosmeticsService/Cosmetics';
 import Nail from './components/NailService/Nail';
 import EyeLash from './components/EyeLashService/EyeLash';
+import Hair from './components/HairService/Hair';
 import ScrollToTop from './ScrollToTop';
 
 const App = () => {
@@ -62,10 +63,11 @@ const AppWithRouter = () => {
         <Routes>
           <Route path="/" element={<App />} />
           {/* <Route path="/food" element={<Food />} /> */}
-          <Route path="/salon" element={<Salon />} />
+          {/* <Route path="/salon" element={<Salon />} /> */}
+           <Route path="/hair" element={<Hair />} />
           {/* <Route path="/cosmetics" element={<Cosmetics />} /> */}
           <Route path="/nail" element={<Nail />} />
-          <Route path="/cosmetics" element={<EyeLash />} />
+          <Route path="/eyeLash" element={<EyeLash />} />
         </Routes>
       </Router>
     </Suspense>

@@ -10,13 +10,11 @@ export default function Categories() {
   const categoryTitleColor = "#419fa4";
   const hoverOverlayColor = "rgba(65, 159, 164, 0.2)";
 
-   const images = [
-  //   "https://images.unsplash.com/photo-1644903751036-adeda377f28d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80",
-  //   "https://images.unsplash.com/photo-1738248393412-87ecae54d5b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80",
-    "/classicLash.png",
-    "volumeLash.png",
-    "https://images.unsplash.com/photo-1661069387738-f959149d8888?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80",
-    "https://images.unsplash.com/photo-1735151226446-1d364b4adc2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80"
+  const images = [
+   "/hairCut.png",
+    "/hairSpa.png",
+    "/hairColor.png", 
+    "/hairStraight.png"
   ];
 
   const icons = [
@@ -27,9 +25,9 @@ export default function Categories() {
   ];
 
   // ⭐ i18n categories (English + Thai)
-  const categories = t("Eyelash", { returnObjects: true });
+  const categories = t("Hair", { returnObjects: true });
 
-  const sectionTitle = t("EyelashSectionTitle");
+  const sectionTitle = t("HairSectionTitle");
 
   return (
     <section
