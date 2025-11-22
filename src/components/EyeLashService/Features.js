@@ -17,7 +17,17 @@ export default function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="text-center p-8 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="
+                text-center 
+                p-8 
+                bg-white 
+                rounded-lg 
+                shadow-md 
+                hover:shadow-xl 
+                transition-transform 
+                duration-300 
+                hover:scale-105   /* ✅ same hover effect as temp */
+              "
             >
               <div
                 className="inline-flex p-4 rounded-full mb-4"
