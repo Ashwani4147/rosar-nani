@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react'; // <-- ADD useEffect here
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './i18n';
 import Header from './components/LandingPage/Header';
@@ -14,9 +14,32 @@ import Salon from './components/SalonService/Salon';
 import Cosmetics from './components/CosmeticsService/Cosmetics';
 import Nail from './components/NailService/Nail';
 import EyeLash from './components/EyeLashService/EyeLash';
-import ScrollToTop from './ScrollToTop';  // 👈 import here
+import ScrollToTop from './ScrollToTop';
 
 const App = () => {
+  
+  // 🚀 SCROLL LOGIC ADDED HERE
+  useEffect(() => {
+    // 1. Check if a hash (e.g., #contact) is present in the URL
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1); // Extracts 'contact'
+      const element = document.getElementById(id);
+
+      // 2. Use a short timeout to wait for the component to render before scrolling
+      const timer = setTimeout(() => {
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start', // Scroll until the element is at the top of the viewport
+          });
+        }
+      }, 50); // 50ms delay
+      
+      return () => clearTimeout(timer); // Cleanup function
+    }
+  }, []); // The empty dependency array ensures this runs only on mount/initial load
+  // END OF SCROLL LOGIC
+
   return (
     <div className="bg-gray-50 min-h-screen font-sans">
       <Header />
@@ -35,7 +58,7 @@ const AppWithRouter = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Router>
-        <ScrollToTop />   {/* 👈 fixes the scroll issue */}
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<App />} />
           {/* <Route path="/food" element={<Food />} /> */}

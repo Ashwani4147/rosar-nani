@@ -26,12 +26,12 @@ function Header() {
 
   // Main nav links (mix of sections + routes)
   const navLinks = [
-    { name: t("welcomeFoodService"), href: "home", type: "section" },
+    { name: t("welcomeLashService"), href: "home", type: "section" },
     { name: t("Home"), href: "/", type: "page" },
     { name: t("servicesLabel1"), href: "services", type: "section" },
     { name: t("Categories"), href: "categories", type: "section" },
     { name: t("qualitysrv"), href: "quality", type: "section" },
-    { name: t("contact"), href: "contact", type: "section" },
+    { name: t("contact"), href: "footer", type: "section" },
   ];
 
   // Service sub-links (some are new pages)
@@ -39,9 +39,9 @@ function Header() {
     // { name: "Food Service", href: "home", type: "section" },
     // { name: "Salon Service", href: "/salon", type: "page" },
     // { name: "Cosmetics Service", href: "/cosmetics", type: "page" },
-    { name: t("serviceFood"), href: "home", type: "section" },
-    { name: t("serviceSalon"), href: "/salon", type: "page" },
-    { name: t("serviceCosmetics"), href: "/cosmetics", type: "page" },
+    { name: t("serviceNail"), href: "home", type: "section" },
+    { name: t("serviceLash"), href: "/eyelash", type: "page" },
+    { name: t("serviceHair"), href: "/hair", type: "page" },
   ];
 
   // Handle in-page navigation (smooth scroll)
