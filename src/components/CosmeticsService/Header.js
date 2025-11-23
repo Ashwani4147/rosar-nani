@@ -128,7 +128,7 @@ function Header() {
             to="/"
             className="flex items-center hover:scale-105 transition-transform duration-200"
           >
-            <img src={logos1} alt="Rosar Nani Logo" className="h-8 md:h-10 w-auto" />
+            <img src={logos1} alt="Rak Nani Logo" className="h-14 md:h-16 w-auto" />
           </Link>
         </div>
 
