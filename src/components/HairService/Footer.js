@@ -51,7 +51,7 @@ export default function Footer() {
                 {t("footerBrand")}
               </h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                {t("footerDescriptioncosmeticssrv")}
+                {t("footerDescriptionhairsrv")}
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (

@@ -26,12 +26,12 @@ function Header() {
 
   // Main nav links (mix of sections + routes)
   const navLinks = [
-    { name: t("welcomeFoodService"), href: "home", type: "section" },
+    { name: t("welcomeHairService"), href: "home", type: "section" },
     { name: t("Home"), href: "/", type: "page" },
     { name: t("servicesLabel1"), href: "services", type: "section" },
     { name: t("Categories"), href: "categories", type: "section" },
     { name: t("qualitysrv"), href: "quality", type: "section" },
-    { name: t("contact"), href: "contact", type: "section" },
+    { name: t("contact"), href: "footer", type: "section" },
   ];
 
   // Service sub-links (some are new pages)
@@ -39,9 +39,9 @@ function Header() {
     // { name: "Food Service", href: "home", type: "section" },
     // { name: "Salon Service", href: "/salon", type: "page" },
     // { name: "Cosmetics Service", href: "/cosmetics", type: "page" },
-    { name: t("serviceHair"), href: "home", type: "section" },
-    { name: t("serviceLash"), href: "/eyelash", type: "page" },
-    { name: t("serviceNail"), href: "/nail", type: "page" },
+    { name: t("serviceLash"), href: "home", type: "section" },
+     { name: t("serviceNail"), href: "/nail", type: "page" },
+    { name: t("serviceHair"), href: "/hair", type: "page" },
   ];
 
   // Handle in-page navigation (smooth scroll)
@@ -167,11 +167,12 @@ function Header() {
                 <button
                   ref={servicesButtonRef}
                   onClick={() => setIsServicesClickedDesktop((prev) => !prev)}
-                  className={`font-medium transition-colors duration-300 hover:scale-105 ${activeSection === link.href ||
-                      location.pathname === link.href
+                  className={`font-medium transition-colors duration-300 hover:scale-105 ${
+                    activeSection === link.href ||
+                    location.pathname === link.href
                       ? "text-[#419fa4] border-b-2 border-[#419fa4] font-semibold"
                       : "text-gray-700 hover:text-[#419fa4]"
-                    }`}
+                  }`}
                 >
                   {link.name}
                 </button>
@@ -211,10 +212,11 @@ function Header() {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`font-medium transition-colors duration-300 hover:scale-105 ${location.pathname === link.href
+                className={`font-medium transition-colors duration-300 hover:scale-105 ${
+                  location.pathname === link.href
                     ? "text-[#419fa4] border-b-2 border-[#419fa4] font-semibold"
                     : "text-gray-700 hover:text-[#419fa4]"
-                  }`}
+                }`}
               >
                 {link.name}
               </Link>
@@ -222,10 +224,11 @@ function Header() {
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className={`font-medium transition-colors duration-300 hover:scale-105 ${activeSection === link.href
+                className={`font-medium transition-colors duration-300 hover:scale-105 ${
+                  activeSection === link.href
                     ? "text-[#419fa4] border-b-2 border-[#419fa4] font-semibold"
                     : "text-gray-700 hover:text-[#419fa4]"
-                  }`}
+                }`}
               >
                 {link.name}
               </button>
@@ -272,10 +275,11 @@ function Header() {
                 <div key={link.href} className="w-full">
                   <button
                     onClick={() => setIsServicesOpenMobile((prev) => !prev)}
-                    className={`w-full text-center py-3 text-lg transition-colors duration-300 ${activeSection === link.href
+                    className={`w-full text-center py-3 text-lg transition-colors duration-300 ${
+                      activeSection === link.href
                         ? "text-[#419fa4] bg-gray-100 font-bold"
                         : "text-gray-700 hover:bg-gray-100"
-                      }`}
+                    }`}
                   >
                     {link.name}
                   </button>
@@ -312,10 +316,11 @@ function Header() {
                 <Link
                   key={link.href}
                   to={link.href}
-                  className={`w-full text-center py-3 text-lg transition-colors duration-300 ${location.pathname === link.href
+                  className={`w-full text-center py-3 text-lg transition-colors duration-300 ${
+                    location.pathname === link.href
                       ? "text-[#419fa4] bg-gray-100 font-bold"
                       : "text-gray-700 hover:bg-gray-100"
-                    }`}
+                  }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
@@ -324,10 +329,11 @@ function Header() {
                 <button
                   key={link.href}
                   onClick={() => handleNavClick(link.href)}
-                  className={`w-full text-center py-3 text-lg transition-colors duration-300 ${activeSection === link.href
+                  className={`w-full text-center py-3 text-lg transition-colors duration-300 ${
+                    activeSection === link.href
                       ? "text-[#419fa4] bg-gray-100 font-bold"
                       : "text-gray-700 hover:bg-gray-100"
-                    }`}
+                  }`}
                 >
                   {link.name}
                 </button>

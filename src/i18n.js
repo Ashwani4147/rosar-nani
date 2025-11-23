@@ -8,7 +8,7 @@ i18n.use(initReactI18next).init({
         comingsoon: "Coming Soon",
         backToHome: "Back to Home",
         // General
-        welcome: "Welcome to Rosar Nani",
+        welcome: "Welcome to Rak Nani",
         welcomeFoodService: "Welcome to Food Service",
         welcomeNailService: "Welcome to Nail Service",
         welcomeLashService: "Welcome to Eye Lash Service",
@@ -23,7 +23,7 @@ i18n.use(initReactI18next).init({
         qualitysrv: "Quality You Can Trust",
         testimonials: "What Our Customers Say",
         contact: "Contact Us",
-        footer: "© 2025 Rosar Nani. All rights reserved.",
+        footer: "© 2025 Rak Nani. All rights reserved.",
         services: [
           { name: "Food Service", href: "/food", type: "page" },
           // { name: "Nail Service", href: "/nail", type: "page" },
@@ -68,7 +68,6 @@ i18n.use(initReactI18next).init({
           hairtitle: "Hair Perfection that Inspires",
           hairsubtitle:
             "Enhance your style with beautifully crafted hair services. Expert techniques, smooth finishes, and naturally stunning results that last.",
-
 
           button: "Explore ",
         },
@@ -259,13 +258,13 @@ i18n.use(initReactI18next).init({
         ],
 
         // About Section
-        aboutTitle: "About Rosar Nani",
+        aboutTitle: "About Rak Nani",
         aboutText:
-          "Rosar Nani is a platform/shop which provides you food delicacies and soothing salon experience along with cosmetic products specially customised for you. We believe in creating personalized experiences that nourish both your body and soul, offering the perfect blend of culinary delights and wellness treatments tailored to your unique preferences.",
+          "Rak Nani is a platform/shop that provides high-quality nail, eyelash, and hair services specially tailored for you. We believe in creating personalized experiences that enhance your beauty and confidence, offering a perfect blend of care and attention designed to match your unique style and preferences.",
 
         aboutTitle1: "Our Unique Experience",
         aboutText1:
-          "At Rosar Nani, every visit is a delightful escape. Handpicked culinary treats and rejuvenating wellness moments crafted just for you, leaving you refreshed and inspired.",
+          "At Rak Nani, every visit is a delightful escape. Thoughtfully curated nail, hair, and eyelash services are crafted just for you, leaving you refreshed, confident, and inspired.",
 
         // Contact Section
         contactTitle: "Get in Touch",
@@ -317,38 +316,38 @@ i18n.use(initReactI18next).init({
           {
             name: "Sarah Johnson",
             rating: 5,
-            text: "Rosar Nani exceeded all my expectations! The food was absolutely divine, and the spa treatment left me feeling completely rejuvenated. The personalized approach made all the difference.",
-            service: "Food & Spa Experience",
+            text: "Rak Nani did an amazing job! My nails look beautiful, my hair feels fresh, and my lashes came out perfect. Really happy with their service!",
+            service: "Complete Experience",
           },
           {
-            name: "Michael Chen",
+            name: "Rattima Sukcharoen",
             rating: 5,
-            text: "The customized skincare products are amazing! They really took the time to understand my skin type and created products that work perfectly for me. Highly recommend!",
-            service: "Customized Products",
+            text: "I’m really impressed with their hair service! They understood exactly what my hair needed and the result looked so smooth and healthy. I’ll definitely come back again!",
+            service: "Hair Service",
           },
           {
             name: "Emily Rodriguez",
             rating: 5,
-            text: "What a unique concept! Being able to enjoy gourmet food and then pamper myself with salon treatments all in one place is incredible. The quality is top-notch.",
-            service: "Complete Experience",
+            text: "I really liked their nail service. The staff were gentle, and my nails came out neat and pretty. It felt relaxing too.",
+            service: "Nail Service",
           },
           {
-            name: "David Thompson",
+            name: "Kanrawee Phiphatchai",
             rating: 5,
             text: "The attention to detail is remarkable. Every aspect of my visit was tailored to my preferences. The staff truly cares about customer satisfaction.",
             service: "Personalized Service",
           },
           {
-            name: "Rohan B.",
-            service: "Complete Experience",
+            name: "Mintra Sirikul",
+            service: "Lash Service",
             rating: 5,
-            text: "I loved the personalized food delicacies and relaxing wellness treatments. Everything felt tailored just for me.",
+            text: "I loved the eyelash service! The staff were gentle, and the lashes came out perfectly. It really felt like the service was tailored just for me.",
           },
           {
-            name: "Ashwani K.",
+            name: "Pimchanok Thanawat",
             service: "Complete Experience",
             rating: 5,
-            text: "Rosar Nani provides a perfect combination of delicious food and soothing treatments.",
+            text: "Rak Nani provides excellent nail and hair services, making the whole experience complete and satisfying.",
           },
         ],
 
@@ -379,19 +378,23 @@ i18n.use(initReactI18next).init({
           list: [
             {
               title: "Expert Stylists",
-              description: "Skilled professionals delivering flawless cuts, styles, and treatments.",
+              description:
+                "Skilled professionals delivering flawless cuts, styles, and treatments.",
             },
             {
               title: "Premium Products",
-              description: "Salon-grade shampoos, conditioners, and styling products for the best results.",
+              description:
+                "Salon-grade shampoos, conditioners, and styling products for the best results.",
             },
             {
               title: "Smooth & Lasting Finish",
-              description: "Enjoy sleek, stylish hair that stays beautiful throughout the day.",
+              description:
+                "Enjoy sleek, stylish hair that stays beautiful throughout the day.",
             },
             {
               title: "Safe & Gentle Care",
-              description: "Nourishing formulas suitable for all hair types, even sensitive scalps.",
+              description:
+                "Nourishing formulas suitable for all hair types, even sensitive scalps.",
             },
           ],
         },
@@ -558,19 +561,23 @@ i18n.use(initReactI18next).init({
           features: [
             {
               title: "Sanitized Tools",
-              description: "Strict hygiene, clean equipment, and safe practices for every client.",
+              description:
+                "Strict hygiene, clean equipment, and safe practices for every client.",
             },
             {
               title: "Premium Products",
-              description: "Salon-grade shampoos, conditioners, and styling products for flawless results.",
+              description:
+                "Salon-grade shampoos, conditioners, and styling products for flawless results.",
             },
             {
               title: "Expert Stylists",
-              description: "Skilled professionals with years of experience in cutting, styling, and hair care.",
+              description:
+                "Skilled professionals with years of experience in cutting, styling, and hair care.",
             },
             {
               title: "Healthy Hair Care",
-              description: "Techniques designed to protect hair health, enhance shine, and maintain natural strength.",
+              description:
+                "Techniques designed to protect hair health, enhance shine, and maintain natural strength.",
             },
           ],
         },
@@ -590,7 +597,7 @@ i18n.use(initReactI18next).init({
           cta: {
             title: "Ready to Experience Amazing Flavors?",
             description:
-              "Join thousands of satisfied customers who have made Rosar Nani their go-to destination for exceptional food experiences.",
+              "Join thousands of satisfied customers who have made Rak Nani their go-to destination for exceptional food experiences.",
             button: "Visit Now",
           },
         },
@@ -600,7 +607,7 @@ i18n.use(initReactI18next).init({
           cta: {
             title: "Ready to Transform Your Look?",
             description:
-              "Join thousands of satisfied clients who have made Rosar Nani their trusted destination for beauty and wellness services.",
+              "Join thousands of satisfied clients who have made Rak Nani their trusted destination for beauty and wellness services.",
             button: "Visit Now",
           },
         },
@@ -609,7 +616,7 @@ i18n.use(initReactI18next).init({
         nailcta: {
           title: "Ready to Pamper Your Nails?",
           description:
-            "Join thousands of satisfied clients who have made Rosar Nani their go-to destination for beautiful, expertly crafted nails.",
+            "Join thousands of satisfied clients who have made Rak Nani their go-to destination for beautiful, expertly crafted nails.",
           button: "Book Appointment",
         },
 
@@ -617,11 +624,11 @@ i18n.use(initReactI18next).init({
         lashcta: {
           title: "Ready to Transform Your Lashes?",
           description:
-           "Join countless happy clients who trust Rak Nani for stunning lashes, expert lash services, and premium beauty care.",
+            "Join countless happy clients who trust Rak Nani for stunning lashes, expert lash services, and premium beauty care.",
           button: "Book Appointment",
         },
 
-         // Hair Call to Action
+        // Hair Call to Action
         haircta: {
           title: "Ready to Transform Your Hair?",
           description:
@@ -630,9 +637,9 @@ i18n.use(initReactI18next).init({
         },
 
         // Footer Section
-        footerBrand: "Rosar Nani",
+        footerBrand: "Rak Nani",
         footerDescription:
-          "Your personalized destination for food delicacies, salon treatments, and customized products.",
+          "Your personalized destination for nail care, hair styling, and eyelash enhancements.",
         footerDescriptionfoodsrv:
           "Bringing you exceptional food experiences with quality, passion,and care.",
         footerDescriptionsalonsrv:
@@ -641,6 +648,10 @@ i18n.use(initReactI18next).init({
           "Bringing you exceptional beauty products with quality, innovation, and timeless elegance.",
         footerDescriptionnailsrv:
           "Crafting flawless looks with innovative, high-quality nail polishes and timeless elegance.",
+        footerDescriptionlashsrv:
+          "Enhancing your natural beauty with high-quality eyelash treatments designed to give you a flawless and elegant look.",
+        footerDescriptionhairsrv:
+          "Creating stunning hairstyles with professional techniques and premium care for a smooth, elegant finish.",
         footerQuickLinksTitle: "Quick Links",
         footerQuickLinks: [
           { name: "Home", href: "#home" },
@@ -705,7 +716,7 @@ i18n.use(initReactI18next).init({
         // },
 
         footerCopyright:
-          "© 2025 Rosar Nani. All rights reserved. Designed with care for your personalized experience.",
+          "© 2025 Rak Nani. All rights reserved. Designed with care for your personalized experience.",
 
         // Services Section
         servicesTitle: "Our Services",
@@ -776,7 +787,7 @@ i18n.use(initReactI18next).init({
         backToHome: "กลับไปหน้าหลัก",
 
         // General
-        welcome: "ยินดีต้อนรับสู่ Rosar Nani",
+        welcome: "ยินดีต้อนรับสู่ Rak Nani",
         welcomeFoodService: "ยินดีต้อนรับสู่บริการอาหาร",
         welcomeNailService: "ยินดีต้อนรับสู่บริการทำเล็บ",
         welcomeLashService: "ยินดีต้อนรับสู่บริการต่อขนตา",
@@ -791,7 +802,7 @@ i18n.use(initReactI18next).init({
         qualitysrv: "คุณภาพที่คุณวางใจได้",
         testimonials: "สิ่งที่ลูกค้าของเราพูด",
         contact: "ติดต่อเรา",
-        footer: "© 2025 Rosar Nani. สงวนลิขสิทธิ์",
+        footer: "© 2025 Rak Nani. สงวนลิขสิทธิ์",
 
         serviceFood: "บริการอาหาร",
         serviceNail: "บริการทำเล็บ",
@@ -1017,15 +1028,14 @@ i18n.use(initReactI18next).init({
           },
         ],
 
-
         // About Section
-        aboutTitle: "เกี่ยวกับ Rosar Nani",
+        aboutTitle: "เกี่ยวกับ Rak Nani",
         aboutText:
-          "Rosar Nani เป็นแพลตฟอร์ม/ร้านค้าที่ให้คุณได้ลิ้มรสอาหารสุดพิเศษและประสบการณ์สปาที่ผ่อนคลายพร้อมผลิตภัณฑ์เครื่องสำอางที่ออกแบบเฉพาะสำหรับคุณ เราเชื่อในการสร้างประสบการณ์ส่วนตัวที่บำรุงทั้งร่างกายและจิตวิญญาณ ให้ผสมผสานระหว่างอาหารอร่อยและการบำบัดสุขภาพที่ปรับให้เหมาะกับความชอบของคุณ",
+          "Rak Nani เป็นแพลตฟอร์ม/ร้านที่ให้บริการทำเล็บ ต่อขนตา และทำผมแบบคุณภาพสูง พร้อมปรับให้เข้ากับความต้องการของแต่ละคนอย่างแท้จริง เราเชื่อในการสร้างประสบการณ์เฉพาะบุคคลที่ช่วยเสริมความสวยงามและความมั่นใจ มอบการดูแลที่ลงตัวและใส่ใจทุกรายละเอียดให้เหมาะกับสไตล์และความต้องการเฉพาะของคุณ",
 
         aboutTitle1: "ประสบการณ์อันเป็นเอกลักษณ์ของเรา",
         aboutText1:
-          "ที่โรซาร์ นานี ทุกการมาเยือนคือการพักผ่อนอันแสนสุข ลิ้มรสอาหารรสเลิศที่คัดสรรมาอย่างดีและช่วงเวลาแห่งการฟื้นฟูสุขภาพที่รังสรรค์ขึ้นเพื่อคุณโดยเฉพาะ มอบความสดชื่นและแรงบันดาลใจให้คุณ",
+          "ที่ Rak Nani ทุกครั้งที่มาเยือนคือช่วงเวลาแห่งความผ่อนคลาย บริการทำเล็บ ทำผม และต่อขนตาที่เลือกสรรมาอย่างพิถีพิถัน ออกแบบมาเพื่อคุณโดยเฉพาะ ทำให้คุณรู้สึกสดชื่น มั่นใจ และได้รับแรงบันดาลใจใหม่ๆ",
 
         // Contact Section
         contactTitle: "ติดต่อเรา",
@@ -1076,42 +1086,40 @@ i18n.use(initReactI18next).init({
           "ฟังความเห็นจากลูกค้าที่พึงพอใจเกี่ยวกับประสบการณ์ส่วนบุคคลของพวกเขา",
         testimonialsList: [
           {
-            name: "ซาร่าห์ จอห์นสัน",
+            name: "ซาราห์ จอห์นสัน",
             rating: 5,
-            text: "Rosar Nani เกินความคาดหมายของฉัน! อาหารอร่อยมาก และการบำบัดสปาทำให้ฉันรู้สึกสดชื่น การให้บริการแบบส่วนตัวทำให้ทุกอย่างแตกต่าง",
-            service: "ประสบการณ์อาหารและสปา",
+            text: "Rak Nani ทำได้ดีมาก! เล็บออกมาสวยงาม ผมรู้สึกสดชื่น และขนตาก็ออกมาสวยเป๊ะจริง ๆ ประทับใจมากค่ะ!",
+            service: "ประสบการณ์ครบถ้วน",
           },
           {
-            name: "ไมเคิล เฉิน",
+            name: "รัตติมา สุขเจริญ",
             rating: 5,
-            text: "ผลิตภัณฑ์ดูแลผิวแบบกำหนดเองยอดเยี่ยม! พวกเขาใช้เวลาเข้าใจสภาพผิวของฉันและสร้างผลิตภัณฑ์ที่เหมาะสมกับฉันอย่างสมบูรณ์ แนะนำอย่างยิ่ง!",
-            service: "ผลิตภัณฑ์ปรับแต่งเฉพาะ",
+            text: "ประทับใจบริการทำผมมากค่ะ! เขารู้ว่าผมของฉันต้องการอะไร และผลลัพธ์ออกมานุ่มลื่นและดูสุขภาพดีมาก จะกลับมาอีกแน่นอนค่ะ!",
+            service: "บริการทำผม",
           },
           {
             name: "เอมิลี่ โรดริเกซ",
             rating: 5,
-            text: "แนวคิดที่ไม่เหมือนใคร! ได้เพลิดเพลินกับอาหารชั้นเลิศและสปาในที่เดียวกัน คุณภาพยอดเยี่ยม",
-            service: "ประสบการณ์ครบวงจร",
+            text: "ชอบบริการทำเล็บของที่นี่มากค่ะ พนักงานทำอย่างเบามือ เล็บออกมาสวยและเรียบร้อย แถมยังรู้สึกผ่อนคลายด้วยค่ะ",
+            service: "บริการทำเล็บ",
           },
           {
-            name: "เดวิด ธอมป์สัน",
+            name: "กัลยาวี พิพัฒน์ชัย",
             rating: 5,
-            text: "ความใส่ใจในรายละเอียดยอดเยี่ยม ทุกสิ่งในระหว่างการเยี่ยมชมถูกปรับให้เหมาะกับความต้องการของฉัน ทีมงานใส่ใจความพึงพอใจของลูกค้าอย่างแท้จริง",
-            service: "บริการส่วนบุคคล",
+            text: "ความใส่ใจในรายละเอียดดีมากจริง ๆ ทุกขั้นตอนถูกปรับให้เข้ากับความต้องการของฉัน พนักงานดูแลอย่างตั้งใจค่ะ",
+            service: "บริการเฉพาะบุคคล",
           },
           {
-            // rohan
-            name: "โรฮาน บี.",
+            name: "มินตรา ศิริกุล",
+            service: "บริการต่อขนตา",
             rating: 5,
-            text: "ฉันชอบอาหารที่พิถีพิถันและทรีตเมนต์เพื่อสุขภาพที่ผ่อนคลาย ทุกอย่างดูลงตัวสำหรับฉันโดยเฉพาะ",
-            service: "ประสบการณ์ที่สมบูรณ์",
+            text: "ชอบบริการต่อขนตามากค่ะ พนักงานทำอย่างเบามือ ขนตาออกมาสวยเป๊ะ เหมือนบริการถูกออกแบบมาเพื่อฉันเลยค่ะ!",
           },
           {
-            // ashwani
-            name: "อัชวานี เค.",
+            name: "พิมชนก ธนวัฒน์",
+            service: "ประสบการณ์ครบถ้วน",
             rating: 5,
-            text: "โรซาร์ นานี มอบการผสมผสานที่ลงตัวระหว่างอาหารรสเลิศและการบำบัดที่ผ่อนคลาย",
-            service: "ประสบการณ์ที่สมบูรณ์",
+            text: "Rak Nani ให้บริการทำเล็บและทำผมได้อย่างยอดเยี่ยม ทำให้ประสบการณ์ทั้งหมดสมบูรณ์และน่าพึงพอใจมากค่ะ",
           },
         ],
 
@@ -1164,19 +1172,23 @@ i18n.use(initReactI18next).init({
           list: [
             {
               title: "ช่างผมผู้เชี่ยวชาญ",
-              description: "มืออาชีพมากประสบการณ์ มอบทรงผม ตัด ซอย และทรีทเมนต์อย่างไร้ที่ติ",
+              description:
+                "มืออาชีพมากประสบการณ์ มอบทรงผม ตัด ซอย และทรีทเมนต์อย่างไร้ที่ติ",
             },
             {
               title: "ผลิตภัณฑ์คุณภาพพรีเมียม",
-              description: "แชมพู ครีมนวด และผลิตภัณฑ์จัดแต่งทรงคุณภาพระดับซาลอน เพื่อผลลัพธ์ที่ดีที่สุด",
+              description:
+                "แชมพู ครีมนวด และผลิตภัณฑ์จัดแต่งทรงคุณภาพระดับซาลอน เพื่อผลลัพธ์ที่ดีที่สุด",
             },
             {
               title: "ผิวสัมผัสเรียบลื่นและติดทนนาน",
-              description: "เพลิดเพลินกับเส้นผมที่สวยเรียบ เงางาม และคงความงดงามได้ตลอดทั้งวัน",
+              description:
+                "เพลิดเพลินกับเส้นผมที่สวยเรียบ เงางาม และคงความงดงามได้ตลอดทั้งวัน",
             },
             {
               title: "การดูแลที่ปลอดภัยและอ่อนโยน",
-              description: "สูตรบำรุงที่เหมาะกับทุกสภาพผม แม้หนังศีรษะที่บอบบาง",
+              description:
+                "สูตรบำรุงที่เหมาะกับทุกสภาพผม แม้หนังศีรษะที่บอบบาง",
             },
           ],
         },
@@ -1320,7 +1332,8 @@ i18n.use(initReactI18next).init({
           features: [
             {
               title: "อุปกรณ์ปลอดเชื้อ",
-              description: "ความสะอาดเข้มงวด อุปกรณ์สะอาดปลอดภัย และขั้นตอนที่ได้มาตรฐานสำหรับลูกค้าทุกคน",
+              description:
+                "ความสะอาดเข้มงวด อุปกรณ์สะอาดปลอดภัย และขั้นตอนที่ได้มาตรฐานสำหรับลูกค้าทุกคน",
             },
             {
               title: "ผลิตภัณฑ์คุณภาพพรีเมียม",
@@ -1340,7 +1353,6 @@ i18n.use(initReactI18next).init({
           ],
         },
 
-
         // Cosmetic Call to Action
         cosmetic: {
           cta: {
@@ -1355,7 +1367,7 @@ i18n.use(initReactI18next).init({
           cta: {
             title: "พร้อมที่จะสัมผัสรสชาติอันยอดเยี่ยมหรือยัง?",
             description:
-              "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rosar Nani ให้เป็นจุดหมายปลายทางสำหรับประสบการณ์อาหารที่ยอดเยี่ยม",
+              "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rak Nani ให้เป็นจุดหมายปลายทางสำหรับประสบการณ์อาหารที่ยอดเยี่ยม",
             button: "เยี่ยมชมเลย",
           },
         },
@@ -1364,43 +1376,46 @@ i18n.use(initReactI18next).init({
         nailcta: {
           title: "พร้อมเปลี่ยนลุคเล็บของคุณหรือยัง?",
           description:
-            "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rosar Nani ให้ดูแลและสร้างสรรค์เล็บสวยงามอย่างมืออาชีพ",
+            "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rak Nani ให้ดูแลและสร้างสรรค์เล็บสวยงามอย่างมืออาชีพ",
           button: "จองคิวทำเล็บ",
         },
         salon: {
           cta: {
             title: "พร้อมที่จะเปลี่ยนลุคของคุณแล้วหรือยัง?",
             description:
-              "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rosar Nani ให้เป็นจุดหมายปลายทางสำหรับบริการด้านความงามและสุขภาพ",
+              "เข้าร่วมกับลูกค้านับพันที่ไว้วางใจ Rak Nani ให้เป็นจุดหมายปลายทางสำหรับบริการด้านความงามและสุขภาพ",
             button: "เยี่ยมชมตอนนี้",
           },
         },
 
         // EyeLash Call to Action
-lashcta: {
-  title: "พร้อมเปลี่ยนลุคขนตาของคุณหรือยัง?",
-  description:
-    "ร่วมเป็นหนึ่งในลูกค้ามากมายที่ไว้วางใจ Rak Nani เพื่อขนตาสวยโดดเด่น บริการต่อขนตามืออาชีพ และการดูแลความงามระดับพรีเมียม",
-  button: "เยี่ยมชมตอนนี้",
-},
+        lashcta: {
+          title: "พร้อมเปลี่ยนลุคขนตาของคุณหรือยัง?",
+          description:
+            "ร่วมเป็นหนึ่งในลูกค้ามากมายที่ไว้วางใจ Rak Nani เพื่อขนตาสวยโดดเด่น บริการต่อขนตามืออาชีพ และการดูแลความงามระดับพรีเมียม",
+          button: "เยี่ยมชมตอนนี้",
+        },
 
-// Hair Call to Action
-haircta: {
-  title: "พร้อมเปลี่ยนลุคผมของคุณหรือยัง?",
-  description:
-    "ร่วมเป็นหนึ่งในลูกค้ามากมายที่ไว้วางใจ Rak Nani เพื่อทรงผมที่สวยงาม บริการทำผมโดยผู้เชี่ยวชาญ และการดูแลระดับซาลอนพรีเมียม",
-  button: "เยี่ยมชมตอนนี้",
-},
-
+        // Hair Call to Action
+        haircta: {
+          title: "พร้อมเปลี่ยนลุคผมของคุณหรือยัง?",
+          description:
+            "ร่วมเป็นหนึ่งในลูกค้ามากมายที่ไว้วางใจ Rak Nani เพื่อทรงผมที่สวยงาม บริการทำผมโดยผู้เชี่ยวชาญ และการดูแลระดับซาลอนพรีเมียม",
+          button: "เยี่ยมชมตอนนี้",
+        },
 
         // Footer Section
-        footerBrand: "Rosar Nani",
+        footerBrand: "Rak Nani",
         footerDescription:
-          "จุดหมายส่วนตัวของคุณสำหรับอาหารรสเลิศ การบริการสปา และผลิตภัณฑ์ที่ปรับแต่งเฉพาะคุณ",
+          "จุดหมายปลายทางเฉพาะสำหรับคุณ ที่ให้บริการทำเล็บ ทำผม และต่อขนตาแบบปรับให้เหมาะกับแต่ละบุคคล",
         footerDescriptionfoodsrv:
           "มอบประสบการณ์การรับประทานอาหารสุดพิเศษด้วยคุณภาพ ความหลงใหล และความใส่ใจ",
         footerDescriptionnailsrv:
           "รังสรรค์ลุคที่สมบูรณ์แบบด้วยนวัตกรรม สีทาเล็บคุณภาพสูง และความงามเหนือกาลเวลา",
+        footerDescriptionlashsrv:
+          "เพิ่มความงามอย่างเป็นธรรมชาติด้วยบริการต่อขนตาคุณภาพสูง เพื่อให้คุณดูสวยโดดเด่นและสง่างาม",
+        footerDescriptionhairsrv:
+          "สร้างสรรค์ทรงผมที่สวยงามด้วยเทคนิคมืออาชีพและการดูแลคุณภาพเยี่ยม เพื่อความเรียบลื่นและสง่างามในทุกลุค",
         footerQuickLinksTitle: "ลิงก์ด่วน",
         footerQuickLinks: [
           { name: "หน้าหลัก", href: "#home" },
@@ -1456,7 +1471,7 @@ haircta: {
         },
 
         footerCopyright:
-          "© 2025 Rosar Nani สงวนลิขสิทธิ์ ออกแบบด้วยความเอาใจใส่สำหรับประสบการณ์ส่วนตัวของคุณ",
+          "© 2025 Rak Nani สงวนลิขสิทธิ์ ออกแบบด้วยความเอาใจใส่สำหรับประสบการณ์ส่วนตัวของคุณ",
 
         //Services Section
 
