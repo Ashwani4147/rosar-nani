@@ -63,7 +63,6 @@ Thank you for booking an appointment with us!
 Here are your details:
 Name: ${name}
 Phone: ${phone}
-Preferred Timing: ${preferredTiming}
 Service: ${service}
 
 Our team will reach out shortly to confirm the appointment time.

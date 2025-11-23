@@ -70,6 +70,7 @@ i18n.use(initReactI18next).init({
             "Enhance your style with beautifully crafted hair services. Expert techniques, smooth finishes, and naturally stunning results that last.",
 
           button: "Explore ",
+          secondbutton: "Book an Appointment "
         },
 
         // Main Heading Section
@@ -842,6 +843,7 @@ i18n.use(initReactI18next).init({
             "เสริมสไตล์ของคุณด้วยบริการทำผมที่ปราณีต ลงเทคนิคมืออาชีพ ให้ผมนุ่มสวยและดูเป็นธรรมชาติอย่างยาวนาน",
 
           button: "สำรวจเมนู",
+          secondbutton: "จองนัดหมาย"
         },
 
         // Main Heading Section
