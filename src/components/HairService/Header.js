@@ -137,8 +137,8 @@ function Header() {
             <img
               src={logos1}
               alt="Rosar Nani Logo"
-             // className="h-8 md:h-10 w-auto"
-               className="h-16 sm:h-16 md:h-16 w-auto"
+              className="h-8 md:h-10 w-auto"
+            //   className="h-16 sm:h-16 md:h-16 w-auto"
             />
           </Link>
         </div>
