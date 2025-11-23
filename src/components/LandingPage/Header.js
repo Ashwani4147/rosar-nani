@@ -89,7 +89,8 @@ function Header() {
             <img
               src={logos1}
               alt="Rak Nani Logo"
-              className="h-8 sm:h-9 md:h-10 w-auto"
+              // className="h-8 sm:h-9 md:h-10 w-auto"
+              className="h-16 sm:h-16 md:h-16 w-auto"
             />
           </button>
         </div>
