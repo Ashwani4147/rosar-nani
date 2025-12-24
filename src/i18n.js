@@ -280,6 +280,23 @@ i18n.use(initReactI18next).init({
         messagePlaceholder:
           "Tell us about your preferences and how we can help you...",
         sendButton: "Send Message",
+        // Appointment popup / form
+        appointment: {
+          title: "Book Your Appointment",
+          nameLabel: "Name",
+          namePlaceholder: "Enter your name",
+          emailLabel: "Email",
+          emailPlaceholder: "Enter your email",
+          phoneLabel: "Phone",
+          phonePlaceholder: "Enter your phone number",
+          serviceLabel: "Service",
+          selectService: "Select service",
+          submitButton: "Submit",
+          submitting: "Submitting...",
+          success: "Appointment booked successfully!",
+          fail: "Failed to book appointment",
+          error: "Error while booking appointment",
+        },
         contactInfoTitle: "Contact Information",
         contactInfoText:
           "We'd love to hear from you! Reach out to us through any of the following channels, and we'll get back to you as soon as possible.",
@@ -1052,6 +1069,23 @@ i18n.use(initReactI18next).init({
         messagePlaceholder:
           "บอกเราเกี่ยวกับความต้องการของคุณและเราสามารถช่วยคุณได้อย่างไร...",
         sendButton: "ส่งข้อความ",
+        // Appointment popup / form (Thai)
+        appointment: {
+          title: "จองคิวของคุณ",
+          nameLabel: "ชื่อ",
+          namePlaceholder: "กรอกชื่อของคุณ",
+          emailLabel: "อีเมล",
+          emailPlaceholder: "กรอกอีเมลของคุณ",
+          phoneLabel: "โทรศัพท์",
+          phonePlaceholder: "กรอกหมายเลขโทรศัพท์",
+          serviceLabel: "บริการ",
+          selectService: "เลือกบริการ",
+          submitButton: "ส่ง",
+          submitting: "กำลังส่ง...",
+          success: "จองคิวสำเร็จ!",
+          fail: "ไม่สามารถจองคิวได้",
+          error: "เกิดข้อผิดพลาดขณะจองคิว",
+        },
         contactInfoTitle: "ข้อมูลการติดต่อ",
         contactInfoText:
           "เรายินดีที่จะรับฟังคุณ! ติดต่อเราผ่านช่องทางใดก็ได้ด้านล่าง และเราจะตอบกลับคุณโดยเร็วที่สุด",

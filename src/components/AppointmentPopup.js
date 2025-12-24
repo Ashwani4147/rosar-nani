@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const AppointmentPopup = ({ open, onClose }) => {
+
+  const { t } = useTranslation();
 
   const initialFormState = {
     name: "",
@@ -50,14 +53,14 @@ const AppointmentPopup = ({ open, onClose }) => {
       });
 
       if (res.ok) {
-        setPopupMessage("✅ Appointment booked successfully!");
+        setPopupMessage("✅ " + t("appointment.success"));
         resetAll();
       } else {
-        setPopupMessage("❌ Failed to book appointment");
+        setPopupMessage("❌ " + t("appointment.fail"));
       }
     } catch (err) {
       console.error("Error:", err);
-      setPopupMessage("⚠️ Error while booking appointment");
+      setPopupMessage("⚠️ " + t("appointment.error"));
     } finally {
       setShowPopup(true);
       setLoading(false);
@@ -92,49 +95,49 @@ const AppointmentPopup = ({ open, onClose }) => {
           </button>
 
           <h3 className="text-2xl mb-4 font-bold text-center" style={{ color: "#419fa4" }}>
-            Book Your Appointment
+            {t("appointment.title")}
           </h3>
 
           <form onSubmit={handleSubmit} className="space-y-5">
 
             {/* NAME */}
             <div>
-              <label className="block mb-1 text-gray-700">Name</label>
+              <label className="block mb-1 text-gray-700">{t("appointment.nameLabel")}</label>
               <input
                 type="text"
                 name="name"
                 required
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Enter your name"
+                placeholder={t("appointment.namePlaceholder")}
                 className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
             {/* EMAIL */}
             <div>
-              <label className="block mb-1 text-gray-700">Email</label>
+              <label className="block mb-1 text-gray-700">{t("appointment.emailLabel")}</label>
               <input
                 type="email"
                 name="email"
                 required
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter your email"
+                placeholder={t("appointment.emailPlaceholder")}
                 className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
             {/* PHONE */}
             <div>
-              <label className="block mb-1 text-gray-700">Phone</label>
+              <label className="block mb-1 text-gray-700">{t("appointment.phoneLabel")}</label>
               <input
                 type="tel"
                 name="phone"
                 required
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder="Enter your phone number"
+                placeholder={t("appointment.phonePlaceholder")}
                 className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
@@ -160,7 +163,7 @@ const AppointmentPopup = ({ open, onClose }) => {
 
             {/* SERVICE DROPDOWN */}
             <div>
-              <label className="block mb-1 text-gray-700">Service</label>
+              <label className="block mb-1 text-gray-700">{t("appointment.serviceLabel")}</label>
               <select
                 name="service"
                 value={formData.service}
@@ -168,10 +171,10 @@ const AppointmentPopup = ({ open, onClose }) => {
                 required
                 className="w-full p-3 border rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               >
-                <option value="" disabled>Select service</option>
-                <option value="hairService">Hair Service</option>
-                <option value="nailService">Nail Service</option>
-                <option value="lashService">EyeLash Service</option>
+                <option value="" disabled>{t("appointment.selectService")}</option>
+                <option value="hairService">{t("serviceHair")}</option>
+                <option value="nailService">{t("serviceNail")}</option>
+                <option value="lashService">{t("serviceLash")}</option>
               </select>
             </div>
 
@@ -182,7 +185,7 @@ const AppointmentPopup = ({ open, onClose }) => {
                 className="w-full py-3 px-6 text-white font-semibold rounded-md transform hover:scale-105 transition-all duration-300 shadow-lg"
                 style={{ backgroundColor: "#419fa4" }}
               >
-                Submit
+                {t("appointment.submitButton")}
               </button>
             )}
 
@@ -191,7 +194,7 @@ const AppointmentPopup = ({ open, onClose }) => {
                 disabled
                 className="w-full py-3 px-6 bg-gray-400 text-white rounded-md"
               >
-                Submitting...
+                {t("appointment.submitting")}
               </button>
             )}
           </form>
